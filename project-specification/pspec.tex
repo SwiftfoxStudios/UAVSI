@@ -1,0 +1,280 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{float}
+
+\usepackage{hyperref}
+\usepackage{tikz} 
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{pgfgantt}
+
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+        \large UNIVERSITY OF WARWICK\\
+       \vspace*{8cm}
+        \Huge UAVSI
+        \\
+        \vspace{0.5cm}
+        \normalsize UNMANNED AERIAL VEHICLE SWARM INTELLIGENCE
+        \\
+        \vspace{0.2cm}
+        Project Specification
+            
+       \vspace{5cm}
+
+       \large \textbf{Antonio Brito}
+			
+			\smallskip
+
+       \vfill
+
+   \end{center}
+\end{titlepage}
+
+\chead{UAVSI}
+
+\section{Abstract}
+This project explores simulating methods of unmanned aerial vehicles (UAVs) moving, pathfinding and completing tasks in bird-like groups (swarms), initially based off of Boids theory \cite{10.1145/37402.37406}.
+
+\section{Background}
+This project combines previous research from several disciplines into one. Looking across these fields, we have \textbf{Swarm Intelligence}, which explores a group of agents interacting locally with one another and with their environment\cite{9173524}. Boids theory is some of the initial work that fits into this field. This project aims at augmenting this with modern swarm intelligence metaheuristics. Aside from this, the aim is to explore the data analysis process from the point of sensing, tracking, state estimation, through to processing and decision making, autonomously. Lastly, we look at managing a UAV system in three dimensions using classical flight mechanics.
+
+In the final report, we will also look back on findings to explore the parallels between the agents' behaviour and expected human behaviour when acting in swarms to evaluate the feasibility of future research on intelligent systems. The overall goal of the project is to combine existing technology in a novel way; in a field of research lacking open source resources.
+
+\section{Objectives}
+The aim of the project can be split down into four distinct sections, grouped by similarity and priority. For all objectives, several implementations will be explored and compared.
+
+\subsection{Swarm Operation}
+The aim here is to simulate a group of identical nodes (UAVs) operating cohesively as a swarm. This objective is further broken down into simulating the physics of the model and the environment as such:
+
+\subsubsection{Physics Model}
+As we are concerned with a 3D environment, the model of the agents will fit such an environment. The agents will be modelled as quadcopters\cite{Khan2014QuadcopterFD}, rather than winged aircraft, for simplicity. This is because of the following considerations\footnote{\href{https://www.adorama.com/alc/quadcopter-vs-drone/}{Quadcopter vs Drone: What's the Difference?}}:
+\begin{itemize}
+    \item High maneuverability is key in swarms to ensure high rates of survivability.
+    \item Aircraft position can be fixed, allowing for greater analysis time.
+    \item Vertical take-off and landing (VTOL) is possible.
+\end{itemize}
+
+As a trade-off, the quadcopter model will be slower and will likely be less stable in real-life scenarios. However, we will explore extending the project to looking at conventional winged aircraft flight. Using the Boids model, we will implement the three key rules for emergent swarm behaviour:
+\begin{itemize}
+    \item \textbf{Node Separation} \\ 
+    Simulating the ability for nodes to keep some minimum distance from other nodes, to prevent collisions.
+    \item \textbf{Node Alignment} \\
+    Simulating nodes tending to have similar velocity vectors to nearby nodes, such that they travel in the same direction.
+    \item \textbf{Node Cohesion} \\
+    Simulating nodes moving towards the centre of nearby nodes to uphold the 'pack'-like behaviour.
+\end{itemize}
+
+Ideally, after the physics model is created, a working simulation of a group of agents will be demonstrated. The number of agents will be dynamic, as this may later affect optimisations. At this stage of development, the aim will be to have minimal to no collisions between agents with a swarm size of \textbf{8-16} drones. The relationship between swarm size and number of collisions will be modelled.
+
+\subsubsection{Environment Model}
+The environment will be continous and three dimensional. The aim will be to have a finite world size, with randomly generated terrain according to a continous heightmap, likely using Perlin noise\cite{10.1145/325165.325247}. Agents will have a start location and a goal location, generated randomly at every iteration of the simulation.
+
+\subsection{Pathfinding}
+To introduce and compare several global path planning algorithms, we will first use a 2D map to model both the \textbf{A*}\cite{4082128} and \textbf{D* Lite}\cite{dstar} algorithms for individual node pathfinding. We will then explore a 3D implementation of the more useful algorithm for the project, likely D*, alongside a case study for the algorithm - the Mars Exploration Rovers\cite{4161272}. Noticeably, a large part of the development timetable in Section \ref{timetable} is devoted to this 3D implementation. This is due to a lack of resources avaliable for this specific implementation.
+
+We will look at three separate implementations of pathfinding:
+
+\begin{itemize}
+    \item \textbf{The Naive, Leaderless Approach}: Does chaos occur without an elected leader, leaving each agent to think for themselves?
+    \item \textbf{A Combined Approach for Swarm Operation \& Pathfinding}: We will attempt to model swarm pathfinding with collision avoidance and cohesion heuristics, such that the edge weights that bring nodes too close or too far to other nodes are high-cost.
+    \item \textbf{D* with Leadership Behaviours}: Does electing a leader reduce computational power requirements at a trade-off for survivability?
+\end{itemize}
+
+For all of these implementations, we will consider the computational power required for simulation, aiming to minimise this so that larger numbers of agents can exist.
+
+\subsection{Obstacle Avoidance}
+Assuming a suitable method of pathfinding is found, the next objective will be to simulate an environment with obstacles and model obstacle avoidance within the swarm. The obstcle-environment relationship is classified by the following characteristsics:
+
+\begin{itemize}
+    \item Obstacles are randomly generated from a set of types (such as Floating Cube, Mountain, Building).
+    \item The size of obstacles will be random, within a Gaussian distribution.
+\end{itemize}
+
+This objective can be broken down into two parts:
+
+\subsubsection{Perfect Representation of the Environment}
+Initially, the goal is to ensure a high survivability rate amongst the swarm when given a perfect representation of the location and classification of obstacles. The project will explore the use of two main avoidance mechanisms:
+
+\begin{enumerate}
+    \item Naive D* Avoidance using edge-weights
+    \item Simulated Magnetic Fields for Collision Avoidance\cite{2017}
+\end{enumerate}
+
+\subsubsection{Incomplete Representation of the Environment}
+The focus will then shift onto how the swarm handles receiving incomplete data regarding obstacles, such as position without a type classification, or vice versa. The goal is to explore autonomous behaviour when considering aspects of probability. At this stage, we consider obstacle density as another factor; in less challenging terrain, avoidance is easier.
+
+\subsection{Obstacle Detection}
+An extension to the project will consist of exploring methods of obstacle detection. This objective, as well as the next objective, begins to look at a simulated implementation of state estimation \& tracking models. The inital steps for this objective will be looking at methods of sensing, primarily LiDAR\cite{8491889}, to detect obstacle positions.
+
+Conequently, we will explore how sensor placement within the swarm affects survivability and whether an increased number of sensors leads to better results (using data fusion techniques).
+
+\subsection{Hostile \& Moving Obstacles}
+A final possible extension will be looking at the detection and avoidance of hostile and moving obstacles. To complete this,
+hostile obstacles are obstacles with the capability of firing projectiles or signal jamming across some unknown (random) radius. Moving
+obstacles traverse the terrain linearly in a given (random) direction. This could be further extended to implement random non-linear walks.
+
+The aim of this objective is to explore autonomous behaviour in environments where predictions need to occur when considering danger travelling
+towards the swarm.
+
+\section{Methods}
+The proejct will be completed in Unity due to the lack of licensing requirements, ease of use and scripting support\cite{unity}, likely using C++. Consequently, the simulation will be a Unity3D environment. The codebase in its entirety, including source code and version control, will be managed by a cloud-based GitHub repository\cite{git}.
+
+The \textbf{waterfall} software methodology will be used in development. This is evident in the timetable in Section \ref{timetable}. The waterfall approach lends itself to structured stages of development, where one stage leads naturally into the next. For the purposes of this project, these stages are outlined in bold in the timetable in Section \ref{timetable}.
+
+For this approach, the model splits the development process into the following sections, specific to this project:
+
+\begin{enumerate}
+    \item \textbf{System} - the project specification outlining the tasks to be completed with rough timelines.
+    \item \textbf{Analysis} - a section in the final report detailing the models used and techniques compared.
+    \item \textbf{Coding} - the development of the system.
+    \item \textbf{Testing} - validating the system to ensure the project's objectives have been met.
+\end{enumerate}
+
+\section{Timetable}
+\label{timetable}
+Generally, the aim is to split the objectives above to be completed according to the timetable below:
+\begin{figure}[h]
+    \begin{center}
+    
+    \begin{ganttchart}[y unit title=0.5cm,
+    y unit chart=0.6cm,
+    vgrid,hgrid, 
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3,
+    group peaks height=.2,
+    link mid=.45]{1}{24}
+    %labels
+    \gantttitle{Term 1}{10}
+    \gantttitle{Xmas Break}{4}
+    \gantttitle{Term 2}{10} \\
+    \gantttitle{1}{1} 
+    \gantttitle{2}{1} 
+    \gantttitle{3}{1} 
+    \gantttitle{4}{1} 
+    \gantttitle{5}{1}
+    \gantttitle{6}{1} 
+    \gantttitle{7}{1} 
+    \gantttitle{8}{1} 
+    \gantttitle{9}{1} 
+    \gantttitle{10}{1}
+    \gantttitle{1}{1} %week 11
+    \gantttitle{2}{1} 
+    \gantttitle{3}{1} 
+    \gantttitle{4}{1} 
+    \gantttitle{1}{1} %week 15
+    \gantttitle{2}{1} 
+    \gantttitle{3}{1} 
+    \gantttitle{4}{1} 
+    \gantttitle{5}{1}
+    \gantttitle{6}{1} %week 20
+    \gantttitle{7}{1} 
+    \gantttitle{8}{1} 
+    \gantttitle{9}{1} 
+    \gantttitle{10}{1} \\
+    %tasks
+    \ganttgroup{Supplementary Work}{1}{24} \\
+    \ganttbar{Project Spec}{1}{2} \\
+    \ganttbar{Progress Report}{8}{8} \\
+    \ganttbar{Presentation}{22}{24} \\
+    \ganttbar{Informing Future Work}{22}{24} \\
+
+    \ganttgroup{Swarm Operation}{2}{8} \\
+    \ganttbar{Physics Model Research}{2}{3} \\
+    \ganttbar{Physics Model Development}{3}{6} \\
+    \ganttbar{Environment Development}{4}{7} \\
+    \ganttbar{Evaluation}{8}{8} \\
+
+    \ganttgroup{Pathfinding}{7}{15} \\
+    \ganttbar{A* \& D* in 2D}{7}{8} \\
+    \ganttbar{3D Implementation of D*}{8}{11} \\
+    \ganttbar{Swarm Leader Navigation}{12}{13} \\
+    \ganttbar{Leaderless Navigation}{13}{14} \\
+    \ganttbar{Evaluation}{14}{15} \\
+
+    \ganttgroup{Project Extensions}{15}{24} \\
+    \ganttbar{Obstacle Avoidance}{15}{18} \\
+    \ganttbar{Obstacle Detection}{19}{21} \\
+    \ganttbar{Hostile Obstacles}{22}{23} \\
+    \ganttbar{Winged Aircraft}{24}{24}
+
+    \ganttlink{elem7}{elem12}
+    \ganttlink{elem12}{elem13}
+    \ganttlink{elem12}{elem14}
+    \ganttlink{elem15}{elem3}
+    \ganttlink{elem9}{elem3}
+
+
+    \end{ganttchart}
+    \end{center}
+    \caption{Gantt Chart showing main objectives. Numbers shown are week numbers.}
+
+\end{figure}
+
+Noticeably, the timetable leaves a large chunk of time between the scheduled completion of essential objectives (Term 2 Week 1) and the presentation (Term 2 Week 9).
+This is to leave a margin of error induced by risks and unexpected events, as discussed in the next section.
+
+\section{Risks \& Issues}
+
+The major risks to the project are as follows:
+
+\begin{enumerate}
+    \item \textbf{Stages in the project fall behind schedule.} \\ This may occur when a critical task takes too long to complete.
+    The solution to this issue is to ensure alternatives exist at all critical points and the timetable lends itself to having leeway.
+    \item \textbf{Insufficient computational power.} \\ Naturally, simulation lends itself to requiring high computing specifications.
+    A side aim of the project is optimising the simulation environment to ensure it is able to be ran on my personal computer. If all
+    else fails, a wise option is to consider the Department's access to computational resources.
+    \item \textbf{Project work is lost and/or unretrievable.} \\ As all development will occur on a personal computer, it is essential
+    to ensure backup copies exist elsewhere. Hence, all written reports, specifications and source code will be backed up to GitHub as a minimum.
+    \item \textbf{Insufficient findings for a complete report.} \\ There is often more to write about regarding failures than successes, as all
+    other reasonable options must be exhausted before declaring failure! No useful product is guaranteed, but findings certainly are.
+    \item \textbf{Libraries or resources become unavaliable during the project process.} \\ Whilst this is low risk, to mitigate this, local copies
+    will be used wherever possible and backed up alongside the codebase.
+\end{enumerate}
+
+
+\subsection{Ethical Issues}
+A research project involving autonomous technology comes with vital ethical considerations. All research
+will be conducted in line with the Department's ethical guidelines\footnote{\href{https://warwick.ac.uk/fac/sci/dcs/teaching/ethics}{Warwick DCS Ethical Guidelines}}, as no human imvolvement is required.
+
+It is important to ensure there is no ethical ambiguity for the purposes of the project. As such, the intended research goals as detailed
+in the problem statement will be kept to those without ethical ambiguity or favouring. The aim through this project is to inform future research
+for using intelligent autonomous systems defensively.
+
+\newpage
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

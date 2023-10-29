@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 211.66666 211.66666"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="uavsi-sized.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="uavsi-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.6879889"
+     inkscape:cx="336.48799"
+     inkscape:cy="505.09536"
+     inkscape:window-width="1512"
+     inkscape:window-height="945"
+     inkscape:window-x="1228"
+     inkscape:window-y="1117"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:95.1515px;font-family:Futura;-inkscape-font-specification:Futura;fill:#629699;fill-opacity:1;stroke:#ffffff;stroke-width:0"
+       x="3.4804261"
+       y="102.29927"
+       id="text790"><tspan
+         sodipodi:role="line"
+         id="tspan788"
+         style="fill:#629699;fill-opacity:1;stroke-width:0"
+         x="3.4804261"
+         y="102.29927">UAV</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:95.1515px;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0.52916667px;fill:#629699;fill-opacity:1;stroke:#ffffff;stroke-width:0"
+       x="7.0578995"
+       y="180.81784"
+       id="text1990"><tspan
+         sodipodi:role="line"
+         id="tspan1988"
+         style="fill:#629699;fill-opacity:1;stroke-width:0"
+         x="7.0578995"
+         y="180.81784"
+         dx="0">SI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.45;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0.529167px;fill:#3c6566;fill-opacity:1;stroke:#ffffff;stroke-width:0"
+       x="86.702782"
+       y="164.47766"
+       id="text3446"><tspan
+         sodipodi:role="line"
+         style="font-size:11.2889px;letter-spacing:0.529167px;fill:#3c6566;fill-opacity:1;stroke-width:0"
+         x="86.702782"
+         y="164.47766"
+         id="tspan3552">antonio brito</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:11.2889px;fill:#3c6566;fill-opacity:1;stroke-width:0"
+         x="86.702782"
+         y="180.84657"
+         id="tspan3550">antbr.co.uk</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.45;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0.261937px;fill:#3c6566;fill-opacity:1;stroke:#ffffff;stroke-width:0"
+       x="87.124977"
+       y="167.67613"
+       id="text3560"><tspan
+         sodipodi:role="line"
+         style="font-size:3.175px;fill:#3c6566;fill-opacity:1;stroke-width:0"
+         x="87.124977"
+         y="167.67613"
+         id="tspan3558">for the University of Warwick</tspan></text>
+  </g>
+</svg>

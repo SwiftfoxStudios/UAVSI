@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{float}
+
+\usepackage{hyperref}
+\usepackage{tikz} 
+\usetikzlibrary{shapes,arrows}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{subfiles}
+\usepackage{pgfgantt}
+
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+        \large UNIVERSITY OF WARWICK\\
+       \vspace*{8cm}
+        \Huge UAVSI
+        \\
+        \vspace{0.5cm}
+        \normalsize UNMANNED AERIAL VEHICLE SWARM INTELLIGENCE
+        \\
+        \vspace{0.2cm}
+        Final Report
+            
+       \vspace{5cm}
+
+       \large \textbf{Antonio Brito}
+			
+			\smallskip
+
+       \vfill
+
+   \end{center}
+\end{titlepage}
+
+\chead{UAVSI}
+
+\subfile{swarm-operation/physicsmodel}
+
+\newpage
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

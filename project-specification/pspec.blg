@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: pspec.aux
+The style file: unsrt.bst
+Database file #1: refs.bib
+Warning--empty booktitle in dstar
+Warning--empty booktitle in unity
+You've used 11 entries,
+            1791 wiz_defined-function locations,
+            522 strings with 5542 characters,
+and the built_in function-call counts, 3083 in all, are:
+= -- 262
+> -- 121
+< -- 5
++ -- 45
+- -- 34
+* -- 227
+:= -- 461
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 141
+empty$ -- 310
+format.name$ -- 34
+if$ -- 711
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 11
+newline$ -- 58
+num.names$ -- 11
+pop$ -- 32
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 246
+swap$ -- 46
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 26
+width$ -- 13
+write$ -- 122
+(There were 2 warnings)

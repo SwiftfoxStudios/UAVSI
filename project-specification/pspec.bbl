@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{10.1145/37402.37406}
+Craig~W. Reynolds.
+\newblock Flocks, herds and schools: A distributed behavioral model.
+\newblock {\em SIGGRAPH Comput. Graph.}, 21(4):25–34, aug 1987.
+
+\bibitem{9173524}
+Junyan Hu, Ali~Emre Turgut, Tomáš Krajník, Barry Lennox, and Farshad Arvin.
+\newblock Occlusion-based coordination protocol design for autonomous robotic
+  shepherding tasks.
+\newblock {\em IEEE Transactions on Cognitive and Developmental Systems},
+  14(1):126--135, 2022.
+
+\bibitem{Khan2014QuadcopterFD}
+Mohd~Shahiq Khan.
+\newblock Quadcopter flight dynamics.
+\newblock {\em International Journal of Scientific \& Technology Research},
+  3:130--135, 2014.
+
+\bibitem{10.1145/325165.325247}
+Ken Perlin.
+\newblock An image synthesizer.
+\newblock {\em SIGGRAPH Comput. Graph.}, 19(3):287–296, jul 1985.
+
+\bibitem{4082128}
+Peter~E. Hart, Nils~J. Nilsson, and Bertram Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock {\em IEEE Transactions on Systems Science and Cybernetics},
+  4(2):100--107, 1968.
+
+\bibitem{dstar}
+Sven Koenig and Maxim Likhachev.
+\newblock D*lite.
+\newblock pages 476--483, 01 2002.
+
+\bibitem{4161272}
+Joseph Carsten, Arturo Rankin, Dave Ferguson, and Anthony Stentz.
+\newblock Global path planning on board the mars exploration rovers.
+\newblock In {\em 2007 IEEE Aerospace Conference}, pages 1--11, 2007.
+
+\bibitem{2017}
+Fang Wu, Akash Vibhute, Gim~Song Soh, Kristin~L. Wood, and Shaohui Foong.
+\newblock A compact magnetic field-based obstacle detection and avoidance
+  system for miniature spherical robots.
+\newblock {\em Sensors}, 17(6):1231, May 2017.
+
+\bibitem{8491889}
+Arne Devos, Emad Ebeid, and Poramate Manoonpong.
+\newblock Development of autonomous drones for adaptive obstacle avoidance in
+  real world environments.
+\newblock In {\em 2018 21st Euromicro Conference on Digital System Design
+  (DSD)}, pages 707--710, 2018.
+
+\bibitem{unity}
+Ismail Buyuksalih, Serdar Bayburt, G.~Buyuksalih, A.~Baskaraca, Hairi Karim,
+  and Alias Rahman.
+\newblock 3d modelling and visualization based on the unity game engine -
+  advantages and challenges.
+\newblock volume IV-4/W4, pages 161--166, 11 2017.
+
+\bibitem{git}
+John Blischak, Emily Davenport, and Greg Wilson.
+\newblock A quick introduction to version control with git and github.
+\newblock {\em PLoS computational biology}, 12:e1004668, 01 2016.
+
+\end{thebibliography}
