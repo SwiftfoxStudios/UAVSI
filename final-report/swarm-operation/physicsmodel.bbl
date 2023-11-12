@@ -41,4 +41,12 @@ F.~P. {Thamm}, N.~{Brieger}, K.~P. {Neitzke}, M.~{Meyer}, R.~{Jansen}, and
   the Photogrammetry, Remote Sensing and Spatial Information Sciences}, vol.
   XL1, p. 345, Aug. 2015.
 
+\bibitem{Reynolds}
+\BIBentryALTinterwordspacing
+C.~W. Reynolds, \emph{Flocks, Herds, and Schools: A Distributed Behavioral
+  Model}.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
+  for Computing Machinery, 1998, pp. 273--282. [Online]. Available:
+  \url{https://doi.org/10.1145/280811.281008}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

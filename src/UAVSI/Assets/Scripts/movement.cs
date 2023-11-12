@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public Rigidbody uav;
 
@@ -188,6 +188,7 @@ public class movement : MonoBehaviour
     // Move up/down
     void VerticalAxis(){
         float thrust_all;
+    
         if(Input.GetKey(KeyCode.I)){
             firstFrame = true;
             targetAltitude = transform.position.y;
@@ -200,9 +201,8 @@ public class movement : MonoBehaviour
         }
         // Set altitude when key is released
         else{
-            if (firstFrame){
+            if(Mathf.Abs(uav.velocity.y) <= 1){
                 targetAltitude = transform.position.y;
-                firstFrame = false;
             }
             thrust_all = 24.5f;
         }

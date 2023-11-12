@@ -350,8 +350,13 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/motor.cs"
-"Assets/Scripts/movement.cs"
+"Assets/Scripts/Agent.cs"
+"Assets/Scripts/Alignment.cs"
+"Assets/Scripts/Avoidance.cs"
+"Assets/Scripts/Cohesion.cs"
+"Assets/Scripts/Flock.cs"
+"Assets/Scripts/FlockBehaviour.cs"
+"Assets/Scripts/Movement.cs"
 -langversion:9.0
 
 /deterministic

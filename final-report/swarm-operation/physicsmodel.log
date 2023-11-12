@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  29 OCT 2023 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  2 NOV 2023 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,12 +6,7 @@ entering extended mode
 **/Users/antonio/Development/CS3/UAVSI/final-report/swarm-operation/physicsmodel.tex
 (/Users/antonio/Development/CS3/UAVSI/final-report/swarm-operation/physicsmodel.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.cls
-Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
-Preamble taken from file `../report.tex'
-(/usr/local/texlive/2022/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-) (swarm-operation/../report.tex (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -505,8 +500,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks45
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.sty
-Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfgantt/pgfgantt.sty
 Package: pgfgantt 2018/01/10 v5.0 Draw Gantt diagrams with TikZ
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
@@ -574,35 +567,35 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box89
-) (swarm-operation/physicsmodel.aux)
+) (./physicsmodel.aux)
 \openout1 = `physicsmodel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 3.
-Package hyperref Info: Link coloring OFF on input line 3.
+(lastpage)             ! on input line 31.
+Package hyperref Info: Link coloring OFF on input line 31.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -612,10 +605,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
- (swarm-operation/physicsmodel.out) (swarm-operation/physicsmodel.out)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+ (./physicsmodel.out) (./physicsmodel.out)
 \@outlinefile=\write4
 \openout4 = `physicsmodel.out'.
 
@@ -673,45 +666,45 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count349
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <../img//prop.png, id=22, 273.02pt x 260.975pt>
 File: ../img//prop.png Graphic file (type png)
 <use ../img//prop.png>
-Package pdftex.def Info: ../img//prop.png  used on input line 44.
+Package pdftex.def Info: ../img//prop.png  used on input line 72.
 (pdftex.def)             Requested size: 84.00626pt x 80.3003pt.
 <../img//drone-unity.png, id=24, 696.6025pt x 379.4175pt>
 File: ../img//drone-unity.png Graphic file (type png)
 <use ../img//drone-unity.png>
-Package pdftex.def Info: ../img//drone-unity.png  used on input line 46.
+Package pdftex.def Info: ../img//drone-unity.png  used on input line 74.
 (pdftex.def)             Requested size: 147.42818pt x 80.3003pt.
  [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <swarm-operation/../img//prop.png> <swarm-operation/../img//drone-unity.png>] [2] [3] (swarm-operation/physicsmodel.bbl) 
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//prop.png> <../img//drone-unity.png>] [2] [3] (./physicsmodel.bbl) 
 AED: lastpage setting LastPage
-[4] (swarm-operation/physicsmodel.aux)
+[4] (./physicsmodel.aux)
 Package rerunfilecheck Info: File `physicsmodel.out' has not changed.
-(rerunfilecheck)             Checksum: 38CE849207E836E324A39744E083EB1D;571.
+(rerunfilecheck)             Checksum: F7EC7B9D5F5AA1505D4315EBD7F3FFD8;611.
  ) 
 Here is how much of TeX's memory you used:
- 25624 strings out of 478268
- 506188 string characters out of 5846347
- 808003 words of memory out of 5000000
- 43367 multiletter control sequences out of 15000+600000
+ 25501 strings out of 478268
+ 502961 string characters out of 5846347
+ 807035 words of memory out of 5000000
+ 43257 multiletter control sequences out of 15000+600000
  472552 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 120i,11n,121p,546b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,11n,104p,539b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on swarm-operation/physicsmodel.pdf (4 pages, 251080 bytes).
+Output written on physicsmodel.pdf (4 pages, 258909 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
  47 words of extra memory for PDF output out of 10000 (max. 10000000)
 

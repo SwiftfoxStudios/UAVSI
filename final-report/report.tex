@@ -13,8 +13,8 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{amsmath}
-\usepackage{subfiles}
 \usepackage{pgfgantt}
+\graphicspath{{img/}{../img/}}
 
 
 \usepackage{listings}
@@ -26,12 +26,10 @@
   postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
 }
 
-
 \pagestyle{fancy}
 \fancyhf{}
-
-
 \begin{document}
+
 
 \begin{titlepage}
    \begin{center}
@@ -58,11 +56,10 @@
 
 \chead{UAVSI}
 
-\subfile{swarm-operation/physicsmodel}
+
 
 \newpage
-
-\bibliographystyle{unsrt}
-\bibliography{refs}
+% remove preambles from each subfile when combining
+% \include{./swarm-operation/physicsmodel}
 
 \end{document}

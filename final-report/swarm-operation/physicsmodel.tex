@@ -1,5 +1,33 @@
-\documentclass[../report.tex]{subfiles}
-\graphicspath{{\subfix{../img/}}}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{float}
+
+\usepackage{hyperref}
+\usepackage{tikz} 
+\usetikzlibrary{shapes,arrows}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{pgfgantt}
+\graphicspath{{img/}{../img/}}
+
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\pagestyle{fancy}
+\fancyhf{}
 \begin{document}
 
 \textbf{WHY WHY WHY?}
@@ -133,7 +161,7 @@ It is then possible to set some thrust constants for each control operation. An 
     \label{fig:thrust-constants}
 \end{figure}
 
-\section{Proportional-Integral-Derivative Controller}
+\section{Stabilisation: Proportional-Integral-Derivative Controller}
 
 An issue arises with this implementation; the simulation becomes unstable as thrust cannot be provided in an accurate enough manner to counteract excessive rotation, notably in the roll and pitch axes. 
 
@@ -259,8 +287,24 @@ Using manual tuning, the values were optimised as shown in Fig. \ref{fig:pid-tun
 
 It is noted that the agent is slightly unstable at very small angles. This is negligible.
 
-\section{Introducing Autonomy: Boids}
-\bibliographystyle{IEEEtran} % We choose the "plain" reference style
+\section{Introducing Autonomy}
+The initial aim is to achieve position control for an agent, such that when given a current position $[x_0,y_0,z_0]$ and a goal position $[x_1,y_1,z_1]$, the agent will move to the goal position.
+
+There are several methods for this. An agent may yaw to face the goal, then pitch towards it. In the case of this project, time-sensitive position decisions will need to be made when considering swarm dynamics and collision avoidance, so a more efficient method is required. As such, the aim will be to pitch and roll towards the position.
+
+This can be split up into two main goals:
+\begin{enumerate}
+    \item Apply a force in the opposite direction when avoiding other agents.
+    \item Use trigonometry to apply relative $\phi$ and $\theta$ forces, reducing these forces when closer to the goal using a separate PID position controller.
+\end{enumerate}
+
+Initially, multiple agents are now introduced into the environment. They are programmed to hover. They should then move away from each other according to rule 1 above. This is the first principle that Reynolds \cite{Reynolds} introduced for autonomous agents - \emph{separation}.
+
+\textbf{NB - note importance of both goals - should they be equal?}
+
+
+
+\bibliographystyle{IEEEtran}
 \bibliography{refs} 
 \end{document}
 
