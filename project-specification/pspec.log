@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  12 OCT 2023 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  17 NOV 2023 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,18 +654,18 @@ Package rerunfilecheck Info: File `pspec.out' has not changed.
 (rerunfilecheck)             Checksum: 63C95AB509D1692CB1B194F5B186569B;2313.
  ) 
 Here is how much of TeX's memory you used:
- 24645 strings out of 478268
- 471646 string characters out of 5846347
+ 24650 strings out of 478268
+ 471757 string characters out of 5846347
  773361 words of memory out of 5000000
- 42403 multiletter control sequences out of 15000+600000
+ 42408 multiletter control sequences out of 15000+600000
  476855 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,11n,104p,775b,965s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on pspec.pdf (7 pages, 172058 bytes).
+Output written on pspec.pdf (7 pages, 172681 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  49 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

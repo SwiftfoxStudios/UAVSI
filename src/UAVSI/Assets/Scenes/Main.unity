@@ -511,9 +511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 3595425850245895742, guid: f3cf8cb50dd9f4fe68d3bd3ec0a8eadc, type: 3}
   behaviour: {fileID: 11400000, guid: ba46ae88cdfae4d70b35aa41e1fec650, type: 2}
-  numAgents: 4
-  spawnRadius: 2.95
-  neighbourRadius: 3.66
+  numAgents: 8
+  spawnRadius: 2.12
+  neighbourRadius: 0.9
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

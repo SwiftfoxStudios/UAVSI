@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex pspec"] 1697032705 "pspec.aux" "pspec.bbl" "pspec" 1697104321
-  "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "pspec.aux" 1697104321 3548 98ba9b527f0538d9d91d1c5feda6b692 "pdflatex"
+["bibtex pspec"] 1700232432 "pspec.aux" "pspec.bbl" "pspec" 1700232434
+  "/usr/local/texlive/2022/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "pspec.aux" 1700232434 3551 974d2ff4fc6685b9fc7a934b529ff04f "pdflatex"
   "refs.bib" 1697031416 10548 a4d17fe7e393dc9b71ebcbf79e80885e ""
   (generated)
   "pspec.bbl"
   "pspec.blg"
-["pdflatex"] 1697104319 "/Users/antonio/Development/CS3/UAVSI/project-specification/pspec.tex" "pspec.pdf" "pspec" 1697104321
-  "/Users/antonio/Development/CS3/UAVSI/project-specification/pspec.tex" 1697104319 15181 2e3cc22bb32b49e7376d59b9dd4c5212 ""
+["pdflatex"] 1700232432 "/Users/antonio/Development/CS3/UAVSI/project-specification/pspec.tex" "pspec.pdf" "pspec" 1700232434
+  "/Users/antonio/Development/CS3/UAVSI/project-specification/pspec.tex" 1700232431 15184 6b7656038ade204ecd5673d1b6a377a0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -183,10 +183,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1674152199 2826440 16baa077e6ecb61807b2b6c839b78577 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "pspec.aux" 1697104321 3548 98ba9b527f0538d9d91d1c5feda6b692 "pdflatex"
-  "pspec.bbl" 1697032705 2432 d24f94c7d08c3b6c02df14b50c0cf012 "bibtex pspec"
-  "pspec.out" 1697104321 2313 63c95ab509d1692cb1b194f5b186569b "pdflatex"
-  "pspec.tex" 1697104319 15181 2e3cc22bb32b49e7376d59b9dd4c5212 ""
+  "pspec.aux" 1700232434 3551 974d2ff4fc6685b9fc7a934b529ff04f "pdflatex"
+  "pspec.bbl" 1700232432 3586 d969d05af030552196c45703f5bcb254 "bibtex pspec"
+  "pspec.out" 1700232434 2313 63c95ab509d1692cb1b194f5b186569b "pdflatex"
+  "pspec.tex" 1700232431 15184 6b7656038ade204ecd5673d1b6a377a0 ""
   (generated)
   "pspec.aux"
   "pspec.log"
