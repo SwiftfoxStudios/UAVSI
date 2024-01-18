@@ -16,6 +16,13 @@
 \usepackage{pgfgantt}
 \graphicspath{{img/}{../img/}}
 
+\usepackage{pgfplots, pgfplotstable}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{colormaps}
+\usepackage{xstring}
+\usepackage{subcaption}
+
+
 
 \usepackage{listings}
 \lstset{
@@ -30,7 +37,7 @@
 \fancyhf{}
 \begin{document}
 
-\textbf{WHY WHY WHY?}
+\section{Context}
 
 \section{Quadcopter Model}
 
@@ -162,6 +169,7 @@ It is then possible to set some thrust constants for each control operation. An 
 \end{figure}
 
 \section{Stabilisation: Proportional-Integral-Derivative Controller}
+\label{sec:stabilisation}
 
 An issue arises with this implementation; the simulation becomes unstable as thrust cannot be provided in an accurate enough manner to counteract excessive rotation, notably in the roll and pitch axes. 
 
@@ -287,6 +295,11 @@ Using manual tuning, the values were optimised as shown in Fig. \ref{fig:pid-tun
 
 It is noted that the agent is slightly unstable at very small angles. This is negligible.
 
+\subsection{Faults - Oscillation}
+
+\section{Methodology - what are the metrics, how do we define success?}
+Qual + Quant analysis!
+
 \section{Introducing Autonomy}
 The initial aim is to achieve position control for an agent, such that when given a current position $[x_0,y_0,z_0]$ and a goal position $[x_1,y_1,z_1]$, the agent will move to the goal position.
 
@@ -298,9 +311,450 @@ This can be split up into two main goals:
     \item Use trigonometry to apply relative $\phi$ and $\theta$ forces, reducing these forces when closer to the goal using a separate PID position controller.
 \end{enumerate}
 
-Initially, multiple agents are now introduced into the environment. They are programmed to hover. They should then move away from each other according to rule 1 above. This is the first principle that Reynolds \cite{Reynolds} introduced for autonomous agents - \emph{separation}.
+\subsection{Boids: Flocking Behaviour}
 
-\textbf{NB - note importance of both goals - should they be equal?}
+Initially, multiple agents are now introduced into the environment and are programmed to hover. We will define two constants to assist in the autonomy of the agents. First, an avoidance radius; namely, the \emph{square avoidance radius}. For the purposes of algorithmic efficiency, we compare the magnitude of a vector, squared, between agents to the defined square avoidance radius, as per \emph{Unity}'s recommendation \cite{unity}. We also specify the number of agents to generate and the spawn radius in which to generate them. Finally, we define the \emph{neighbour radius}, defined as the radius in which an agent will consider other agents as neighbours. This is used to reduce the number of calculations required for each agent, as it will only consider nearby agents.
+
+Notably, we must also define the implementation of `applying a force $F$ to an agent' with respect to the agents' control parameters. Initially, we consider the difference between the position vector in the agent's local frame and the environment's global frame, namely, the rotation matrix that characterises the agent's orientation. The mathematics of such an operation is outside the scope of this report. In short, we can either calculate the rotation matrix, $R$, representing this change of frame and utilise a transformation matrix, such that $F_{global} = R \cdot F_{local}$, or use quarternions to represent the change of frame. \emph{Unity} has a built in method to handle this, but the source code is obfuscated. We will utilise this method, \verb|transform.InverseTransformVector()|, to calculate the force vector in the agent's local frame. This can then be split up into the constituent pitch and roll magnitudes by taking the $x$ and $z$ components respectively.
+
+We then introduce Reynolds' principles \cite{Reynolds} to simulate some flock behaviour. The first principle, \emph{separation}\footnote{In Reynolds' original article, this is called \emph{collision avoidance}}. In practice, this is done as follows:
+
+\begin{enumerate}
+    \item For each agent, calculate the distance to each other agent within the neighbour radius.
+    \item For each distance, if the magnitude of the vector is less than the square avoidance radius, add the vector to the total force vector.
+    \item Divide the total force vector by the number of agents within the neighbour radius.
+    \item Apply the force vector to the agent.
+\end{enumerate}
+
+To implement the second principle, \emph{alignment}, we take the heading of each agent within the neighbour radius and average them. We then apply a force in the direction of the average heading to the agent. As with the separation principle, this force is separated into pitch and roll components.
+
+Finally, we implement the third principle, \emph{cohesion}. This is in principle, the inverse to the separation principle. Hence, this is implemented as follows:
+
+\begin{enumerate}
+    \item For each agent, find the global position of each other agent within the neighbour radius.
+    \item Sum all these positions and divide them by the number of neighbours to find the average position between all neighbours.
+    \item Subtract the agent's current position from the average position to find the force vector between the two.
+    \item Apply this force vector to the agent, after transforming it into the agent's local frame.
+\end{enumerate}
+
+Finding the balance between cohesion and separation is important. If the cohesion force is too strong, the agents will collide. If the separation force is too strong, the agents will become disconnected and fly apart. This is similar in principle to the \emph{strong nuclear force} acting within the nucleus of an atom. The force is repulsive at close ranges (the avoidance radius), but attractive at larger ranges (the neighbourhood). We explore this in more detail in the next section.
+
+In general, tuning the influence of all three components is challenging. Even considering the constants in the simulation, Reynolds notes that the relative weights that influence the strength of each component `\emph{is a precarious interrelationship that is difficult to adjust}'. Despite this, we can combine these three independent behaviours and attempt to tune them. The method for this is empirical; we can observe the behaviour of the agents and adjust the constants accordingly. We introduce the method for this below.
+
+Initially, we will set the constants as shown in Table \ref{tab:spawn-constants}. These may be adjusted later. Additionally, we will set the weights for each component as shown in Table \ref{tab:boids-weights}.
+
+\begin{table}[h]
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \begin{tabular}{| c | c |} 
+        \hline
+        Constant & Value \\ 
+        \hline\hline
+        Number of Agents & 8 \\
+        \hline
+        Spawn Radius & 4 \\
+        \hline
+        Neighbour Radius & 1 \\
+        \hline
+        Square Avoidance Radius & 16 \\
+        \hline
+        \end{tabular}
+        \caption{Spawn Constants}
+        \label{tab:spawn-constants}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \begin{tabular}{| c | c |} 
+        \hline
+        Behaviour & Weight \\ 
+        \hline\hline
+        Separation & 1 \\
+        \hline
+        Alignment & 1 \\
+        \hline
+        Cohesion & 1 \\
+        \hline
+        \end{tabular}
+        \caption{Boids Weights}
+        \label{tab:boids-weights}
+    \end{minipage}
+\end{table}
+
+We can then simulate a run with these constants, culimating in the eight agents' X and Z positions within the space of 10 seconds, updated every 0.5 seconds. The spawn radius is also shown by the black circle. This is shown in Fig. \ref{fig:exp1}. When discussing the behaviour of individual agents, we will refer to them by their X-coordinate upon despawning at $t=10$, left to right. We see in Fig. \ref{fig:exp1} that the agents do move together, in a straight line, signifying that the alignment weight is initially well-tuned. However, we notice the behviour of Agents 5 and 6. These agents spawn outside of each other's neighbour radius, so will never make an effort to move towards each other. Additionally, the avoidance weight is not strong enough to pull them towards each other (as a result of being replused away from Agents 4 and 7, respectively). We will modify the neighbourhood radius to \textbf{3} and increase the weight of avoidance to \textbf{1.5}. This simulation results in the positions in Fig. \ref{fig:exp2}. Note that the agents intially move away from each other - this is due to the increased effects of avoidance. We note, however, that Agents 1 and 2 do not appear to be pulled together, despite being within each other's neighbourhood. To mitigate this, we can increase the weight of cohesion to \textbf{1.4} and reduce the square avoidance radius to \textbf{12}. Finally, we can increase the weight of alignment slightly, to \textbf{1.2}, to reduce the effects of agents veering at the sides of the flock. This simulation results in the positions in Fig. \ref{fig:exp3}.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.33\textwidth}
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=X,
+        ylabel=Z,
+        legend pos=outer north east,
+        colormap/cool,
+        width=1.1\textwidth
+    ]
+
+    \draw (axis cs:0,0) circle [blue, radius=4];
+
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {droneData.csv};
+    
+    \end{axis}
+\end{tikzpicture}
+\caption{Initial}
+\label{fig:exp1}
+\end{minipage}%
+\begin{minipage}{.33\textwidth}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel=X,
+            ylabel=Z,
+            legend pos=outer north east,
+            colormap/cool,
+            width=1.1\textwidth
+        ]
+    
+        \draw (axis cs:0,0) circle [blue, radius=4];
+    
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone2.csv};
+        
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Avoidance Tuning}
+    \label{fig:exp2}
+\end{minipage}%
+\begin{minipage}{.33\textwidth}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel=X,
+            ylabel=Z,
+            legend pos=outer north east,
+            colormap/cool,
+            width=1.2\textwidth
+        ]
+    
+        \draw (axis cs:0,0) circle [blue, radius=4];
+    
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone3.csv};
+        
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Final Tuning}
+    \label{fig:exp3}
+\end{minipage}
+\end{figure}
+
+The results from each stage of the tuning process have their strengths; for our purposes, the final tuning is the most appropriate due to their responsiveness within the flock. However, this may change when we look at implementing our fourth behaviour, \emph{goal seeking}.
+
+\subsection{Boids: Goal Seeking}
+We can implement the agents' ability to seek for a goal position in a similar method to the three behaviours Reynolds mentions. We can define a \emph{goal sphere}, with a given radius, centred around a random position in the world. We can then implement the \emph{seeking} behaviour to calculate the distance vector between the agent and the goal. We can then apply a force vector in the direction of the goal. At present, we choose the weight of the seeking behaviour to be 2, so that it is most prominent. This results in some interesting `orbiting' behaviour. The location of the goal is shown by the green circle in Fig. \ref{fig:exp4}. We note that the agents do not actually enter the goal radius. This behaviour was likely down to the method being used before to implement the agent's moves. The agent would receive the given force vector, then normalise it - acting as a maximum clamping value for the force. This turned out to not be best practice, as whilst in close spaces, the direction of the desired goal \emph{(e.g. avoidance of nearby neighbours)} would be more important than the magnitude of the force, at higher distances between the current and goal position of the agent, the magnitudes, specifically of the pitch and roll components, become more significant in path planning. As an alternative, we simply use Unity's built in \verb|Math.Clamp| function to set the minimum and maximum foce values to ones we deem safe. An example simulation is seen below in Fig. \ref{fig:exp5}.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.45\textwidth}
+\begin{tikzpicture}[trim axis left, trim axis right]
+    \begin{axis}[
+        axis equal,
+        xlabel=X,
+        ylabel=Z,
+        legend pos=outer north east,
+        colormap/cool,
+        width=1.2\textwidth
+    ]
+
+
+    \draw (axis cs:0,0) circle [radius=4];
+    
+
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+\addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+    table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone4.csv};
+
+    \draw [green, line width=0.7mm] (axis cs:-16,-29) circle [radius=3.45];
+    
+    \end{axis}
+\end{tikzpicture}
+\caption{Normalised Force Vector}
+\label{fig:exp4}
+\end{subfigure}
+\hfill
+\begin{subfigure}{.45\textwidth}
+    \centering
+    \begin{tikzpicture}[trim axis left, trim axis right]
+        \begin{axis}[
+            axis equal,
+            xlabel=X,
+            ylabel=Z,
+            legend pos=outer north east,
+            colormap/cool,
+            width=1.2\textwidth
+        ]
+    
+        \draw (axis cs:0,0) circle [radius=4];
+    
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone5.csv};
+    
+    \draw [green, line width=0.7mm] (axis cs:27,22) circle [radius=3.45];
+
+    \end{axis}
+\end{tikzpicture}
+\caption{Clamped Force Vector}
+\label{fig:exp5}
+\end{subfigure}
+\caption{Seeking Behaviour}
+\label{fig:exp45}
+\end{figure}
+
+The behaviour now seen in Fig. \ref{fig:exp5} is accurate, but not ideal, as the agents overshoot the goal and find themselves backtracking during pathfinding. This can be mitigated by implementing an Error Controller, using the fundamentals of control theory discussed in Section \ref{sec:stabilisation}. This is done by modifying the force vector such that it reduces with the distance between the agent and the goal position.
+
+We can then instruct the agents to stop once they have detected that they are within the goal space. An example simulation of this is shown in Fig. \ref{fig:exp6}. We note that the agents gravitate towards the centre of the goal space. This is unwanted, as it does not make enough considerations for adjacent agents and their respective avoidance radii. At this point, we can then reintroduce our three initial behaviours and tune the influence of \emph{seeking} accordingly. an example simulation of this can be seen in
+
+At this stage, we note an important flaw with our current model. The weights of the individual behaviours, ideally, should not stay constant throughout the duration of flight. For example, when the agents are far away from the goal, the seeking behaviour should be more prominent. However, when the agents are close to the goal, the agents should be more keen to avoid each other. We introduce alternative models in Section \ref{sec:complex-pathfinding}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.45\textwidth}
+    \begin{tikzpicture}[trim axis left, trim axis right]
+        \begin{axis}[
+            axis equal,
+            xlabel=X,
+            ylabel=Z,
+            legend pos=outer north east,
+            colormap/cool,
+            width=1.2\textwidth
+        ]
+    
+        \draw (axis cs:0,0) circle [radius=4];
+    
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone6.csv};
+    
+    \draw [green, line width=0.7mm] (axis cs:21,-19) circle [radius=3.45];
+
+    \end{axis}
+\end{tikzpicture}
+\caption{Final Seeking Behaviour}
+\label{fig:exp6}
+\end{subfigure}
+\hfill
+\begin{subfigure}{.45\textwidth}
+    \centering
+    \begin{tikzpicture}[trim axis left, trim axis right]
+        \begin{axis}[
+            axis equal,
+            xlabel=X,
+            ylabel=Z,
+            legend pos=outer north east,
+            colormap/cool,
+            width=1.2\textwidth
+        ]
+    
+        \draw (axis cs:0,0) circle [radius=4];
+    
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 0}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 1}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 2}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 3}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 4}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 5}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 6}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \addplot [scatter, surf, mark=*, x filter/.code={\IfStrEq{\thisrow{DroneID}}{Agent 7}{}{\def\pgfmathresult{}}{\def\pgfmathresult{}}},]
+        table [x=X, y=Z, col sep=comma, point meta=\thisrow{Time}] {drone7.csv};
+    
+    \draw [green, line width=0.7mm] (axis cs:-29,12) circle [radius=3.45];
+
+    \end{axis}
+\end{tikzpicture}
+\caption{Three Initial Behaviours + Seeking}
+\label{fig:exp7}
+\end{subfigure}
+\caption{Finalising Seeking Behaviour}
+\label{fig:exp67}
+\end{figure}
+
+\section{Obstacles}
+\subsection{Obstacle Avoidance}
+In previous sections, we have focused on the pathfinding behaviour of the agents in an empty space. However, in the real world, there are many obstacles that the agents must avoid. 
+
+\subsection{Limitations of Boids}
+
+\section{Complex Pathfinding for Hostile Environments}
+\label{sec:complex-pathfinding}
+\subsection{A* - The Hacks \& Bodges?}
+
+\subsection{Pair Potential Model}
+
+\subsubsection{Obstacle Avoidance}
+
+\section{Real World Limitations}
+\subsection{Real World Represenation}
+
+\subsection{Sensing \& Vision}
+
+\section{Extensions}
+\subsection{Obstacle Detection}
+
+\subsection{Semi-Autonomous Control}
+
+\section{Evaluation}
+\subsection{Speed-Success-Flock Size Tradeoffs}
+
+\subsection{Use Cases}
+
+
 
 
 

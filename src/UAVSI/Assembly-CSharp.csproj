@@ -59,18 +59,24 @@
     <UnityVersion>2022.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Users/antonio/.vscode/extensions/visualstudiotoolsforunity.vstuc-0.9.3/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/antonio/.vscode/extensions/visualstudiotoolsforunity.vstuc-0.9.4/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Movement.cs" />
-    <Compile Include="Assets/Scripts/Cohesion.cs" />
-    <Compile Include="Assets/Scripts/Agent.cs" />
-    <Compile Include="Assets/Scripts/FlockBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Flock.cs" />
-    <Compile Include="Assets/Scripts/Avoidance.cs" />
-    <Compile Include="Assets/Scripts/Alignment.cs" />
+    <Compile Include="Assets/Scripts/Boids/CompositeBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Boids/Alignment.cs" />
+    <Compile Include="Assets/Scripts/Flock/Agent.cs" />
+    <Compile Include="Assets/Scripts/Flock/FlockBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Terrain/TerrainGenerator.cs" />
+    <Compile Include="Assets/Scripts/Seeking.cs" />
+    <Compile Include="Assets/Scripts/FinishSpawner.cs" />
+    <Compile Include="Assets/Scripts/CSVwriter.cs" />
+    <Compile Include="Assets/Scripts/Flock/Movement.cs" />
+    <Compile Include="Assets/Scripts/Boids/Cohesion.cs" />
+    <Compile Include="Assets/Scripts/Boids/Avoidance.cs" />
+    <Compile Include="Assets/Scripts/Flock/Flock.cs" />
+    <Compile Include="Assets/Scripts/Terrain/Noise.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

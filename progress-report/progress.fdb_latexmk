@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex progress"] 1700232393 "progress.aux" "progress.bbl" "progress" 1700232588
+["bibtex progress"] 1700750536 "progress.aux" "progress.bbl" "progress" 1700750538
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "progress.aux" 1700232588 3411 51c24cc9fd269c292827772b3e6200c9 "pdflatex"
-  "refs.bib" 1700230916 4751 331995f6ab2db75f0c721524fd49c98b ""
+  "progress.aux" 1700750537 3566 8bb74e9b5e4ca702c95002de03fdedc3 "pdflatex"
+  "refs.bib" 1700749335 5301 e4991511ff42b749aefa5f90fcdf50d0 ""
   (generated)
   "progress.bbl"
   "progress.blg"
-["pdflatex"] 1700232587 "/Users/antonio/Development/CS3/UAVSI/progress-report/progress.tex" "progress.pdf" "progress" 1700232588
+["pdflatex"] 1700750536 "/Users/antonio/Development/CS3/UAVSI/progress-report/progress.tex" "progress.pdf" "progress" 1700750538
   "../project-specification/pspec.pdf" 1700232434 172681 177a14fe40c0ba8fee5c70f454cd3790 ""
-  "/Users/antonio/Development/CS3/UAVSI/progress-report/progress.tex" 1700232587 13071 c6ee299002c9aefc76af4c267966ce09 ""
+  "/Users/antonio/Development/CS3/UAVSI/progress-report/progress.tex" 1700750534 15836 b8b76b64d5715dc50a22fd491c9d0497 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -193,10 +193,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1674152199 2826440 16baa077e6ecb61807b2b6c839b78577 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "progress.aux" 1700232588 3411 51c24cc9fd269c292827772b3e6200c9 "pdflatex"
-  "progress.bbl" 1700232393 3341 5c8c7df0000b6b41f56c764fcbf8bf0f "bibtex progress"
-  "progress.out" 1700232588 1491 7f8186375e9472b6d042cc2c4a510f62 "pdflatex"
-  "progress.tex" 1700232587 13071 c6ee299002c9aefc76af4c267966ce09 ""
+  "progress.aux" 1700750537 3566 8bb74e9b5e4ca702c95002de03fdedc3 "pdflatex"
+  "progress.bbl" 1700750536 3701 191b8efbacbbe68c4405e0445aa895e2 "bibtex progress"
+  "progress.out" 1700750537 1311 33fa811d13f5f13aa1edb80e1850ef66 "pdflatex"
+  "progress.tex" 1700750534 15836 b8b76b64d5715dc50a22fd491c9d0497 ""
   (generated)
   "progress.aux"
   "progress.log"

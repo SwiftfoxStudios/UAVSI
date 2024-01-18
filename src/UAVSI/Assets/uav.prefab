@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4886885719762676452}
   - component: {fileID: 7953440830832904919}
-  - component: {fileID: 5515421810810267934}
-  - component: {fileID: 3595425850245895742}
   - component: {fileID: -925492058920775631}
+  - component: {fileID: 2446949540294535117}
+  - component: {fileID: 2913529644925153933}
   m_Layer: 0
   m_Name: uav
   m_TagString: Untagged
@@ -66,8 +66,31 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &5515421810810267934
+  m_CollisionDetection: 1
+--- !u!114 &-925492058920775631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537677489032384640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e63ca37583143e58d22782351967c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uav: {fileID: 7953440830832904919}
+  thrustD1: {fileID: 8119742699896374831}
+  thrustD2: {fileID: 7376434310534984808}
+  thrustD3: {fileID: 6008888378697648595}
+  thrustD4: {fileID: 6397705932719903406}
+  kprop_altitude: 6
+  kinteg_altitude: 5
+  kderiv_altitude: 2
+  kprop_pitchroll: 10
+  kinteg_pitchroll: 10
+  kderiv_pitchroll: 2
+--- !u!65 &2446949540294535117
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,11 +107,11 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3595425850245895742
+--- !u!114 &2913529644925153933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,29 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d57cf4522d04c37bc476358b0d0607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-925492058920775631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4537677489032384640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e63ca37583143e58d22782351967c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uav: {fileID: 0}
-  thrustD1: {fileID: 8119742699896374831}
-  thrustD2: {fileID: 7376434310534984808}
-  thrustD3: {fileID: 6008888378697648595}
-  thrustD4: {fileID: 6397705932719903406}
-  kprop_altitude: 6
-  kinteg_altitude: 5
-  kderiv_altitude: 2
-  kprop_pitchroll: 10
-  kinteg_pitchroll: 10
-  kderiv_pitchroll: 2
 --- !u!1 &6008888378697648595
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +224,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -329,7 +329,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -434,7 +434,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -539,7 +539,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -644,7 +644,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

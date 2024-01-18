@@ -59,7 +59,9 @@
 \chead{UAVSI}
 
 \section{Background}
-The uses for autonomous systems are ever-growing, with applications in logistics, agriculture, remote sensing and situational awareness\cite{muchiri}\cite{drury}. The aim of this project is to explore the use of autonomous systems in a defensive manner, specifically in the context of a swarm of Unmanned Aerial Vehicles (UAVs) in a hostile environment. The project will explore the use of swarm intelligence to ensure the survivability of the swarm in a hostile environment, where the swarm is tasked with reaching a goal location whilst avoiding obstacles and hostile entities.
+The uses for autonomous systems are ever-growing, with applications in logistics, agriculture, remote sensing and situational awareness\cite{muchiri}\cite{drury}. The aim of this project is to explore the use of autonomous systems in a defensive manner, specifically in the context of a swarm of Unmanned Aerial Vehicles (UAVs) in a hostile environment. The project will explore the use of swarm intelligence to ensure the survivability of the swarm in a hostile environment, where the swarm is tasked with reaching a goal location whilst avoiding obstacles and hostile entities. A model for this operation is already well defined\cite[p.183857-183858]{zhou}, where the operation of the swarm is split into several layers.
+
+We aim to optimise the simulation of these layers, and in doing so, show the possibility for the effective operation, mission planning, obstacle avoidance and survivability of a swarm of UAVs in a challenging environment. \emph{Zhou et al.} also note the application layer of the system being malleable to the mission objective of the swarm, for applications such as in transportation and agriculture. This is an area of research that we aim to explore in the project\cite[p.183871-183872]{zhou}.
 
 In the final report, we will also look back on findings to explore the parallels between the agents' behaviour and expected human behaviour when acting in swarms to evaluate the feasibility of future research on intelligent systems. The overall goal of the project is to combine existing technology in a novel way; in a field of research lacking open source resources.
 
@@ -69,9 +71,31 @@ The aim of this report is to document the progress made so far in the project, a
 \label{sec:progress}
 The majority of the work completed so far has been research and development of the physics model and the simulation of initial swarm behaviour, based upon Reynolds' \emph{Boids}\cite{Reynolds}.
 
-The completed work can be split into several subsections as follows:
+The completed work can be split into several subsections. These sections act as the phsyical system of the simulation, as described in Fig. \ref{fig:system}. The system consists of an environment, a swarm of agents that operate within the bounds of the environment, and a positive number of agents that are part of the swarm.
 
-\subsection{Quadcopter Operation}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+            
+        \draw (0,0) rectangle (8,4);
+        \draw (0.5,0.5) rectangle (4.3,3.5);
+        \draw (0.75,2.25) rectangle (1.75,3.25);
+        \draw (1.9,2.25) rectangle (2.9,3.25);
+        \draw (3.05,2.25) rectangle (4.05,3.25);
+
+        \node[] at (6.15,2) {Environment};
+        \node[] at (2.35,1) {Swarm};
+        \node[] at (1.25,2.75) {Agent};
+        \node[] at (2.4,2.75) {Agent};
+        \node[] at (3.55,2.75) {Agent};
+
+    \end{tikzpicture}
+    \caption{System Diagram}
+    \label{fig:system}
+\end{figure}
+
+\subsection{Agent}
 A model simulating the movement and physics of a quadcopter operating in an Earth-like environment has been developed. This has been achieved by simulating a quadcopter as a rigid body, with four \emph{`propellers`}\footnote{For the purposes of the simulation, the propellers do not rotate. Thrust is simulated as an upward force.} generating thrust. At this stage, some constants have been assigned to the model in order to simulate operation in an Earth-like environment. These constants may be refined as the project progresses if needed. The table of these constants is seen in the table below.
 
 To gain familiarisation with the \emph{Unity Engine}, the initial aim was to operate the quadcopter using keyboard controls, rather than autonomously. The design of the control system and model was largely based on \emph{Luukkonen's} research in the field\cite{Luukkonen} alongside some high-level explanatory reading in \emph{IJREAM}\footnote{International Journal for Research in Engineering Application \& Management}\cite{Tatale}.
@@ -105,10 +129,15 @@ The keyboard operation was based on 8 axes of control. These are summarised in T
     \label{tab:keyboard-operation}
 \end{table}
 
-This then allowed for a control system to be tested. The aim of this system was to allow for the drone to be controlled in a stable manner, with the drone returning to a stable position when no controls were being applied. This was achieved by using a \emph{PID} controller\cite[p72-73]{Szafranski}. Whilst there was some success from the literature, the implementation of the controller largely came from online tutorials, namely from \emph{Carbon Aeronautics}\cite{Carbon}.
+This then allowed for a control system to be tested. The aim of this system was to allow for the drone to be controlled in a stable manner, with the drone returning to a stable position when no controls were being applied. This was achieved by using a \emph{PID} controller\cite[p.72-73]{Szafranski}. Whilst there was some success from the literature, the implementation of the controller largely came from online tutorials, namely from \emph{Carbon Aeronautics}\cite{Carbon}.
 
+A \emph{PID} controller is a control loop feedback mechanism, with three main constants. \emph{P}, the proportional constant, produces an output that is directly proportional to the error at the current time. However, this alone may result in an unstable system where the agent overshoots the target position. Hence, the \emph{I} and \emph{D} constants are used to counteract this.
 
-The \emph{PID} controller was then tuned using an empirical method. This was done by setting the \emph{P} constant to a high value, and then reducing it until the drone was stable. The \emph{I} and \emph{D} constants were then tuned in a similar manner. The provisional final values of the constants are shown in Table \ref{tab:pid-constants}.
+\emph{I}, the integral constant, considers the sum of the errors over time. This reduces the amount of \emph{steady-state error}, defined as the distance between the input and output response as time tends to infinity.
+
+\emph{D}, the derivative constant, considers the rate of change of the error, with the aim of reducing overshoot error. The output of the controller is then the sum of the three constants multiplied by their respective error values. The \emph{PID} controller underwent empirical tuning whereby the initial adjustment involved setting the \emph{P} constant to an elevated value, progressively attenuating it until achieving stability in the drone's behavior. Subsequently, the iterative refinement of the \emph{I} and \emph{D} constants followed a similar approach to achieve optimal controller performance. This was achieved by observing the drone's behaviour in the \emph{Unity} editor, as well as the console output of the controller's error values. It should be noted that this isn't the optimal tuning method, and mathematical methods exist to tune the constants\cite[p.67]{evans}. This may be a later consdieration if the control system becomes unstable. However, at this time, the system is stable.
+
+The provisional final values of the constants are shown in Table \ref{tab:pid-constants}.
 
 \begin{table}[H]
     \centering
@@ -142,18 +171,14 @@ The initial project noted the development of the environment would be partly don
 In place of this, an initial environment was completed, formed of a simple ground plane. There are currently plans to create a randomly assigned goal location within the dimensions of the plane to allow for the development and testing of the pathfinding algorithms.
 
 \section{Project Management}
-
-Generally, the management of the project so far has been successful. As with any project, there have been delays, which have been mitigated by effective risk planning and management. The delays are explained alongside the revised timetable in Section \ref{sec:timetable}. In spite of this, the project's development is consistent, largely in part due to being held to account by regular, usually weekly, meetings with the project supervisor.
-
-
-\section{Future Plan}
 \label{sec:timetable}
+
+Generally, the management of the project so far has been successful. As with any project, there have been delays, which have been mitigated by effective risk planning and management. The delays are explained alongside the revised timetable. In spite of this, the project's development is consistent, largely in part due to being held to account by regular, usually weekly, meetings with the project supervisor.
 
 At this stage, it is useful to outline the timetable changes. These are seen in Figure \ref{fig:gantt}.
 
 \begin{figure}[H]
     \begin{center}
-    
     \begin{ganttchart}[y unit title=0.5cm,
     y unit chart=0.6cm,
     vgrid,hgrid, 
