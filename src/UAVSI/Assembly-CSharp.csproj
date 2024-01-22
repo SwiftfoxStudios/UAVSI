@@ -69,14 +69,18 @@
     <Compile Include="Assets/Scripts/Flock/Agent.cs" />
     <Compile Include="Assets/Scripts/Flock/FlockBehaviour.cs" />
     <Compile Include="Assets/Scripts/Terrain/TerrainGenerator.cs" />
-    <Compile Include="Assets/Scripts/Seeking.cs" />
+    <Compile Include="Assets/Scripts/Terrain/GenEditor.cs" />
+    <Compile Include="Assets/Scripts/Terrain/MeshGenerator.cs" />
     <Compile Include="Assets/Scripts/FinishSpawner.cs" />
     <Compile Include="Assets/Scripts/CSVwriter.cs" />
     <Compile Include="Assets/Scripts/Flock/Movement.cs" />
     <Compile Include="Assets/Scripts/Boids/Cohesion.cs" />
+    <Compile Include="Assets/Scripts/Terrain/MapDisplay.cs" />
     <Compile Include="Assets/Scripts/Boids/Avoidance.cs" />
     <Compile Include="Assets/Scripts/Flock/Flock.cs" />
     <Compile Include="Assets/Scripts/Terrain/Noise.cs" />
+    <Compile Include="Assets/Scripts/Terrain/MapGenerator.cs" />
+    <Compile Include="Assets/Scripts/Boids/Seeking.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

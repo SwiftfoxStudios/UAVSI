@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/antonio/Development/CS3/UAVSI/src/UAVSI/Assembly-CSharp.csproj": {}
+  },
+  "projects": {
+    "/Users/antonio/Development/CS3/UAVSI/src/UAVSI/Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antonio/Development/CS3/UAVSI/src/UAVSI/Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "/Users/antonio/Development/CS3/UAVSI/src/UAVSI/Assembly-CSharp.csproj",
+        "packagesPath": "/Users/antonio/.nuget/packages/",
+        "outputPath": "/Users/antonio/Development/CS3/UAVSI/src/UAVSI/Temp/obj/Debug/Assembly-CSharp/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antonio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
