@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.IO;
+
 
 public class MapGenerator : MonoBehaviour
 {
@@ -22,4 +26,8 @@ public class MapGenerator : MonoBehaviour
         MapDisplay display = FindObjectOfType<MapDisplay>(); 
         display.DrawMesh(MeshGenerator.GenerateTerrainMesh(noiseMap, multiplier));
     }
+
+    void Update()
+    {}
+
 }

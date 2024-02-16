@@ -20,6 +20,8 @@
 \pgfplotsset{compat=newest}
 \usepgfplotslibrary{colormaps}
 \usepackage{xstring}
+\usepackage{caption}
+
 \usepackage{subcaption}
 
 
@@ -297,10 +299,16 @@ It is noted that the agent is slightly unstable at very small angles. This is ne
 
 \subsection{Faults - Oscillation}
 
-\section{Methodology - what are the metrics, how do we define success?}
+\section{Methodology}
 Qual + Quant analysis!
+\subsection{Problem Statements}
+\subsubsection{Scenario 1: Reaching the goal is paramount}
 
-\section{Introducing Autonomy}
+\subsubsection{Scenario 2: Collisions are to be avoided at all costs}
+
+\subsubsection{Scenario 3: Performing reconnaisance of an area}
+
+\section{Autonomy}
 The initial aim is to achieve position control for an agent, such that when given a current position $[x_0,y_0,z_0]$ and a goal position $[x_1,y_1,z_1]$, the agent will move to the goal position.
 
 There are several methods for this. An agent may yaw to face the goal, then pitch towards it. In the case of this project, time-sensitive position decisions will need to be made when considering swarm dynamics and collision avoidance, so a more efficient method is required. As such, the aim will be to pitch and roll towards the position.
@@ -310,6 +318,12 @@ This can be split up into two main goals:
     \item Apply a force in the opposite direction when avoiding other agents.
     \item Use trigonometry to apply relative $\phi$ and $\theta$ forces, reducing these forces when closer to the goal using a separate PID position controller.
 \end{enumerate}
+
+\subsection{Agent Vision}
+\label{sec:vision}
+Initially, we define what an agent can `see'. We assume that an agent knows the positions of all other agents within a certain radius, $r$. This is defined as the \emph{neighbourhood radius}. This is a constant that can be tuned. We also assume that an agent can see the goal position, $[x_1,y_1,z_1]$, and its current position, $[x_0,y_0,z_0]$.
+
+For the purposes of foreign obejcts in the simulation, namely terrain and obstacles, we will simulate the agents as having a light ranging device, namely LiDAR, which can detect the distance to the nearest object in a given direction. The \emph{Unity} physics engine has a built-in method for this, \verb|Physics.Raycast()|. This returns the distance to the nearest object in a given direction, or \verb|Infinity| if no object is detected. Whilst this is a significant abstraction of the real world implementation of a LiDAR sensor, it is sufficient for the purposes of this simulation. We go into more detail on the implementation of this in Section \ref{sec:terrain-avoidance}.
 
 \subsection{Boids: Flocking Behaviour}
 
@@ -726,18 +740,200 @@ At this stage, we note an important flaw with our current model. The weights of 
 \end{figure}
 
 \section{Obstacles}
-\subsection{Obstacle Avoidance}
-In previous sections, we have focused on the pathfinding behaviour of the agents in an empty space. However, in the real world, there are many obstacles that the agents must avoid. 
+\subsection{Terrain Generation}
+In previous sections, we have focused on the pathfinding behaviour of the agents in an empty space. However, in the real world, there are many obstacles that the agents must avoid. In this section, we introduce a terrain model to the simulation to parallel real world deviations in terrain heights. This is done using Perlin Noise\cite[289-293]{Perlin}. Specifically, for our implementation, we will look at generating a waveform with frequency $f$ and amplitude $A$ to model the terrain. We can then use this waveform to generate a heightmap for our terrain mesh.
 
-\subsection{Limitations of Boids}
+We will consider four parameters which characterise how our terrain is generated. The number of octaves, $O_n$, lacunarity, $l$, persistence, $p$, and scale, $s$.
+An octave is a measure of the ratio bewteen frequencies in a waveform. Accordingly, the lacunarity, $l$, controls the increase in frequency between octaves; an increase in lacunarity results in an increase in frequency between octaves. This is characterised by the realtionship:
 
-\section{Complex Pathfinding for Hostile Environments}
-\label{sec:complex-pathfinding}
-\subsection{A* - The Hacks \& Bodges?}
+$$\forall x \in \{O_1,O_2,...,O_n\}, f_x = l^{O_x}$$
 
-\subsection{Pair Potential Model}
+Lacunarity, then, allows us to tune the increase in detail between octaves. We can see in Fig. \ref{fig:lacunarity}, with four octaves, the effect of lacunarity on the generated terrain. We can see that as the lacunarity increases, the terrain becomes more `spiky'.
 
-\subsubsection{Obstacle Avoidance}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{lacunarity1.png}
+        \caption{$l=1$}
+        \label{fig:lacunarity1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{lacunarity2.png}
+        \caption{$l=2$}
+        \label{fig:lacunarity2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{lacunarity4.png}
+        \caption{$l=4$}
+        \label{fig:lacunarity4}
+    \end{subfigure}
+    \caption{The effect of lacunarity on the generated terrain}
+    \label{fig:lacunarity}
+\end{figure}
+
+
+The persistence, $p$, controls the decrease in amplitude between octaves. This allows us to tune how much each subsequent octave decreases in contribution to the overall waveform. This is characterised by the relationship:
+
+$$\forall x \in \{O_1,O_2,...,O_n\}, A_x = p^{O_x}$$
+
+We can see below, in Fig. \ref{fig:persistence}, the effect of persistence on the generated terrain. We can see that as the persistence increases, the height of the smaller details in the terrain increases. As we have kept the lacunarity constant, the spikes are not as evident as with Fig. \ref{fig:lacunarity4}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{persistance0.2.png}
+        \caption{$p=0.2$}
+        \label{fig:persistence0.2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{persistance0.5.png}
+        \caption{$p=0.5$}
+        \label{fig:persistence0.5}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{persistance0.8.png}
+        \caption{$p=0.8$}
+        \label{fig:persistence0.8}
+    \end{subfigure}
+    \caption{The effect of persistence on the generated terrain}
+    \label{fig:persistence}
+\end{figure}
+
+Finally, the scale, $s$, contols the level of detail in the waveform that is applied to the terrain. We see in Fig. \ref{fig:scale}, the effect of scale on the generated terrain. We can see that as the scale increases, the terrain becomes more `zoomed out', and the details become less prominent. Notably, we can see a mountain ridge in the quadrant closest to the camera increase in size and distance away from the origin\footnote{The origin is the top left (the quadrant furthest away from the camera) of the terrain mesh.} between Fig. \ref{fig:scale25} and Fig. \ref{fig:scale28}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{scale25.png}
+        \caption{$s=25$}
+        \label{fig:scale25}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{scale28.png}
+        \caption{$s=28$}
+        \label{fig:scale28}
+    \end{subfigure}
+    \caption{The effect of scale on the generated terrain}
+    \label{fig:scale}
+\end{figure}
+
+After tuning the parameters based on a combination of empirical methods and noted examples \cite[pg.3-4]{Etherington}, the following parameters were chosen, with the final terrain mesh shown alongside:
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{lacunarity2.png}
+        \caption{Final Terrain Mesh}
+        \label{fig:final}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Number of Octaves & 4 \\
+            \hline
+            Parameter & Value \\
+            \hline
+            Lacunarity & 2 \\
+            \hline
+            Persistence & 0.5 \\
+            \hline
+            Scale & 25 \\
+            \hline
+        \end{tabular}
+        \caption{Perlin Noise Parameter Values}
+        \label{tab:parameter-values}
+    \end{subfigure}
+    \caption{}
+    \label{fig:parameter-values-lacunarity2}
+\end{figure}
+
+\subsection{Terrain Avoidance}
+\label{sec:terrain-avoidance}
+\subsubsection{A Naive Model}
+Earlier, in Section \ref{sec:vision}, we introduced the agents' ability to determine range from a light ranging sensor, or LiDAR. We can use this to determine the distance between the agent and the terrain mesh. Initially, we will model the sensor as a single point on the bottom of the agent, which casts a singular light ray downwards.
+
+We can then perform terrain avoidance by generating upward thrust to cause an increase in the agent's $y$ position if the distance between the agent and the terrain is less than a given threshold. We will initially set this threshold to 5 metres.
+
+We can see this behaviour in operation in Fig. \ref{fig:naive-ta-1}, where an agent approaches a steep hill. We see that before point 1, the agent does not increase its altitude. When a ray is cast at point 1, the agent detects that the distance between itself and the terrain is less than the threshold, and increases its altitude. Point 2 is the crest of the hill. At this point, the agent detects that there is still not enough distance between itself and the terrain, so the altitude continues to increase. In Fig. \ref{fig:naive-ta-2}, we see that the agent has detected the terrain, but appears to carry too much forward momentum and is locked in a tilt, so cannot avoid the hill.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{naive-ta-edited.png}
+        \caption{Agent approaching a steep hill}
+        \label{fig:naive-ta-1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{naive-ta-2.png}
+        \caption{Agent failing to avoid terrain}
+        \label{fig:naive-ta-2}
+    \end{subfigure}
+    \caption{Naive Terrain Avoidance}
+    \label{fig:naive-ta-side-by-side}
+\end{figure}
+
+These two observations reveal two important modifications that need to be made to our avoidance system:
+\begin{enumerate}
+    \item The agent needs to be able to detect the terrain in front of it, not just below it.
+    \item The agent needs to be able to detect the terrain at a greater distance.
+\end{enumerate}
+
+\subsubsection{Improving The Model}
+\label{sec:improving-the-model}
+To address our concerns, we can adjust the angle of the LiDAR scanner along the pitch axis of the agent to face slightly forward. This should allow the agent to detect the terrain in front of it, as well as below it. We will also increase the avoidance range of the agent to 10 meters to counter steeper hills. 
+
+Unfortunately, the scale of the terrain proved a large challenge in optimising the avoidance behaviour.
+
+\subsection{Tuning the Boids Model}
+In line with the terrain changes, we will make some changes to how the simulation begins and ends. We define two platforms - a (red) start platform and a (green) end platform. The start platform is a flat surface, with a radius of 4, centred at the origin. The end platform is a flat surface, with a radius of 4, centred at a random point within a radius of 100m of the origin. The agents will begin on the start platform, and will be instructed to seek the end platform. These platforms are seen below in Fig. \ref{fig:platforms}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{startplatform.png}
+        \caption{Start Platform}
+        \label{fig:startplatform}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{goalplatform.png}
+        \caption{Goal Platform}
+        \label{fig:goalplatform}
+    \end{subfigure}
+    \caption{Start and Goal Platforms in a single simulation}
+    \label{fig:platforms}
+\end{figure}
+
+
+
+% \section{Complex Pathfinding for Hostile Environments}
+% \label{sec:complex-pathfinding}
+% \subsection{A* - The Hacks \& Bodges?}
+
+% \subsection{Pair Potential Model}
+
+% \subsubsection{Obstacle Avoidance}
 
 \section{Real World Limitations}
 \subsection{Real World Represenation}
@@ -757,7 +953,7 @@ In previous sections, we have focused on the pathfinding behaviour of the agents
 
 
 
-
+\newpage
 \bibliographystyle{IEEEtran}
 \bibliography{refs} 
 \end{document}

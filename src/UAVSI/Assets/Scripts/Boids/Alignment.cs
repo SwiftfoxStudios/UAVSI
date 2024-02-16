@@ -20,4 +20,14 @@ public class Alignment : FlockBehaviour
 
         return alignmentMove;
     }
+
+    public override Dictionary<string, float> WeightedBehaviours()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void SetWeights(Dictionary<string, float> weights)
+    {
+        throw new System.NotImplementedException();
+    }
 }

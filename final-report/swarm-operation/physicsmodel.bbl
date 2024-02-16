@@ -56,4 +56,20 @@ C.~W. Reynolds, \emph{Flocks, Herds, and Schools: A Distributed Behavioral
   \url{https://doi.org/10.1145/280811.281008}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Perlin}
+\BIBentryALTinterwordspacing
+K.~Perlin, ``An image synthesizer,'' in \emph{Proceedings of the 12th Annual
+  Conference on Computer Graphics and Interactive Techniques}, ser. SIGGRAPH
+  '85.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
+  for Computing Machinery, 1985, pp. 287--296. [Online]. Available:
+  \url{https://doi.org/10.1145/325334.325247}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Etherington}
+\BIBentryALTinterwordspacing
+T.~R. Etherington, ``Perlin noise as a hierarchical neutral landscape model,''
+  \emph{Web Ecology}, vol.~22, no.~1, pp. 1--6, 2022. [Online]. Available:
+  \url{https://we.copernicus.org/articles/22/1/2022/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

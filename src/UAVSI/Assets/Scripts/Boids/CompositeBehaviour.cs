@@ -28,7 +28,7 @@ public class CompositeBehaviour : FlockBehaviour
             {
                 if (partialMove.sqrMagnitude > weights[i] * weights[i])
                 {
-                    partialMove.Normalize();
+
                     partialMove *= weights[i];
                 }
 
@@ -36,5 +36,23 @@ public class CompositeBehaviour : FlockBehaviour
             }
         }
         return move;
+    }
+
+    public override Dictionary<string, float> WeightedBehaviours()
+    {
+        Dictionary<string, float> weightedBehaviours = new Dictionary<string, float>();
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            weightedBehaviours.Add(behaviours[i].name, weights[i]);
+        }
+        return weightedBehaviours;
+    }
+
+    public override void SetWeights(Dictionary<string, float> newWeights)
+    {
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            weights[i] = newWeights[behaviours[i].name];
+        }
     }
 }
