@@ -1,0 +1,2589 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  13 MAR 2024 11:26
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/antonio/Development/CS3/UAVSI/presentation/presentation.tex
+(/Users/antonio/Development/CS3/UAVSI/presentation/presentation.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
+(/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+)
+\beamer@tempbox=\box50
+\beamer@tempcount=\count186
+\c@beamerpauses=\count187
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+\beamer@slideinframe=\count188
+\beamer@minimum=\count189
+\beamer@decode@box=\box51
+)
+\beamer@commentbox=\box52
+\beamer@modecount=\count190
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\headdp=\dimen138
+\footheight=\dimen139
+\sidebarheight=\dimen140
+\beamer@tempdim=\dimen141
+\beamer@finalheight=\dimen142
+\beamer@animht=\dimen143
+\beamer@animdp=\dimen144
+\beamer@animwd=\dimen145
+\beamer@leftmargin=\dimen146
+\beamer@rightmargin=\dimen147
+\beamer@leftsidebar=\dimen148
+\beamer@rightsidebar=\dimen149
+\beamer@boxsize=\dimen150
+\beamer@vboxoffset=\dimen151
+\beamer@descdefault=\dimen152
+\beamer@descriptionwidth=\dimen153
+\beamer@lastskip=\skip47
+\beamer@areabox=\box53
+\beamer@animcurrent=\box54
+\beamer@animshowbox=\box55
+\beamer@sectionbox=\box56
+\beamer@logobox=\box57
+\beamer@linebox=\box58
+\beamer@sectioncount=\count191
+\beamer@subsubsectionmax=\count192
+\beamer@subsectionmax=\count193
+\beamer@sectionmax=\count194
+\beamer@totalheads=\count195
+\beamer@headcounter=\count196
+\beamer@partstartpage=\count197
+\beamer@sectionstartpage=\count198
+\beamer@subsectionstartpage=\count199
+\beamer@animationtempa=\count266
+\beamer@animationtempb=\count267
+\beamer@xpos=\count268
+\beamer@ypos=\count269
+\beamer@ypos@offset=\count270
+\beamer@showpartnumber=\count271
+\beamer@currentsubsection=\count272
+\beamer@coveringdepth=\count273
+\beamer@sectionadjust=\count274
+\beamer@toclastsection=\count275
+\beamer@tocsectionnumber=\count276
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+))
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks17
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen164
+\pgf@xa=\dimen165
+\pgf@xb=\dimen166
+\pgf@xc=\dimen167
+\pgf@y=\dimen168
+\pgf@ya=\dimen169
+\pgf@yb=\dimen170
+\pgf@yc=\dimen171
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count284
+\pgfmath@box=\box60
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+))) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+\pgf@x=\dimen175
+\pgf@y=\dimen176
+\pgf@xa=\dimen177
+\pgf@ya=\dimen178
+\pgf@xb=\dimen179
+\pgf@yb=\dimen180
+\pgf@xc=\dimen181
+\pgf@yc=\dimen182
+\pgf@xd=\dimen183
+\pgf@yd=\dimen184
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count290
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count293
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen259
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen263
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box64
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count296
+\XC@countmixins=\count297
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen265
+\Hy@linkcounter=\count298
+\Hy@pagecounter=\count299
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count300
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4018.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4018.
+Package hyperref Info: Option `implicit' set `false' on input line 4018.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count301
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen266
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count302
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+\Hy@abspage=\count303
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaserequires.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasefont.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2020/01/31
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+))))) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasemisc.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+\beamer@argscount=\count306
+\beamer@lastskipcover=\skip50
+\beamer@trivlistdepth=\count307
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetitle.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+\c@lecture=\count308
+\c@part=\count309
+\c@section=\count310
+\c@subsection=\count311
+\c@subsubsection=\count312
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+\beamer@framebox=\box65
+\beamer@frametitlebox=\box66
+\beamer@zoombox=\box67
+\beamer@zoomcount=\count313
+\beamer@zoomframecount=\count314
+\beamer@frametextheight=\dimen269
+\c@subsectionslide=\count315
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
+\beamer@envbody=\toks29
+\framewidth=\dimen270
+\c@framenumber=\count316
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+\beamer@splitbox=\box68
+\beamer@autobreakcount=\count317
+\beamer@autobreaklastheight=\dimen271
+\beamer@frametitletoks=\toks30
+\beamer@framesubtitletoks=\toks31
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+\beamer@footins=\box69
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasecolor.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+\beamer@frameboxcopy=\box70
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+\beamer@sbttoks=\toks32
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+\bmb@box=\box71
+\bmb@colorbox=\box72
+\bmb@boxwidth=\dimen272
+\bmb@boxheight=\dimen273
+\bmb@prevheight=\dimen274
+\bmb@temp=\dimen275
+\bmb@dima=\dimen276
+\bmb@dimb=\dimen277
+\bmb@prevheight=\dimen278
+)
+\beamer@blockheadheight=\dimen279
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks33
+)
+\beamer@bibiconwidth=\skip55
+\c@figure=\count318
+\c@table=\count319
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+\beamer@section@min@dim=\dimen280
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen281
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen282
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count320
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count321
+\leftroot@=\count322
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count323
+\DOTSCASE@=\count324
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box73
+\strutbox@=\box74
+\big@size=\dimen283
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count325
+\c@MaxMatrixCols=\count326
+\dotsspace@=\muskip17
+\c@parentequation=\count327
+\dspbrk@lvl=\count328
+\tag@help=\toks35
+\row@=\count329
+\column@=\count330
+\maxfields@=\count331
+\andhelp@=\toks36
+\eqnshift@=\dimen284
+\alignsep@=\dimen285
+\tagshift@=\dimen286
+\tagwidth@=\dimen287
+\totwidth@=\dimen288
+\lineht@=\dimen289
+\@envbody=\toks37
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks44
+)
+\c@theorem=\count332
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+\beamer@dima=\dimen290
+\beamer@dimb=\dimen291
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (/usr/local/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2022/02/21 PDF & SVG animations from files and inline graphics
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
+)
+\XKV@depth=\count333
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count334
+\calc@Bcount=\count335
+\calc@Adimen=\dimen292
+\calc@Bdimen=\dimen293
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count336
+\calc@Cskip=\skip66
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count337
+Package zref Info: New property: abspage on input line 66.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/media9/pdfbase.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count338
+\l__pdf_internal_box=\box75
+))
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2022/03/18 v0.54 driver independent access to low-level PDF features
+\g_pbs_page_int=\count339
+\g_pbs_oc_int=\count340
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count341
+)
+\@anim@box=\box76
+\@anim@measbox=\box77
+\@anim@tmpdima=\dimen294
+\@anim@tmpdimb=\dimen295
+\@anim@num=\count342
+\@anim@curframe=\count343
+\@anim@curframe@zb=\count344
+\@anim@resizeflags=\count345
+\@anim@skipfram=\count346
+\@anim@mulframecnt=\count347
+\@anim@@tmlnfile=\read3
+\@anim@tmpcnt=\count348
+\c@@anim@ltxcnt=\count349
+\@anim@curlayer=\count350
+\@anim@lineno=\count351
+\@anim@curfield=\count352
+\@anim@@resizeflags=\count353
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+) (./presentation.aux)
+\openout1 = `presentation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=342.2953pt
+* \textheight=244.6939pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count354
+\scratchdimen=\dimen296
+\scratchbox=\box78
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen297
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks48
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 13.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count360
+)
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
+ (./presentation.out) (./presentation.out)
+\@outlinefile=\write5
+\openout5 = `presentation.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 13.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 13.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 13.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 13.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 13.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 13.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 13.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 13.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 13.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 13.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+) (./presentation.nav) [1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] [3
+
+]
+<prop.png, id=148, 273.02pt x 260.975pt>
+File: prop.png Graphic file (type png)
+<use prop.png>
+Package pdftex.def Info: prop.png  used on input line 66.
+(pdftex.def)             Requested size: 81.90663pt x 78.29309pt.
+ [4
+
+ <./prop.png>]
+File: prop.png Graphic file (type png)
+<use prop.png>
+Package pdftex.def Info: prop.png  used on input line 66.
+(pdftex.def)             Requested size: 81.90663pt x 78.29309pt.
+ [5
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 104.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+) [6
+
+] [7
+
+]
+<se-0000.jpg, id=273, 217.81375pt x 145.54375pt>
+File: se-0000.jpg Graphic file (type jpg)
+<use se-0000.jpg>
+Package pdftex.def Info: se-0000.jpg  used on input line 147.
+(pdftex.def)             Requested size: 87.12395pt x 58.21646pt.
+ [8
+
+ <./se-0000.jpg>]
+<al-0000.jpg, id=305, 217.81375pt x 145.54375pt>
+File: al-0000.jpg Graphic file (type jpg)
+<use al-0000.jpg>
+Package pdftex.def Info: al-0000.jpg  used on input line 166.
+(pdftex.def)             Requested size: 108.9066pt x 72.77168pt.
+ [9
+
+ <./al-0000.jpg>]
+<co-0000.jpg, id=333, 217.81375pt x 145.54375pt>
+File: co-0000.jpg Graphic file (type jpg)
+<use co-0000.jpg>
+Package pdftex.def Info: co-0000.jpg  used on input line 190.
+(pdftex.def)             Requested size: 108.9066pt x 72.77168pt.
+ [10
+
+ <./co-0000.jpg>]
+<boids-0.png, id=361, 1455.4375pt x 772.8875pt>
+File: boids-0.png Graphic file (type png)
+<use boids-0.png>
+Package pdftex.def Info: boids-0.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-0.png> <a0,fr0>
+<boids-1.png, id=364, 1455.4375pt x 772.8875pt>
+File: boids-1.png Graphic file (type png)
+<use boids-1.png>
+Package pdftex.def Info: boids-1.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-1.png> <a0,fr1>
+<boids-2.png, id=367, 1455.4375pt x 772.8875pt>
+File: boids-2.png Graphic file (type png)
+<use boids-2.png>
+Package pdftex.def Info: boids-2.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-2.png> <a0,fr2>
+<boids-3.png, id=370, 1455.4375pt x 772.8875pt>
+File: boids-3.png Graphic file (type png)
+<use boids-3.png>
+Package pdftex.def Info: boids-3.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-3.png> <a0,fr3>
+<boids-4.png, id=373, 1455.4375pt x 772.8875pt>
+File: boids-4.png Graphic file (type png)
+<use boids-4.png>
+Package pdftex.def Info: boids-4.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-4.png> <a0,fr4>
+<boids-5.png, id=376, 1455.4375pt x 772.8875pt>
+File: boids-5.png Graphic file (type png)
+<use boids-5.png>
+Package pdftex.def Info: boids-5.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-5.png> <a0,fr5>
+<boids-6.png, id=380, 1455.4375pt x 772.8875pt>
+File: boids-6.png Graphic file (type png)
+<use boids-6.png>
+Package pdftex.def Info: boids-6.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-6.png> <a0,fr6>
+<boids-7.png, id=383, 1455.4375pt x 772.8875pt>
+File: boids-7.png Graphic file (type png)
+<use boids-7.png>
+Package pdftex.def Info: boids-7.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-7.png> <a0,fr7>
+<boids-8.png, id=386, 1455.4375pt x 772.8875pt>
+File: boids-8.png Graphic file (type png)
+<use boids-8.png>
+Package pdftex.def Info: boids-8.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-8.png> <a0,fr8>
+<boids-9.png, id=389, 1455.4375pt x 772.8875pt>
+File: boids-9.png Graphic file (type png)
+<use boids-9.png>
+Package pdftex.def Info: boids-9.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-9.png> <a0,fr9>
+<boids-10.png, id=392, 1455.4375pt x 772.8875pt>
+File: boids-10.png Graphic file (type png)
+<use boids-10.png>
+Package pdftex.def Info: boids-10.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-10.png> <a0,fr10>
+<boids-11.png, id=395, 1455.4375pt x 772.8875pt>
+File: boids-11.png Graphic file (type png)
+<use boids-11.png>
+Package pdftex.def Info: boids-11.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-11.png> <a0,fr11>
+<boids-12.png, id=398, 1455.4375pt x 772.8875pt>
+File: boids-12.png Graphic file (type png)
+<use boids-12.png>
+Package pdftex.def Info: boids-12.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-12.png> <a0,fr12>
+<boids-13.png, id=401, 1455.4375pt x 772.8875pt>
+File: boids-13.png Graphic file (type png)
+<use boids-13.png>
+Package pdftex.def Info: boids-13.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-13.png> <a0,fr13>
+<boids-14.png, id=404, 1455.4375pt x 772.8875pt>
+File: boids-14.png Graphic file (type png)
+<use boids-14.png>
+Package pdftex.def Info: boids-14.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-14.png> <a0,fr14>
+<boids-15.png, id=407, 1455.4375pt x 772.8875pt>
+File: boids-15.png Graphic file (type png)
+<use boids-15.png>
+Package pdftex.def Info: boids-15.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-15.png> <a0,fr15>
+<boids-16.png, id=410, 1455.4375pt x 772.8875pt>
+File: boids-16.png Graphic file (type png)
+<use boids-16.png>
+Package pdftex.def Info: boids-16.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-16.png> <a0,fr16>
+<boids-17.png, id=413, 1455.4375pt x 772.8875pt>
+File: boids-17.png Graphic file (type png)
+<use boids-17.png>
+Package pdftex.def Info: boids-17.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-17.png> <a0,fr17>
+<boids-18.png, id=416, 1455.4375pt x 772.8875pt>
+File: boids-18.png Graphic file (type png)
+<use boids-18.png>
+Package pdftex.def Info: boids-18.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-18.png> <a0,fr18>
+<boids-19.png, id=419, 1455.4375pt x 772.8875pt>
+File: boids-19.png Graphic file (type png)
+<use boids-19.png>
+Package pdftex.def Info: boids-19.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-19.png> <a0,fr19>
+<boids-20.png, id=422, 1455.4375pt x 772.8875pt>
+File: boids-20.png Graphic file (type png)
+<use boids-20.png>
+Package pdftex.def Info: boids-20.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-20.png> <a0,fr20>
+<boids-21.png, id=425, 1455.4375pt x 772.8875pt>
+File: boids-21.png Graphic file (type png)
+<use boids-21.png>
+Package pdftex.def Info: boids-21.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-21.png> <a0,fr21>
+<boids-22.png, id=428, 1455.4375pt x 772.8875pt>
+File: boids-22.png Graphic file (type png)
+<use boids-22.png>
+Package pdftex.def Info: boids-22.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-22.png> <a0,fr22>
+<boids-23.png, id=431, 1455.4375pt x 772.8875pt>
+File: boids-23.png Graphic file (type png)
+<use boids-23.png>
+Package pdftex.def Info: boids-23.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-23.png> <a0,fr23>
+<boids-24.png, id=434, 1455.4375pt x 772.8875pt>
+File: boids-24.png Graphic file (type png)
+<use boids-24.png>
+Package pdftex.def Info: boids-24.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-24.png> <a0,fr24>
+<boids-25.png, id=437, 1455.4375pt x 772.8875pt>
+File: boids-25.png Graphic file (type png)
+<use boids-25.png>
+Package pdftex.def Info: boids-25.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-25.png> <a0,fr25>
+<boids-26.png, id=440, 1455.4375pt x 772.8875pt>
+File: boids-26.png Graphic file (type png)
+<use boids-26.png>
+Package pdftex.def Info: boids-26.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-26.png> <a0,fr26>
+<boids-27.png, id=443, 1455.4375pt x 772.8875pt>
+File: boids-27.png Graphic file (type png)
+<use boids-27.png>
+Package pdftex.def Info: boids-27.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-27.png> <a0,fr27>
+<boids-28.png, id=446, 1455.4375pt x 772.8875pt>
+File: boids-28.png Graphic file (type png)
+<use boids-28.png>
+Package pdftex.def Info: boids-28.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-28.png> <a0,fr28>
+<boids-29.png, id=449, 1455.4375pt x 772.8875pt>
+File: boids-29.png Graphic file (type png)
+<use boids-29.png>
+Package pdftex.def Info: boids-29.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-29.png> <a0,fr29>
+<boids-30.png, id=452, 1455.4375pt x 772.8875pt>
+File: boids-30.png Graphic file (type png)
+<use boids-30.png>
+Package pdftex.def Info: boids-30.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-30.png> <a0,fr30>
+<boids-31.png, id=455, 1455.4375pt x 772.8875pt>
+File: boids-31.png Graphic file (type png)
+<use boids-31.png>
+Package pdftex.def Info: boids-31.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-31.png> <a0,fr31>
+<boids-32.png, id=458, 1455.4375pt x 772.8875pt>
+File: boids-32.png Graphic file (type png)
+<use boids-32.png>
+Package pdftex.def Info: boids-32.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-32.png> <a0,fr32>
+<boids-33.png, id=461, 1455.4375pt x 772.8875pt>
+File: boids-33.png Graphic file (type png)
+<use boids-33.png>
+Package pdftex.def Info: boids-33.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-33.png> <a0,fr33>
+<boids-34.png, id=464, 1455.4375pt x 772.8875pt>
+File: boids-34.png Graphic file (type png)
+<use boids-34.png>
+Package pdftex.def Info: boids-34.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-34.png> <a0,fr34>
+<boids-35.png, id=467, 1455.4375pt x 772.8875pt>
+File: boids-35.png Graphic file (type png)
+<use boids-35.png>
+Package pdftex.def Info: boids-35.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-35.png> <a0,fr35>
+<boids-36.png, id=470, 1455.4375pt x 772.8875pt>
+File: boids-36.png Graphic file (type png)
+<use boids-36.png>
+Package pdftex.def Info: boids-36.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-36.png> <a0,fr36>
+<boids-37.png, id=473, 1455.4375pt x 772.8875pt>
+File: boids-37.png Graphic file (type png)
+<use boids-37.png>
+Package pdftex.def Info: boids-37.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-37.png> <a0,fr37>
+<boids-38.png, id=476, 1455.4375pt x 772.8875pt>
+File: boids-38.png Graphic file (type png)
+<use boids-38.png>
+Package pdftex.def Info: boids-38.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-38.png> <a0,fr38>
+<boids-39.png, id=479, 1455.4375pt x 772.8875pt>
+File: boids-39.png Graphic file (type png)
+<use boids-39.png>
+Package pdftex.def Info: boids-39.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-39.png> <a0,fr39>
+<boids-40.png, id=482, 1455.4375pt x 772.8875pt>
+File: boids-40.png Graphic file (type png)
+<use boids-40.png>
+Package pdftex.def Info: boids-40.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-40.png> <a0,fr40>
+<boids-41.png, id=485, 1455.4375pt x 772.8875pt>
+File: boids-41.png Graphic file (type png)
+<use boids-41.png>
+Package pdftex.def Info: boids-41.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-41.png> <a0,fr41>
+<boids-42.png, id=488, 1455.4375pt x 772.8875pt>
+File: boids-42.png Graphic file (type png)
+<use boids-42.png>
+Package pdftex.def Info: boids-42.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-42.png> <a0,fr42>
+<boids-43.png, id=491, 1455.4375pt x 772.8875pt>
+File: boids-43.png Graphic file (type png)
+<use boids-43.png>
+Package pdftex.def Info: boids-43.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-43.png> <a0,fr43>
+<boids-44.png, id=494, 1455.4375pt x 772.8875pt>
+File: boids-44.png Graphic file (type png)
+<use boids-44.png>
+Package pdftex.def Info: boids-44.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-44.png> <a0,fr44>
+<boids-45.png, id=497, 1455.4375pt x 772.8875pt>
+File: boids-45.png Graphic file (type png)
+<use boids-45.png>
+Package pdftex.def Info: boids-45.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-45.png> <a0,fr45>
+<boids-46.png, id=500, 1455.4375pt x 772.8875pt>
+File: boids-46.png Graphic file (type png)
+<use boids-46.png>
+Package pdftex.def Info: boids-46.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-46.png> <a0,fr46>
+<boids-47.png, id=503, 1455.4375pt x 772.8875pt>
+File: boids-47.png Graphic file (type png)
+<use boids-47.png>
+Package pdftex.def Info: boids-47.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-47.png> <a0,fr47>
+<boids-48.png, id=506, 1455.4375pt x 772.8875pt>
+File: boids-48.png Graphic file (type png)
+<use boids-48.png>
+Package pdftex.def Info: boids-48.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-48.png> <a0,fr48>
+<boids-49.png, id=509, 1455.4375pt x 772.8875pt>
+File: boids-49.png Graphic file (type png)
+<use boids-49.png>
+Package pdftex.def Info: boids-49.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-49.png> <a0,fr49>
+<boids-50.png, id=512, 1455.4375pt x 772.8875pt>
+File: boids-50.png Graphic file (type png)
+<use boids-50.png>
+Package pdftex.def Info: boids-50.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-50.png> <a0,fr50>
+<boids-51.png, id=515, 1455.4375pt x 772.8875pt>
+File: boids-51.png Graphic file (type png)
+<use boids-51.png>
+Package pdftex.def Info: boids-51.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-51.png> <a0,fr51>
+<boids-52.png, id=518, 1455.4375pt x 772.8875pt>
+File: boids-52.png Graphic file (type png)
+<use boids-52.png>
+Package pdftex.def Info: boids-52.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-52.png> <a0,fr52>
+<boids-53.png, id=521, 1455.4375pt x 772.8875pt>
+File: boids-53.png Graphic file (type png)
+<use boids-53.png>
+Package pdftex.def Info: boids-53.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-53.png> <a0,fr53>
+<boids-54.png, id=524, 1455.4375pt x 772.8875pt>
+File: boids-54.png Graphic file (type png)
+<use boids-54.png>
+Package pdftex.def Info: boids-54.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-54.png> <a0,fr54>
+<boids-55.png, id=527, 1455.4375pt x 772.8875pt>
+File: boids-55.png Graphic file (type png)
+<use boids-55.png>
+Package pdftex.def Info: boids-55.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-55.png> <a0,fr55>
+<boids-56.png, id=530, 1455.4375pt x 772.8875pt>
+File: boids-56.png Graphic file (type png)
+<use boids-56.png>
+Package pdftex.def Info: boids-56.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-56.png> <a0,fr56>
+<boids-57.png, id=533, 1455.4375pt x 772.8875pt>
+File: boids-57.png Graphic file (type png)
+<use boids-57.png>
+Package pdftex.def Info: boids-57.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-57.png> <a0,fr57>
+<boids-58.png, id=536, 1455.4375pt x 772.8875pt>
+File: boids-58.png Graphic file (type png)
+<use boids-58.png>
+Package pdftex.def Info: boids-58.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-58.png> <a0,fr58>
+<boids-59.png, id=539, 1455.4375pt x 772.8875pt>
+File: boids-59.png Graphic file (type png)
+<use boids-59.png>
+Package pdftex.def Info: boids-59.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-59.png> <a0,fr59>
+<boids-60.png, id=542, 1455.4375pt x 772.8875pt>
+File: boids-60.png Graphic file (type png)
+<use boids-60.png>
+Package pdftex.def Info: boids-60.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-60.png> <a0,fr60>
+<boids-61.png, id=545, 1455.4375pt x 772.8875pt>
+File: boids-61.png Graphic file (type png)
+<use boids-61.png>
+Package pdftex.def Info: boids-61.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-61.png> <a0,fr61>
+<boids-62.png, id=548, 1455.4375pt x 772.8875pt>
+File: boids-62.png Graphic file (type png)
+<use boids-62.png>
+Package pdftex.def Info: boids-62.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-62.png> <a0,fr62>
+<boids-63.png, id=551, 1455.4375pt x 772.8875pt>
+File: boids-63.png Graphic file (type png)
+<use boids-63.png>
+Package pdftex.def Info: boids-63.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-63.png> <a0,fr63>
+<boids-64.png, id=554, 1455.4375pt x 772.8875pt>
+File: boids-64.png Graphic file (type png)
+<use boids-64.png>
+Package pdftex.def Info: boids-64.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-64.png> <a0,fr64>
+<boids-65.png, id=557, 1455.4375pt x 772.8875pt>
+File: boids-65.png Graphic file (type png)
+<use boids-65.png>
+Package pdftex.def Info: boids-65.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-65.png> <a0,fr65>
+<boids-66.png, id=560, 1455.4375pt x 772.8875pt>
+File: boids-66.png Graphic file (type png)
+<use boids-66.png>
+Package pdftex.def Info: boids-66.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-66.png> <a0,fr66>
+<boids-67.png, id=563, 1455.4375pt x 772.8875pt>
+File: boids-67.png Graphic file (type png)
+<use boids-67.png>
+Package pdftex.def Info: boids-67.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-67.png> <a0,fr67>
+<boids-68.png, id=566, 1455.4375pt x 772.8875pt>
+File: boids-68.png Graphic file (type png)
+<use boids-68.png>
+Package pdftex.def Info: boids-68.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-68.png> <a0,fr68>
+<boids-69.png, id=569, 1455.4375pt x 772.8875pt>
+File: boids-69.png Graphic file (type png)
+<use boids-69.png>
+Package pdftex.def Info: boids-69.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-69.png> <a0,fr69>
+<boids-70.png, id=572, 1455.4375pt x 772.8875pt>
+File: boids-70.png Graphic file (type png)
+<use boids-70.png>
+Package pdftex.def Info: boids-70.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-70.png> <a0,fr70>
+<boids-71.png, id=575, 1455.4375pt x 772.8875pt>
+File: boids-71.png Graphic file (type png)
+<use boids-71.png>
+Package pdftex.def Info: boids-71.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-71.png> <a0,fr71>
+<boids-72.png, id=578, 1455.4375pt x 772.8875pt>
+File: boids-72.png Graphic file (type png)
+<use boids-72.png>
+Package pdftex.def Info: boids-72.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-72.png> <a0,fr72>
+<boids-73.png, id=581, 1455.4375pt x 772.8875pt>
+File: boids-73.png Graphic file (type png)
+<use boids-73.png>
+Package pdftex.def Info: boids-73.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-73.png> <a0,fr73>
+<boids-74.png, id=584, 1455.4375pt x 772.8875pt>
+File: boids-74.png Graphic file (type png)
+<use boids-74.png>
+Package pdftex.def Info: boids-74.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-74.png> <a0,fr74>
+<boids-75.png, id=587, 1455.4375pt x 772.8875pt>
+File: boids-75.png Graphic file (type png)
+<use boids-75.png>
+Package pdftex.def Info: boids-75.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-75.png> <a0,fr75>
+<boids-76.png, id=590, 1455.4375pt x 772.8875pt>
+File: boids-76.png Graphic file (type png)
+<use boids-76.png>
+Package pdftex.def Info: boids-76.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-76.png> <a0,fr76>
+<boids-77.png, id=593, 1455.4375pt x 772.8875pt>
+File: boids-77.png Graphic file (type png)
+<use boids-77.png>
+Package pdftex.def Info: boids-77.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-77.png> <a0,fr77>
+<boids-78.png, id=596, 1455.4375pt x 772.8875pt>
+File: boids-78.png Graphic file (type png)
+<use boids-78.png>
+Package pdftex.def Info: boids-78.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-78.png> <a0,fr78>
+<boids-79.png, id=599, 1455.4375pt x 772.8875pt>
+File: boids-79.png Graphic file (type png)
+<use boids-79.png>
+Package pdftex.def Info: boids-79.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-79.png> <a0,fr79>
+<boids-80.png, id=602, 1455.4375pt x 772.8875pt>
+File: boids-80.png Graphic file (type png)
+<use boids-80.png>
+Package pdftex.def Info: boids-80.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-80.png> <a0,fr80>
+<boids-81.png, id=605, 1455.4375pt x 772.8875pt>
+File: boids-81.png Graphic file (type png)
+<use boids-81.png>
+Package pdftex.def Info: boids-81.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-81.png> <a0,fr81>
+<boids-82.png, id=608, 1455.4375pt x 772.8875pt>
+File: boids-82.png Graphic file (type png)
+<use boids-82.png>
+Package pdftex.def Info: boids-82.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-82.png> <a0,fr82>
+<boids-83.png, id=611, 1455.4375pt x 772.8875pt>
+File: boids-83.png Graphic file (type png)
+<use boids-83.png>
+Package pdftex.def Info: boids-83.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-83.png> <a0,fr83>
+<boids-84.png, id=614, 1455.4375pt x 772.8875pt>
+File: boids-84.png Graphic file (type png)
+<use boids-84.png>
+Package pdftex.def Info: boids-84.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-84.png> <a0,fr84>
+<boids-85.png, id=617, 1455.4375pt x 772.8875pt>
+File: boids-85.png Graphic file (type png)
+<use boids-85.png>
+Package pdftex.def Info: boids-85.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-85.png> <a0,fr85>
+<boids-86.png, id=620, 1455.4375pt x 772.8875pt>
+File: boids-86.png Graphic file (type png)
+<use boids-86.png>
+Package pdftex.def Info: boids-86.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-86.png> <a0,fr86>
+<boids-87.png, id=623, 1455.4375pt x 772.8875pt>
+File: boids-87.png Graphic file (type png)
+<use boids-87.png>
+Package pdftex.def Info: boids-87.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-87.png> <a0,fr87>
+<boids-88.png, id=626, 1455.4375pt x 772.8875pt>
+File: boids-88.png Graphic file (type png)
+<use boids-88.png>
+Package pdftex.def Info: boids-88.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-88.png> <a0,fr88>
+<boids-89.png, id=629, 1455.4375pt x 772.8875pt>
+File: boids-89.png Graphic file (type png)
+<use boids-89.png>
+Package pdftex.def Info: boids-89.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-89.png> <a0,fr89>
+<boids-90.png, id=632, 1455.4375pt x 772.8875pt>
+File: boids-90.png Graphic file (type png)
+<use boids-90.png>
+Package pdftex.def Info: boids-90.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-90.png> <a0,fr90>
+<boids-91.png, id=635, 1455.4375pt x 772.8875pt>
+File: boids-91.png Graphic file (type png)
+<use boids-91.png>
+Package pdftex.def Info: boids-91.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-91.png> <a0,fr91>
+<boids-92.png, id=638, 1455.4375pt x 772.8875pt>
+File: boids-92.png Graphic file (type png)
+<use boids-92.png>
+Package pdftex.def Info: boids-92.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-92.png> <a0,fr92>
+<boids-93.png, id=641, 1455.4375pt x 772.8875pt>
+File: boids-93.png Graphic file (type png)
+<use boids-93.png>
+Package pdftex.def Info: boids-93.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-93.png> <a0,fr93>
+<boids-94.png, id=644, 1455.4375pt x 772.8875pt>
+File: boids-94.png Graphic file (type png)
+<use boids-94.png>
+Package pdftex.def Info: boids-94.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-94.png> <a0,fr94>
+<boids-95.png, id=647, 1455.4375pt x 772.8875pt>
+File: boids-95.png Graphic file (type png)
+<use boids-95.png>
+Package pdftex.def Info: boids-95.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-95.png> <a0,fr95>
+<boids-96.png, id=650, 1455.4375pt x 772.8875pt>
+File: boids-96.png Graphic file (type png)
+<use boids-96.png>
+Package pdftex.def Info: boids-96.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-96.png> <a0,fr96>
+<boids-97.png, id=653, 1455.4375pt x 772.8875pt>
+File: boids-97.png Graphic file (type png)
+<use boids-97.png>
+Package pdftex.def Info: boids-97.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-97.png> <a0,fr97>
+<boids-98.png, id=656, 1455.4375pt x 772.8875pt>
+File: boids-98.png Graphic file (type png)
+<use boids-98.png>
+Package pdftex.def Info: boids-98.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-98.png> <a0,fr98>
+<boids-99.png, id=659, 1455.4375pt x 772.8875pt>
+File: boids-99.png Graphic file (type png)
+<use boids-99.png>
+Package pdftex.def Info: boids-99.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-99.png> <a0,fr99>
+<boids-100.png, id=662, 1455.4375pt x 772.8875pt>
+File: boids-100.png Graphic file (type png)
+<use boids-100.png>
+Package pdftex.def Info: boids-100.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-100.png> <a0,fr100>
+<boids-101.png, id=665, 1455.4375pt x 772.8875pt>
+File: boids-101.png Graphic file (type png)
+<use boids-101.png>
+Package pdftex.def Info: boids-101.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-101.png> <a0,fr101>
+<boids-102.png, id=668, 1455.4375pt x 772.8875pt>
+File: boids-102.png Graphic file (type png)
+<use boids-102.png>
+Package pdftex.def Info: boids-102.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-102.png> <a0,fr102>
+<boids-103.png, id=671, 1455.4375pt x 772.8875pt>
+File: boids-103.png Graphic file (type png)
+<use boids-103.png>
+Package pdftex.def Info: boids-103.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-103.png> <a0,fr103>
+<boids-104.png, id=674, 1455.4375pt x 772.8875pt>
+File: boids-104.png Graphic file (type png)
+<use boids-104.png>
+Package pdftex.def Info: boids-104.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-104.png> <a0,fr104>
+<boids-105.png, id=677, 1455.4375pt x 772.8875pt>
+File: boids-105.png Graphic file (type png)
+<use boids-105.png>
+Package pdftex.def Info: boids-105.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-105.png> <a0,fr105>
+<boids-106.png, id=681, 1455.4375pt x 772.8875pt>
+File: boids-106.png Graphic file (type png)
+<use boids-106.png>
+Package pdftex.def Info: boids-106.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-106.png> <a0,fr106>
+<boids-107.png, id=684, 1455.4375pt x 772.8875pt>
+File: boids-107.png Graphic file (type png)
+<use boids-107.png>
+Package pdftex.def Info: boids-107.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-107.png> <a0,fr107>
+<boids-108.png, id=687, 1455.4375pt x 772.8875pt>
+File: boids-108.png Graphic file (type png)
+<use boids-108.png>
+Package pdftex.def Info: boids-108.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-108.png> <a0,fr108>
+<boids-109.png, id=690, 1455.4375pt x 772.8875pt>
+File: boids-109.png Graphic file (type png)
+<use boids-109.png>
+Package pdftex.def Info: boids-109.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-109.png> <a0,fr109>
+<boids-110.png, id=693, 1455.4375pt x 772.8875pt>
+File: boids-110.png Graphic file (type png)
+<use boids-110.png>
+Package pdftex.def Info: boids-110.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-110.png> <a0,fr110>
+<boids-111.png, id=696, 1455.4375pt x 772.8875pt>
+File: boids-111.png Graphic file (type png)
+<use boids-111.png>
+Package pdftex.def Info: boids-111.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-111.png> <a0,fr111>
+<boids-112.png, id=699, 1455.4375pt x 772.8875pt>
+File: boids-112.png Graphic file (type png)
+<use boids-112.png>
+Package pdftex.def Info: boids-112.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-112.png> <a0,fr112>
+<boids-113.png, id=702, 1455.4375pt x 772.8875pt>
+File: boids-113.png Graphic file (type png)
+<use boids-113.png>
+Package pdftex.def Info: boids-113.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-113.png> <a0,fr113>
+<boids-114.png, id=705, 1455.4375pt x 772.8875pt>
+File: boids-114.png Graphic file (type png)
+<use boids-114.png>
+Package pdftex.def Info: boids-114.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-114.png> <a0,fr114>
+<boids-115.png, id=708, 1455.4375pt x 772.8875pt>
+File: boids-115.png Graphic file (type png)
+<use boids-115.png>
+Package pdftex.def Info: boids-115.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-115.png> <a0,fr115>
+<boids-116.png, id=711, 1455.4375pt x 772.8875pt>
+File: boids-116.png Graphic file (type png)
+<use boids-116.png>
+Package pdftex.def Info: boids-116.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-116.png> <a0,fr116>
+<boids-117.png, id=714, 1455.4375pt x 772.8875pt>
+File: boids-117.png Graphic file (type png)
+<use boids-117.png>
+Package pdftex.def Info: boids-117.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-117.png> <a0,fr117>
+<boids-118.png, id=717, 1455.4375pt x 772.8875pt>
+File: boids-118.png Graphic file (type png)
+<use boids-118.png>
+Package pdftex.def Info: boids-118.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-118.png> <a0,fr118>
+<boids-119.png, id=720, 1455.4375pt x 772.8875pt>
+File: boids-119.png Graphic file (type png)
+<use boids-119.png>
+Package pdftex.def Info: boids-119.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-119.png> <a0,fr119>
+<boids-120.png, id=723, 1455.4375pt x 772.8875pt>
+File: boids-120.png Graphic file (type png)
+<use boids-120.png>
+Package pdftex.def Info: boids-120.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-120.png> <a0,fr120>
+<boids-121.png, id=726, 1455.4375pt x 772.8875pt>
+File: boids-121.png Graphic file (type png)
+<use boids-121.png>
+Package pdftex.def Info: boids-121.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-121.png> <a0,fr121>
+<boids-122.png, id=729, 1455.4375pt x 772.8875pt>
+File: boids-122.png Graphic file (type png)
+<use boids-122.png>
+Package pdftex.def Info: boids-122.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-122.png> <a0,fr122>
+<boids-123.png, id=732, 1455.4375pt x 772.8875pt>
+File: boids-123.png Graphic file (type png)
+<use boids-123.png>
+Package pdftex.def Info: boids-123.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-123.png> <a0,fr123>
+<boids-124.png, id=735, 1455.4375pt x 772.8875pt>
+File: boids-124.png Graphic file (type png)
+<use boids-124.png>
+Package pdftex.def Info: boids-124.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-124.png> <a0,fr124>
+<boids-125.png, id=738, 1455.4375pt x 772.8875pt>
+File: boids-125.png Graphic file (type png)
+<use boids-125.png>
+Package pdftex.def Info: boids-125.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-125.png> <a0,fr125>
+<boids-126.png, id=741, 1455.4375pt x 772.8875pt>
+File: boids-126.png Graphic file (type png)
+<use boids-126.png>
+Package pdftex.def Info: boids-126.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-126.png> <a0,fr126>
+<boids-127.png, id=744, 1455.4375pt x 772.8875pt>
+File: boids-127.png Graphic file (type png)
+<use boids-127.png>
+Package pdftex.def Info: boids-127.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-127.png> <a0,fr127>
+<boids-128.png, id=747, 1455.4375pt x 772.8875pt>
+File: boids-128.png Graphic file (type png)
+<use boids-128.png>
+Package pdftex.def Info: boids-128.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-128.png> <a0,fr128>
+<boids-129.png, id=750, 1455.4375pt x 772.8875pt>
+File: boids-129.png Graphic file (type png)
+<use boids-129.png>
+Package pdftex.def Info: boids-129.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-129.png> <a0,fr129>
+<boids-130.png, id=753, 1455.4375pt x 772.8875pt>
+File: boids-130.png Graphic file (type png)
+<use boids-130.png>
+Package pdftex.def Info: boids-130.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-130.png> <a0,fr130>
+<boids-131.png, id=756, 1455.4375pt x 772.8875pt>
+File: boids-131.png Graphic file (type png)
+<use boids-131.png>
+Package pdftex.def Info: boids-131.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-131.png> <a0,fr131>
+<boids-132.png, id=759, 1455.4375pt x 772.8875pt>
+File: boids-132.png Graphic file (type png)
+<use boids-132.png>
+Package pdftex.def Info: boids-132.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-132.png> <a0,fr132>
+<boids-133.png, id=762, 1455.4375pt x 772.8875pt>
+File: boids-133.png Graphic file (type png)
+<use boids-133.png>
+Package pdftex.def Info: boids-133.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-133.png> <a0,fr133>
+<boids-134.png, id=765, 1455.4375pt x 772.8875pt>
+File: boids-134.png Graphic file (type png)
+<use boids-134.png>
+Package pdftex.def Info: boids-134.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-134.png> <a0,fr134>
+<boids-135.png, id=768, 1455.4375pt x 772.8875pt>
+File: boids-135.png Graphic file (type png)
+<use boids-135.png>
+Package pdftex.def Info: boids-135.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-135.png> <a0,fr135>
+<boids-136.png, id=771, 1455.4375pt x 772.8875pt>
+File: boids-136.png Graphic file (type png)
+<use boids-136.png>
+Package pdftex.def Info: boids-136.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-136.png> <a0,fr136>
+<boids-137.png, id=774, 1455.4375pt x 772.8875pt>
+File: boids-137.png Graphic file (type png)
+<use boids-137.png>
+Package pdftex.def Info: boids-137.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-137.png> <a0,fr137>
+<boids-138.png, id=777, 1455.4375pt x 772.8875pt>
+File: boids-138.png Graphic file (type png)
+<use boids-138.png>
+Package pdftex.def Info: boids-138.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-138.png> <a0,fr138>
+<boids-139.png, id=780, 1455.4375pt x 772.8875pt>
+File: boids-139.png Graphic file (type png)
+<use boids-139.png>
+Package pdftex.def Info: boids-139.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-139.png> <a0,fr139>
+<boids-140.png, id=783, 1455.4375pt x 772.8875pt>
+File: boids-140.png Graphic file (type png)
+<use boids-140.png>
+Package pdftex.def Info: boids-140.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-140.png> <a0,fr140>
+<boids-141.png, id=786, 1455.4375pt x 772.8875pt>
+File: boids-141.png Graphic file (type png)
+<use boids-141.png>
+Package pdftex.def Info: boids-141.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-141.png> <a0,fr141>
+<boids-142.png, id=789, 1455.4375pt x 772.8875pt>
+File: boids-142.png Graphic file (type png)
+<use boids-142.png>
+Package pdftex.def Info: boids-142.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-142.png> <a0,fr142>
+<boids-143.png, id=792, 1455.4375pt x 772.8875pt>
+File: boids-143.png Graphic file (type png)
+<use boids-143.png>
+Package pdftex.def Info: boids-143.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-143.png> <a0,fr143>
+<boids-144.png, id=795, 1455.4375pt x 772.8875pt>
+File: boids-144.png Graphic file (type png)
+<use boids-144.png>
+Package pdftex.def Info: boids-144.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-144.png> <a0,fr144>
+<boids-145.png, id=798, 1455.4375pt x 772.8875pt>
+File: boids-145.png Graphic file (type png)
+<use boids-145.png>
+Package pdftex.def Info: boids-145.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-145.png> <a0,fr145>
+<boids-146.png, id=801, 1455.4375pt x 772.8875pt>
+File: boids-146.png Graphic file (type png)
+<use boids-146.png>
+Package pdftex.def Info: boids-146.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-146.png> <a0,fr146>
+<boids-147.png, id=804, 1455.4375pt x 772.8875pt>
+File: boids-147.png Graphic file (type png)
+<use boids-147.png>
+Package pdftex.def Info: boids-147.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-147.png> <a0,fr147>
+<boids-148.png, id=807, 1455.4375pt x 772.8875pt>
+File: boids-148.png Graphic file (type png)
+<use boids-148.png>
+Package pdftex.def Info: boids-148.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-148.png> <a0,fr148>
+<boids-149.png, id=810, 1455.4375pt x 772.8875pt>
+File: boids-149.png Graphic file (type png)
+<use boids-149.png>
+Package pdftex.def Info: boids-149.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-149.png> <a0,fr149>
+<boids-150.png, id=813, 1455.4375pt x 772.8875pt>
+File: boids-150.png Graphic file (type png)
+<use boids-150.png>
+Package pdftex.def Info: boids-150.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-150.png> <a0,fr150>
+<boids-151.png, id=816, 1455.4375pt x 772.8875pt>
+File: boids-151.png Graphic file (type png)
+<use boids-151.png>
+Package pdftex.def Info: boids-151.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-151.png> <a0,fr151>
+<boids-152.png, id=819, 1455.4375pt x 772.8875pt>
+File: boids-152.png Graphic file (type png)
+<use boids-152.png>
+Package pdftex.def Info: boids-152.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-152.png> <a0,fr152>
+<boids-153.png, id=822, 1455.4375pt x 772.8875pt>
+File: boids-153.png Graphic file (type png)
+<use boids-153.png>
+Package pdftex.def Info: boids-153.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-153.png> <a0,fr153>
+<boids-154.png, id=825, 1455.4375pt x 772.8875pt>
+File: boids-154.png Graphic file (type png)
+<use boids-154.png>
+Package pdftex.def Info: boids-154.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-154.png> <a0,fr154>
+<boids-155.png, id=828, 1455.4375pt x 772.8875pt>
+File: boids-155.png Graphic file (type png)
+<use boids-155.png>
+Package pdftex.def Info: boids-155.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-155.png> <a0,fr155>
+<boids-156.png, id=831, 1455.4375pt x 772.8875pt>
+File: boids-156.png Graphic file (type png)
+<use boids-156.png>
+Package pdftex.def Info: boids-156.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-156.png> <a0,fr156>
+<boids-157.png, id=834, 1455.4375pt x 772.8875pt>
+File: boids-157.png Graphic file (type png)
+<use boids-157.png>
+Package pdftex.def Info: boids-157.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-157.png> <a0,fr157>
+<boids-158.png, id=837, 1455.4375pt x 772.8875pt>
+File: boids-158.png Graphic file (type png)
+<use boids-158.png>
+Package pdftex.def Info: boids-158.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-158.png> <a0,fr158>
+<boids-159.png, id=840, 1455.4375pt x 772.8875pt>
+File: boids-159.png Graphic file (type png)
+<use boids-159.png>
+Package pdftex.def Info: boids-159.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-159.png> <a0,fr159>
+<boids-160.png, id=843, 1455.4375pt x 772.8875pt>
+File: boids-160.png Graphic file (type png)
+<use boids-160.png>
+Package pdftex.def Info: boids-160.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-160.png> <a0,fr160>
+<boids-161.png, id=846, 1455.4375pt x 772.8875pt>
+File: boids-161.png Graphic file (type png)
+<use boids-161.png>
+Package pdftex.def Info: boids-161.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-161.png> <a0,fr161>
+<boids-162.png, id=849, 1455.4375pt x 772.8875pt>
+File: boids-162.png Graphic file (type png)
+<use boids-162.png>
+Package pdftex.def Info: boids-162.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-162.png> <a0,fr162>
+<boids-163.png, id=852, 1455.4375pt x 772.8875pt>
+File: boids-163.png Graphic file (type png)
+<use boids-163.png>
+Package pdftex.def Info: boids-163.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-163.png> <a0,fr163>
+<boids-164.png, id=855, 1455.4375pt x 772.8875pt>
+File: boids-164.png Graphic file (type png)
+<use boids-164.png>
+Package pdftex.def Info: boids-164.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-164.png> <a0,fr164>
+<boids-165.png, id=858, 1455.4375pt x 772.8875pt>
+File: boids-165.png Graphic file (type png)
+<use boids-165.png>
+Package pdftex.def Info: boids-165.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-165.png> <a0,fr165>
+<boids-166.png, id=861, 1455.4375pt x 772.8875pt>
+File: boids-166.png Graphic file (type png)
+<use boids-166.png>
+Package pdftex.def Info: boids-166.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-166.png> <a0,fr166>
+<boids-167.png, id=864, 1455.4375pt x 772.8875pt>
+File: boids-167.png Graphic file (type png)
+<use boids-167.png>
+Package pdftex.def Info: boids-167.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-167.png> <a0,fr167>
+<boids-168.png, id=867, 1455.4375pt x 772.8875pt>
+File: boids-168.png Graphic file (type png)
+<use boids-168.png>
+Package pdftex.def Info: boids-168.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-168.png> <a0,fr168>
+<boids-169.png, id=870, 1455.4375pt x 772.8875pt>
+File: boids-169.png Graphic file (type png)
+<use boids-169.png>
+Package pdftex.def Info: boids-169.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-169.png> <a0,fr169>
+<boids-170.png, id=873, 1455.4375pt x 772.8875pt>
+File: boids-170.png Graphic file (type png)
+<use boids-170.png>
+Package pdftex.def Info: boids-170.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-170.png> <a0,fr170>
+<boids-171.png, id=876, 1455.4375pt x 772.8875pt>
+File: boids-171.png Graphic file (type png)
+<use boids-171.png>
+Package pdftex.def Info: boids-171.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-171.png> <a0,fr171>
+<boids-172.png, id=879, 1455.4375pt x 772.8875pt>
+File: boids-172.png Graphic file (type png)
+<use boids-172.png>
+Package pdftex.def Info: boids-172.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-172.png> <a0,fr172>
+<boids-173.png, id=882, 1455.4375pt x 772.8875pt>
+File: boids-173.png Graphic file (type png)
+<use boids-173.png>
+Package pdftex.def Info: boids-173.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-173.png> <a0,fr173>
+<boids-174.png, id=885, 1455.4375pt x 772.8875pt>
+File: boids-174.png Graphic file (type png)
+<use boids-174.png>
+Package pdftex.def Info: boids-174.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-174.png> <a0,fr174>
+<boids-175.png, id=888, 1455.4375pt x 772.8875pt>
+File: boids-175.png Graphic file (type png)
+<use boids-175.png>
+Package pdftex.def Info: boids-175.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-175.png> <a0,fr175>
+<boids-176.png, id=891, 1455.4375pt x 772.8875pt>
+File: boids-176.png Graphic file (type png)
+<use boids-176.png>
+Package pdftex.def Info: boids-176.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-176.png> <a0,fr176>
+<boids-177.png, id=894, 1455.4375pt x 772.8875pt>
+File: boids-177.png Graphic file (type png)
+<use boids-177.png>
+Package pdftex.def Info: boids-177.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-177.png> <a0,fr177>
+<boids-178.png, id=897, 1455.4375pt x 772.8875pt>
+File: boids-178.png Graphic file (type png)
+<use boids-178.png>
+Package pdftex.def Info: boids-178.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-178.png> <a0,fr178>
+<boids-179.png, id=900, 1455.4375pt x 772.8875pt>
+File: boids-179.png Graphic file (type png)
+<use boids-179.png>
+Package pdftex.def Info: boids-179.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-179.png> <a0,fr179>
+<boids-180.png, id=903, 1455.4375pt x 772.8875pt>
+File: boids-180.png Graphic file (type png)
+<use boids-180.png>
+Package pdftex.def Info: boids-180.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-180.png> <a0,fr180>
+<boids-181.png, id=906, 1455.4375pt x 772.8875pt>
+File: boids-181.png Graphic file (type png)
+<use boids-181.png>
+Package pdftex.def Info: boids-181.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-181.png> <a0,fr181>
+<boids-182.png, id=909, 1455.4375pt x 772.8875pt>
+File: boids-182.png Graphic file (type png)
+<use boids-182.png>
+Package pdftex.def Info: boids-182.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-182.png> <a0,fr182>
+<boids-183.png, id=912, 1455.4375pt x 772.8875pt>
+File: boids-183.png Graphic file (type png)
+<use boids-183.png>
+Package pdftex.def Info: boids-183.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-183.png> <a0,fr183>
+<boids-184.png, id=915, 1455.4375pt x 772.8875pt>
+File: boids-184.png Graphic file (type png)
+<use boids-184.png>
+Package pdftex.def Info: boids-184.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-184.png> <a0,fr184>
+<boids-185.png, id=918, 1455.4375pt x 772.8875pt>
+File: boids-185.png Graphic file (type png)
+<use boids-185.png>
+Package pdftex.def Info: boids-185.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-185.png> <a0,fr185>
+<boids-186.png, id=921, 1455.4375pt x 772.8875pt>
+File: boids-186.png Graphic file (type png)
+<use boids-186.png>
+Package pdftex.def Info: boids-186.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-186.png> <a0,fr186>
+<boids-187.png, id=924, 1455.4375pt x 772.8875pt>
+File: boids-187.png Graphic file (type png)
+<use boids-187.png>
+Package pdftex.def Info: boids-187.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-187.png> <a0,fr187>
+<boids-188.png, id=927, 1455.4375pt x 772.8875pt>
+File: boids-188.png Graphic file (type png)
+<use boids-188.png>
+Package pdftex.def Info: boids-188.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-188.png> <a0,fr188>
+<boids-189.png, id=930, 1455.4375pt x 772.8875pt>
+File: boids-189.png Graphic file (type png)
+<use boids-189.png>
+Package pdftex.def Info: boids-189.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-189.png> <a0,fr189>
+<boids-190.png, id=933, 1455.4375pt x 772.8875pt>
+File: boids-190.png Graphic file (type png)
+<use boids-190.png>
+Package pdftex.def Info: boids-190.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-190.png> <a0,fr190>
+<boids-191.png, id=936, 1455.4375pt x 772.8875pt>
+File: boids-191.png Graphic file (type png)
+<use boids-191.png>
+Package pdftex.def Info: boids-191.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-191.png> <a0,fr191>
+<boids-192.png, id=939, 1455.4375pt x 772.8875pt>
+File: boids-192.png Graphic file (type png)
+<use boids-192.png>
+Package pdftex.def Info: boids-192.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-192.png> <a0,fr192>
+<boids-193.png, id=942, 1455.4375pt x 772.8875pt>
+File: boids-193.png Graphic file (type png)
+<use boids-193.png>
+Package pdftex.def Info: boids-193.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-193.png> <a0,fr193>
+<boids-194.png, id=945, 1455.4375pt x 772.8875pt>
+File: boids-194.png Graphic file (type png)
+<use boids-194.png>
+Package pdftex.def Info: boids-194.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-194.png> <a0,fr194>
+<boids-195.png, id=948, 1455.4375pt x 772.8875pt>
+File: boids-195.png Graphic file (type png)
+<use boids-195.png>
+Package pdftex.def Info: boids-195.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-195.png> <a0,fr195>
+<boids-196.png, id=951, 1455.4375pt x 772.8875pt>
+File: boids-196.png Graphic file (type png)
+<use boids-196.png>
+Package pdftex.def Info: boids-196.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-196.png> <a0,fr196>
+<boids-197.png, id=954, 1455.4375pt x 772.8875pt>
+File: boids-197.png Graphic file (type png)
+<use boids-197.png>
+Package pdftex.def Info: boids-197.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-197.png> <a0,fr197>
+<boids-198.png, id=957, 1455.4375pt x 772.8875pt>
+File: boids-198.png Graphic file (type png)
+<use boids-198.png>
+Package pdftex.def Info: boids-198.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-198.png> <a0,fr198>
+<boids-199.png, id=960, 1455.4375pt x 772.8875pt>
+File: boids-199.png Graphic file (type png)
+<use boids-199.png>
+Package pdftex.def Info: boids-199.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-199.png> <a0,fr199>
+<boids-200.png, id=963, 1455.4375pt x 772.8875pt>
+File: boids-200.png Graphic file (type png)
+<use boids-200.png>
+Package pdftex.def Info: boids-200.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-200.png> <a0,fr200>
+<boids-201.png, id=966, 1455.4375pt x 772.8875pt>
+File: boids-201.png Graphic file (type png)
+<use boids-201.png>
+Package pdftex.def Info: boids-201.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-201.png> <a0,fr201>
+<boids-202.png, id=969, 1455.4375pt x 772.8875pt>
+File: boids-202.png Graphic file (type png)
+<use boids-202.png>
+Package pdftex.def Info: boids-202.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-202.png> <a0,fr202>
+<boids-203.png, id=972, 1455.4375pt x 772.8875pt>
+File: boids-203.png Graphic file (type png)
+<use boids-203.png>
+Package pdftex.def Info: boids-203.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-203.png> <a0,fr203>
+<boids-204.png, id=975, 1455.4375pt x 772.8875pt>
+File: boids-204.png Graphic file (type png)
+<use boids-204.png>
+Package pdftex.def Info: boids-204.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-204.png> <a0,fr204>
+<boids-205.png, id=978, 1455.4375pt x 772.8875pt>
+File: boids-205.png Graphic file (type png)
+<use boids-205.png>
+Package pdftex.def Info: boids-205.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-205.png> <a0,fr205>
+<boids-206.png, id=982, 1455.4375pt x 772.8875pt>
+File: boids-206.png Graphic file (type png)
+<use boids-206.png>
+Package pdftex.def Info: boids-206.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-206.png> <a0,fr206>
+<boids-207.png, id=985, 1455.4375pt x 772.8875pt>
+File: boids-207.png Graphic file (type png)
+<use boids-207.png>
+Package pdftex.def Info: boids-207.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-207.png> <a0,fr207>
+<boids-208.png, id=988, 1455.4375pt x 772.8875pt>
+File: boids-208.png Graphic file (type png)
+<use boids-208.png>
+Package pdftex.def Info: boids-208.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-208.png> <a0,fr208>
+<boids-209.png, id=991, 1455.4375pt x 772.8875pt>
+File: boids-209.png Graphic file (type png)
+<use boids-209.png>
+Package pdftex.def Info: boids-209.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-209.png> <a0,fr209>
+<boids-210.png, id=994, 1455.4375pt x 772.8875pt>
+File: boids-210.png Graphic file (type png)
+<use boids-210.png>
+Package pdftex.def Info: boids-210.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-210.png> <a0,fr210>
+<boids-211.png, id=997, 1455.4375pt x 772.8875pt>
+File: boids-211.png Graphic file (type png)
+<use boids-211.png>
+Package pdftex.def Info: boids-211.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-211.png> <a0,fr211>
+<boids-212.png, id=1000, 1455.4375pt x 772.8875pt>
+File: boids-212.png Graphic file (type png)
+<use boids-212.png>
+Package pdftex.def Info: boids-212.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-212.png> <a0,fr212>
+<boids-213.png, id=1003, 1455.4375pt x 772.8875pt>
+File: boids-213.png Graphic file (type png)
+<use boids-213.png>
+Package pdftex.def Info: boids-213.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-213.png> <a0,fr213>
+<boids-214.png, id=1006, 1455.4375pt x 772.8875pt>
+File: boids-214.png Graphic file (type png)
+<use boids-214.png>
+Package pdftex.def Info: boids-214.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-214.png> <a0,fr214>
+<boids-215.png, id=1009, 1455.4375pt x 772.8875pt>
+File: boids-215.png Graphic file (type png)
+<use boids-215.png>
+Package pdftex.def Info: boids-215.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-215.png> <a0,fr215>
+<boids-216.png, id=1012, 1455.4375pt x 772.8875pt>
+File: boids-216.png Graphic file (type png)
+<use boids-216.png>
+Package pdftex.def Info: boids-216.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-216.png> <a0,fr216>
+<boids-217.png, id=1015, 1455.4375pt x 772.8875pt>
+File: boids-217.png Graphic file (type png)
+<use boids-217.png>
+Package pdftex.def Info: boids-217.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-217.png> <a0,fr217>
+<boids-218.png, id=1018, 1455.4375pt x 772.8875pt>
+File: boids-218.png Graphic file (type png)
+<use boids-218.png>
+Package pdftex.def Info: boids-218.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-218.png> <a0,fr218>
+<boids-219.png, id=1021, 1455.4375pt x 772.8875pt>
+File: boids-219.png Graphic file (type png)
+<use boids-219.png>
+Package pdftex.def Info: boids-219.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-219.png> <a0,fr219>
+<boids-220.png, id=1024, 1455.4375pt x 772.8875pt>
+File: boids-220.png Graphic file (type png)
+<use boids-220.png>
+Package pdftex.def Info: boids-220.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-220.png> <a0,fr220>
+<boids-221.png, id=1027, 1455.4375pt x 772.8875pt>
+File: boids-221.png Graphic file (type png)
+<use boids-221.png>
+Package pdftex.def Info: boids-221.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-221.png> <a0,fr221>
+<boids-222.png, id=1030, 1455.4375pt x 772.8875pt>
+File: boids-222.png Graphic file (type png)
+<use boids-222.png>
+Package pdftex.def Info: boids-222.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-222.png> <a0,fr222>
+<boids-223.png, id=1033, 1455.4375pt x 772.8875pt>
+File: boids-223.png Graphic file (type png)
+<use boids-223.png>
+Package pdftex.def Info: boids-223.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-223.png> <a0,fr223>
+<boids-224.png, id=1036, 1455.4375pt x 772.8875pt>
+File: boids-224.png Graphic file (type png)
+<use boids-224.png>
+Package pdftex.def Info: boids-224.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-224.png> <a0,fr224>
+<boids-225.png, id=1039, 1455.4375pt x 772.8875pt>
+File: boids-225.png Graphic file (type png)
+<use boids-225.png>
+Package pdftex.def Info: boids-225.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-225.png> <a0,fr225>
+<boids-226.png, id=1042, 1455.4375pt x 772.8875pt>
+File: boids-226.png Graphic file (type png)
+<use boids-226.png>
+Package pdftex.def Info: boids-226.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-226.png> <a0,fr226>
+<boids-227.png, id=1045, 1455.4375pt x 772.8875pt>
+File: boids-227.png Graphic file (type png)
+<use boids-227.png>
+Package pdftex.def Info: boids-227.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-227.png> <a0,fr227>
+<boids-228.png, id=1048, 1455.4375pt x 772.8875pt>
+File: boids-228.png Graphic file (type png)
+<use boids-228.png>
+Package pdftex.def Info: boids-228.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-228.png> <a0,fr228>
+<boids-229.png, id=1051, 1455.4375pt x 772.8875pt>
+File: boids-229.png Graphic file (type png)
+<use boids-229.png>
+Package pdftex.def Info: boids-229.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-229.png> <a0,fr229>
+<boids-230.png, id=1054, 1455.4375pt x 772.8875pt>
+File: boids-230.png Graphic file (type png)
+<use boids-230.png>
+Package pdftex.def Info: boids-230.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-230.png> <a0,fr230>
+<boids-231.png, id=1057, 1455.4375pt x 772.8875pt>
+File: boids-231.png Graphic file (type png)
+<use boids-231.png>
+Package pdftex.def Info: boids-231.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-231.png> <a0,fr231>
+<boids-232.png, id=1060, 1455.4375pt x 772.8875pt>
+File: boids-232.png Graphic file (type png)
+<use boids-232.png>
+Package pdftex.def Info: boids-232.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-232.png> <a0,fr232>
+<boids-233.png, id=1063, 1455.4375pt x 772.8875pt>
+File: boids-233.png Graphic file (type png)
+<use boids-233.png>
+Package pdftex.def Info: boids-233.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-233.png> <a0,fr233>
+<boids-234.png, id=1066, 1455.4375pt x 772.8875pt>
+File: boids-234.png Graphic file (type png)
+<use boids-234.png>
+Package pdftex.def Info: boids-234.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-234.png> <a0,fr234>
+<boids-235.png, id=1069, 1455.4375pt x 772.8875pt>
+File: boids-235.png Graphic file (type png)
+<use boids-235.png>
+Package pdftex.def Info: boids-235.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-235.png> <a0,fr235>
+<boids-236.png, id=1072, 1455.4375pt x 772.8875pt>
+File: boids-236.png Graphic file (type png)
+<use boids-236.png>
+Package pdftex.def Info: boids-236.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-236.png> <a0,fr236>
+<boids-237.png, id=1075, 1455.4375pt x 772.8875pt>
+File: boids-237.png Graphic file (type png)
+<use boids-237.png>
+Package pdftex.def Info: boids-237.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-237.png> <a0,fr237>
+<boids-238.png, id=1078, 1455.4375pt x 772.8875pt>
+File: boids-238.png Graphic file (type png)
+<use boids-238.png>
+Package pdftex.def Info: boids-238.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-238.png> <a0,fr238>
+<boids-239.png, id=1081, 1455.4375pt x 772.8875pt>
+File: boids-239.png Graphic file (type png)
+<use boids-239.png>
+Package pdftex.def Info: boids-239.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-239.png> <a0,fr239>
+<boids-240.png, id=1084, 1455.4375pt x 772.8875pt>
+File: boids-240.png Graphic file (type png)
+<use boids-240.png>
+Package pdftex.def Info: boids-240.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-240.png> <a0,fr240>
+<boids-241.png, id=1087, 1455.4375pt x 772.8875pt>
+File: boids-241.png Graphic file (type png)
+<use boids-241.png>
+Package pdftex.def Info: boids-241.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-241.png> <a0,fr241>
+<boids-242.png, id=1090, 1455.4375pt x 772.8875pt>
+File: boids-242.png Graphic file (type png)
+<use boids-242.png>
+Package pdftex.def Info: boids-242.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-242.png> <a0,fr242>
+<boids-243.png, id=1093, 1455.4375pt x 772.8875pt>
+File: boids-243.png Graphic file (type png)
+<use boids-243.png>
+Package pdftex.def Info: boids-243.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-243.png> <a0,fr243>
+<boids-244.png, id=1096, 1455.4375pt x 772.8875pt>
+File: boids-244.png Graphic file (type png)
+<use boids-244.png>
+Package pdftex.def Info: boids-244.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-244.png> <a0,fr244>
+<boids-245.png, id=1099, 1455.4375pt x 772.8875pt>
+File: boids-245.png Graphic file (type png)
+<use boids-245.png>
+Package pdftex.def Info: boids-245.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-245.png> <a0,fr245>
+<boids-246.png, id=1102, 1455.4375pt x 772.8875pt>
+File: boids-246.png Graphic file (type png)
+<use boids-246.png>
+Package pdftex.def Info: boids-246.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-246.png> <a0,fr246>
+<boids-247.png, id=1105, 1455.4375pt x 772.8875pt>
+File: boids-247.png Graphic file (type png)
+<use boids-247.png>
+Package pdftex.def Info: boids-247.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-247.png> <a0,fr247>
+<boids-248.png, id=1108, 1455.4375pt x 772.8875pt>
+File: boids-248.png Graphic file (type png)
+<use boids-248.png>
+Package pdftex.def Info: boids-248.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-248.png> <a0,fr248>
+<boids-249.png, id=1111, 1455.4375pt x 772.8875pt>
+File: boids-249.png Graphic file (type png)
+<use boids-249.png>
+Package pdftex.def Info: boids-249.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-249.png> <a0,fr249>
+<boids-250.png, id=1114, 1455.4375pt x 772.8875pt>
+File: boids-250.png Graphic file (type png)
+<use boids-250.png>
+Package pdftex.def Info: boids-250.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-250.png> <a0,fr250>
+<boids-251.png, id=1117, 1455.4375pt x 772.8875pt>
+File: boids-251.png Graphic file (type png)
+<use boids-251.png>
+Package pdftex.def Info: boids-251.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-251.png> <a0,fr251>
+<boids-252.png, id=1120, 1455.4375pt x 772.8875pt>
+File: boids-252.png Graphic file (type png)
+<use boids-252.png>
+Package pdftex.def Info: boids-252.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-252.png> <a0,fr252>
+<boids-253.png, id=1123, 1455.4375pt x 772.8875pt>
+File: boids-253.png Graphic file (type png)
+<use boids-253.png>
+Package pdftex.def Info: boids-253.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-253.png> <a0,fr253>
+<boids-254.png, id=1126, 1455.4375pt x 772.8875pt>
+File: boids-254.png Graphic file (type png)
+<use boids-254.png>
+Package pdftex.def Info: boids-254.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-254.png> <a0,fr254>
+<boids-255.png, id=1129, 1455.4375pt x 772.8875pt>
+File: boids-255.png Graphic file (type png)
+<use boids-255.png>
+Package pdftex.def Info: boids-255.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-255.png> <a0,fr255>
+<boids-256.png, id=1132, 1455.4375pt x 772.8875pt>
+File: boids-256.png Graphic file (type png)
+<use boids-256.png>
+Package pdftex.def Info: boids-256.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-256.png> <a0,fr256>
+<boids-257.png, id=1135, 1455.4375pt x 772.8875pt>
+File: boids-257.png Graphic file (type png)
+<use boids-257.png>
+Package pdftex.def Info: boids-257.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-257.png> <a0,fr257>
+<boids-258.png, id=1138, 1455.4375pt x 772.8875pt>
+File: boids-258.png Graphic file (type png)
+<use boids-258.png>
+Package pdftex.def Info: boids-258.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-258.png> <a0,fr258>
+<boids-259.png, id=1141, 1455.4375pt x 772.8875pt>
+File: boids-259.png Graphic file (type png)
+<use boids-259.png>
+Package pdftex.def Info: boids-259.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-259.png> <a0,fr259>
+<boids-260.png, id=1144, 1455.4375pt x 772.8875pt>
+File: boids-260.png Graphic file (type png)
+<use boids-260.png>
+Package pdftex.def Info: boids-260.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-260.png> <a0,fr260>
+<boids-261.png, id=1147, 1455.4375pt x 772.8875pt>
+File: boids-261.png Graphic file (type png)
+<use boids-261.png>
+Package pdftex.def Info: boids-261.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-261.png> <a0,fr261>
+<boids-262.png, id=1150, 1455.4375pt x 772.8875pt>
+File: boids-262.png Graphic file (type png)
+<use boids-262.png>
+Package pdftex.def Info: boids-262.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-262.png> <a0,fr262>
+<boids-263.png, id=1153, 1455.4375pt x 772.8875pt>
+File: boids-263.png Graphic file (type png)
+<use boids-263.png>
+Package pdftex.def Info: boids-263.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-263.png> <a0,fr263>
+<boids-264.png, id=1156, 1455.4375pt x 772.8875pt>
+File: boids-264.png Graphic file (type png)
+<use boids-264.png>
+Package pdftex.def Info: boids-264.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-264.png> <a0,fr264>
+<boids-265.png, id=1159, 1455.4375pt x 772.8875pt>
+File: boids-265.png Graphic file (type png)
+<use boids-265.png>
+Package pdftex.def Info: boids-265.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-265.png> <a0,fr265>
+<boids-266.png, id=1162, 1455.4375pt x 772.8875pt>
+File: boids-266.png Graphic file (type png)
+<use boids-266.png>
+Package pdftex.def Info: boids-266.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-266.png> <a0,fr266>
+<boids-267.png, id=1165, 1455.4375pt x 772.8875pt>
+File: boids-267.png Graphic file (type png)
+<use boids-267.png>
+Package pdftex.def Info: boids-267.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-267.png> <a0,fr267>
+<boids-268.png, id=1168, 1455.4375pt x 772.8875pt>
+File: boids-268.png Graphic file (type png)
+<use boids-268.png>
+Package pdftex.def Info: boids-268.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-268.png> <a0,fr268>
+<boids-269.png, id=1171, 1455.4375pt x 772.8875pt>
+File: boids-269.png Graphic file (type png)
+<use boids-269.png>
+Package pdftex.def Info: boids-269.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-269.png> <a0,fr269>
+<boids-270.png, id=1174, 1455.4375pt x 772.8875pt>
+File: boids-270.png Graphic file (type png)
+<use boids-270.png>
+Package pdftex.def Info: boids-270.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-270.png> <a0,fr270>
+<boids-271.png, id=1177, 1455.4375pt x 772.8875pt>
+File: boids-271.png Graphic file (type png)
+<use boids-271.png>
+Package pdftex.def Info: boids-271.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-271.png> <a0,fr271>
+<boids-272.png, id=1180, 1455.4375pt x 772.8875pt>
+File: boids-272.png Graphic file (type png)
+<use boids-272.png>
+Package pdftex.def Info: boids-272.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-272.png> <a0,fr272>
+<boids-273.png, id=1183, 1455.4375pt x 772.8875pt>
+File: boids-273.png Graphic file (type png)
+<use boids-273.png>
+Package pdftex.def Info: boids-273.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-273.png> <a0,fr273>
+<boids-274.png, id=1186, 1455.4375pt x 772.8875pt>
+File: boids-274.png Graphic file (type png)
+<use boids-274.png>
+Package pdftex.def Info: boids-274.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-274.png> <a0,fr274>
+<boids-275.png, id=1189, 1455.4375pt x 772.8875pt>
+File: boids-275.png Graphic file (type png)
+<use boids-275.png>
+Package pdftex.def Info: boids-275.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-275.png> <a0,fr275>
+<boids-276.png, id=1192, 1455.4375pt x 772.8875pt>
+File: boids-276.png Graphic file (type png)
+<use boids-276.png>
+Package pdftex.def Info: boids-276.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-276.png> <a0,fr276>
+<boids-277.png, id=1195, 1455.4375pt x 772.8875pt>
+File: boids-277.png Graphic file (type png)
+<use boids-277.png>
+Package pdftex.def Info: boids-277.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-277.png> <a0,fr277>
+<boids-278.png, id=1199, 1455.4375pt x 772.8875pt>
+File: boids-278.png Graphic file (type png)
+<use boids-278.png>
+Package pdftex.def Info: boids-278.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-278.png> <a0,fr278>
+<boids-279.png, id=1203, 1455.4375pt x 772.8875pt>
+File: boids-279.png Graphic file (type png)
+<use boids-279.png>
+Package pdftex.def Info: boids-279.png  used on input line 206.
+(pdftex.def)             Requested size: 1455.43396pt x 772.8856pt.
+ <./boids-279.png> <a0,fr279> [11
+
+]
+<startplatform.png, id=1550, 421.575pt x 431.6125pt>
+File: startplatform.png Graphic file (type png)
+<use startplatform.png>
+Package pdftex.def Info: startplatform.png  used on input line 236.
+(pdftex.def)             Requested size: 85.57382pt x 87.61179pt.
+<goalplatform.png, id=1551, 268.00125pt x 274.52562pt>
+File: goalplatform.png Graphic file (type png)
+<use goalplatform.png>
+Package pdftex.def Info: goalplatform.png  used on input line 236.
+(pdftex.def)             Requested size: 85.57382pt x 87.6531pt.
+ [12
+
+ <./startplatform.png> <./goalplatform.png>]
+<lacunarity2.png, id=1581, 689.57625pt x 444.66125pt>
+File: lacunarity2.png Graphic file (type png)
+<use lacunarity2.png>
+Package pdftex.def Info: lacunarity2.png  used on input line 251.
+(pdftex.def)             Requested size: 137.9128pt x 88.93066pt.
+ [13
+
+ <./lacunarity2.png>]
+<naive-ta-edited.png, id=1612, 532.99126pt x 438.63875pt>
+File: naive-ta-edited.png Graphic file (type png)
+<use naive-ta-edited.png>
+Package pdftex.def Info: naive-ta-edited.png  used on input line 273.
+(pdftex.def)             Requested size: 106.59636pt x 87.72618pt.
+ [14
+
+ <./naive-ta-edited.png>] [15
+
+] [16
+
+] [17
+
+] [18
+
+]
+<chart.png, id=1763, 2127.95pt x 803.0pt>
+File: chart.png Graphic file (type png)
+<use chart.png>
+Package pdftex.def Info: chart.png  used on input line 366.
+(pdftex.def)             Requested size: 239.60567pt x 90.41324pt.
+ [19
+
+ <./chart.png>] [20
+
+]
+<gantt.png, id=1819, 662.475pt x 547.04375pt>
+File: gantt.png Graphic file (type png)
+<use gantt.png>
+Package pdftex.def Info: gantt.png  used on input line 402.
+(pdftex.def)             Requested size: 205.37926pt x 169.59015pt.
+ [21
+
+ <./gantt.png>] [22
+
+] [23
+
+] [24
+
+]
+<logo.png, id=1952, 803.0pt x 803.0pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 442.
+(pdftex.def)             Requested size: 34.23161pt x 34.222pt.
+ (./presentation.bbl) [25
+
+ <./logo.png> </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+\tf@nav=\write6
+\openout6 = `presentation.nav'.
+
+\tf@toc=\write7
+\openout7 = `presentation.toc'.
+
+\tf@snm=\write8
+\openout8 = `presentation.snm'.
+
+ (./presentation.aux)
+Package rerunfilecheck Info: File `presentation.out' has not changed.
+(rerunfilecheck)             Checksum: 58787DA85C883BC049ABD6A7DFB017AA;1238.
+ ) 
+Here is how much of TeX's memory you used:
+ 27887 strings out of 478268
+ 543464 string characters out of 5846347
+ 795880 words of memory out of 5000000
+ 45238 multiletter control sequences out of 15000+600000
+ 480466 words of font info for 68 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,15n,122p,485b,938s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on presentation.pdf (25 pages, 3948102 bytes).
+PDF statistics:
+ 2047 PDF objects out of 2073 (max. 8388607)
+ 1361 compressed objects within 14 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 3448 words of extra memory for PDF output out of 10000 (max. 10000000)
+

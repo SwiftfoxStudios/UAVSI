@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bouabdallah}
+Samir Bouabdallah and Roland~Y. Siegwart.
+\newblock Full control of a quadrotor.
+\newblock {\em 2007 IEEE/RSJ International Conference on Intelligent Robots and
+  Systems}, pages 153--158, 2007.
+
+\bibitem{rafaelkuebler_2018}
+RafaelKuebler.
+\newblock Github - rafaelkuebler/flocking: 2d flocking in the unity3d game
+  engine using craig reynolds’ boids, 2018.
+
+\bibitem{boids}
+Craig~W. Reynolds.
+\newblock Boids (flocks, herds, and schools: a distributed behavioral model),
+  2024.
+
+\end{thebibliography}

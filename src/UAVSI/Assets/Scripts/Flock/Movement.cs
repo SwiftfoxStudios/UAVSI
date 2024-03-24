@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -12,6 +13,8 @@ public class Movement : MonoBehaviour
     public GameObject thrustD2;
     public GameObject thrustD3;
     public GameObject thrustD4;
+
+    public bool usePID = true;
 
     public float kprop_altitude = 6f;
     public float kinteg_altitude = 5f;
@@ -31,7 +34,7 @@ public class Movement : MonoBehaviour
     private bool firstFrame = true;
     private float targetAltitude = 0;
 
-    float desiredPitchRate = 0;
+    public float desiredPitchRate = 0;
     float pitchRate = 0;
     float pitchError = 0;
     float pitchInput = 0;
@@ -87,8 +90,15 @@ public class Movement : MonoBehaviour
         }
 
         // PID controller
-        pitchInput = kprop_pitchroll* pitchError + integral_pitch + kinteg_pitchroll* (pitchError + lastError_pitch)/2 + kderiv_pitchroll* (pitchError - lastError_pitch) / Time.deltaTime;
-        lastError_pitch= pitchError;
+        if(usePID){
+            pitchInput = kprop_pitchroll* pitchError + integral_pitch + kinteg_pitchroll* (pitchError + lastError_pitch)/2 + kderiv_pitchroll* (pitchError - lastError_pitch) / Time.deltaTime;
+            lastError_pitch= pitchError;
+        }
+        else{
+            pitchInput = desiredPitchRate;
+        }
+        // pitchInput = kprop_pitchroll* pitchError + integral_pitch + kinteg_pitchroll* (pitchError + lastError_pitch)/2 + kderiv_pitchroll* (pitchError - lastError_pitch) / Time.deltaTime;
+        // lastError_pitch= pitchError;
         
         // Clamp pitch input for safety
         pitchInput = Mathf.Clamp(pitchInput, -20f, 20f);
@@ -130,8 +140,15 @@ public class Movement : MonoBehaviour
         }
 
         // PID controller
-        rollInput = kprop_pitchroll* rollError + integral_roll + kinteg_pitchroll* (rollError + lastError_roll)/2 + kderiv_pitchroll* (rollError - lastError_roll) / Time.deltaTime;
-        lastError_roll = rollError;
+        if(usePID){
+            rollInput = kprop_pitchroll* rollError + integral_roll + kinteg_pitchroll* (rollError + lastError_roll)/2 + kderiv_pitchroll* (rollError - lastError_roll) / Time.deltaTime;
+            lastError_roll = rollError;
+        }
+        else{
+            rollInput = desiredRollRate;
+        }
+        // rollInput = kprop_pitchroll* rollError + integral_roll + kinteg_pitchroll* (rollError + lastError_roll)/2 + kderiv_pitchroll* (rollError - lastError_roll) / Time.deltaTime;
+        // lastError_roll = rollError;
 
         // Clamp roll input for safety
         rollInput = Mathf.Clamp(rollInput, -20f, 20f);
@@ -166,8 +183,15 @@ public class Movement : MonoBehaviour
         yawError = desiredYawRate - yawRate;
 
         // PID controller
-        yawInput = kprop_pitchroll * yawError + integral_yaw + kinteg_pitchroll* (yawError + lastError_yaw)/2 + kderiv_pitchroll* (yawError - lastError_yaw) / Time.deltaTime;
-        lastError_yaw = yawError;
+        if(usePID){
+            yawInput = kprop_pitchroll * yawError + integral_yaw + kinteg_pitchroll* (yawError + lastError_yaw)/2 + kderiv_pitchroll* (yawError - lastError_yaw) / Time.deltaTime;
+            lastError_yaw = yawError;
+        }
+        else{
+            yawInput = desiredYawRate;
+        }
+        // yawInput = kprop_pitchroll * yawError + integral_yaw + kinteg_pitchroll* (yawError + lastError_yaw)/2 + kderiv_pitchroll* (yawError - lastError_yaw) / Time.deltaTime;
+        // lastError_yaw = yawError;
 
         // Clamp yaw input for safety
         yawInput = Mathf.Clamp(yawInput, -2f, 2f);
@@ -212,8 +236,17 @@ public class Movement : MonoBehaviour
             integral_altitude = 0;
         }
         // PID controller
-        float throttleInput = kprop_altitude * error + kinteg_altitude * (error + lastError_altitude)/2 + kderiv_altitude * ((error - lastError_altitude) / Time.deltaTime);
-        lastError_altitude = error; 
+        float throttleInput;
+        if(usePID){
+            throttleInput = kprop_altitude * error + kinteg_altitude * (error + lastError_altitude)/2 + kderiv_altitude * ((error - lastError_altitude) / Time.deltaTime);
+            lastError_altitude = error; 
+        }
+        else{
+            throttleInput = targetAltitude;
+        }
+
+        // throttleInput = kprop_altitude * error + kinteg_altitude * (error + lastError_altitude)/2 + kderiv_altitude * ((error - lastError_altitude) / Time.deltaTime);
+        // lastError_altitude = error; 
 
         // Clamp throttle input for safety
         throttleInput = Mathf.Clamp(throttleInput, -40f, 40f);

@@ -25,12 +25,15 @@ public class Flock : MonoBehaviour
     public Dictionary<string, float> lastChangeMade;
     
     public int numAgents = 2;
-    public float spawnRadius = 5.0f;
+    public float spawnRadius = 10.0f;
     public float neighbourRadius = 10.0f;
 
     public float SquareAvoidanceRadius { get { return 12.0f; } }
 
     public float timeReached = 60.0f;
+    public float simTime = 60.0f;
+    public int numOfSimsPerRun = 10;
+    List<float> times = new List<float>();
 
     public int collisionNumber = 0;
     // Start is called before the first frame update
@@ -55,14 +58,25 @@ public class Flock : MonoBehaviour
         {
             behavs = behaviour.WeightedBehaviours();
         }
+
+
         // get number of runs left
         StreamReader reader = new StreamReader("./sims.txt");
         string sims = reader.ReadLine();
         reader.Close();
-        if(sims != null && int.Parse(sims) % 10 == 0)
-        {
-            behaviour.SetWeights(ModifyBehaviours(behavs));
-        }
+
+        // UNCOMMENT FOR ANNEALING
+        //
+        //
+        // if(sims != null && int.Parse(sims) % numOfSimsPerRun == 0) // 100 IS WRONG, DO NOT HARD CODE
+        // {
+        //     behaviour.SetWeights(ModifyBehaviours(behavs));
+        // }
+        // else if(sims == null)
+        // {
+        //     // anneal mode
+        //     behaviour.SetWeights(RandomiseBehaviours(20));
+        // }
         
 
 
@@ -100,7 +114,7 @@ public class Flock : MonoBehaviour
 
 
         InvokeRepeating("UpdatePositions", 0.0f, 0.5f);
-        Invoke("WriteCSV", 59f);
+        Invoke("WriteCSV", simTime - 1.0f);
 
         for (int i=0; i < numAgents; i++){
             Vector3 randomPosition = new Vector3(
@@ -160,6 +174,7 @@ public class Flock : MonoBehaviour
                     goalReached = true;
                 }
                 move = new Vector3(0, 24.5f, 0);
+                
             }
             if(agent.tag == "Perished"){
                 move = new Vector3(0, 0, 0);
@@ -200,6 +215,7 @@ public class Flock : MonoBehaviour
             // agent.GetComponent<Rigidbody>().AddForceAtPosition(agent.transform.up * move.x,agent.transform.position + new Vector3(0.5f,0,0));
             // agent.GetComponent<Rigidbody>().AddForceAtPosition(agent.transform.up * move.z,agent.transform.position + new Vector3(0,0,0.5f));
 
+        
         }
     }
 
@@ -231,19 +247,49 @@ public class Flock : MonoBehaviour
     //     newBehav[randomKey] = modifiedWeight;
 
     //     return newBehav;
-    // }
+    // }x
+
+    Dictionary<string, float> RandomiseBehaviours(int upperCap)
+    {
+        Dictionary<string, float> newBehav = new Dictionary<string, float>
+        {
+            // 8.5,2.5,0.5,17,16.5
+            // 12.5,4,15,18.5,0.5
+            { "avoidance", UnityEngine.Random.Range(2, upperCap) }, // heuristics
+            { "alignment", UnityEngine.Random.Range(2, upperCap) },
+            { "cohesion", UnityEngine.Random.Range(2, upperCap) },
+            { "seeking", UnityEngine.Random.Range(2, upperCap) },
+            { "terrain", UnityEngine.Random.Range(2, upperCap) }
+        };
+
+        return newBehav;
+    }
 
     Dictionary<string, float> ModifyBehaviours(Dictionary<string, float> behavList)
     {
         Dictionary<string, float> newBehav = new Dictionary<string, float>(behavList);
+        float step;
 
-        // Pick a random key from the dictionary
+        // Pick a random key from the dictionary with a value between 0 and 20
         List<string> keys = new List<string>(newBehav.Keys);
-        string randomKey = keys[UnityEngine.Random.Range(0, keys.Count)];
+        string randomKey = "";
+        do
+        {
+            randomKey = keys[UnityEngine.Random.Range(0, keys.Count)];
+        } while (newBehav[randomKey] < 2 || newBehav[randomKey] > 18);
 
         // Modify the weight of the randomly picked key
         float currentWeight = newBehav[randomKey];
-        float modifiedWeight = currentWeight + (UnityEngine.Random.value < 0.5f ? 0.5f : -0.5f);
+        int helperValue = UnityEngine.Random.Range(0, 2);
+        if(helperValue == 0)
+        {
+            step = -1f;
+        }
+        else
+        {
+            step = 1f;
+        }
+        float modifiedWeight = (float)Math.Round(currentWeight + step, 1, MidpointRounding.AwayFromZero);
         newBehav[randomKey] = modifiedWeight;
 
         return newBehav;
@@ -294,8 +340,19 @@ public class Flock : MonoBehaviour
     {
         // if(droneData.Count > 0)
         // {
+            foreach (Agent agent in agents){
+                float time = agent.GetTimeReachedGoal();
+                if(time != 0)
+                {
+                    times.Add(time);
+                }
+                else
+                {
+                    times.Add(60.0f);
+                }
+            }
             TextWriter tw = new StreamWriter(filename, true);
-            tw.WriteLine("Avoidance,Alignment,Cohesion,Seeking,TerrainAvoidance,NumberReached,NumberLostFlock,NumberDead,TimeForFirst,Collisions");
+            tw.WriteLine("Avoidance,Alignment,Cohesion,Seeking,TerrainAvoidance,NumberReached,NumberLostFlock,NumberDead,TimeForFirst,Collisions,TimeForLast");
             tw.Close();
             Dictionary<string, float> behavList = behaviour.WeightedBehaviours();
 
@@ -313,7 +370,8 @@ public class Flock : MonoBehaviour
                             (numAgents - agents.FindAll(x => x.tag == "Goal Reached").Count - agents.FindAll(x => x.tag == "Perished").Count) + "," +
                             agents.FindAll(x => x.tag == "Perished").Count + "," +
                             timeReached + "," +
-                            collisionNumber
+                            collisionNumber + "," +
+                            string.Join(" ", times)
                             );
             // }
             tw.Close();

@@ -13,9 +13,7 @@ public class TerrainAvoidance : FlockBehaviour
         Vector3 velocity = agent.GetComponent<Rigidbody>().velocity;
         float distanceToTerrain = SenseLidar(GameObject.Find("TerrainMesh").GetComponent<MeshCollider>(), agent.transform.position, velocity);
         if(distanceToTerrain < 10f){
-            
-            Debug.Log(agent.name + " is too close to the ground");
-            return 50 * agent.transform.up;
+            return 100 * agent.transform.up;
         }
         else{
             return Vector3.zero;
@@ -27,10 +25,13 @@ public class TerrainAvoidance : FlockBehaviour
         Quaternion angleOfattack = Quaternion.Euler(-80, 0, 0);
         Vector3 rayDirection = angleOfattack * new Vector3(0, sensorDirection.y, sensorDirection.z);
         float distance = Mathf.Infinity;
+        if(rayDirection == Vector3.zero){
+            return distance;
+        }
     
         // Perform the raycast
         RaycastHit hit;
-        if (goal.Raycast(new Ray(rayStart, rayDirection), out hit, Mathf.Infinity))
+        if (goal.Raycast(new Ray(rayStart, rayDirection.normalized), out hit, Mathf.Infinity))
         {
             distance = hit.distance;
             Debug.DrawLine(rayStart, hit.point, Color.white);

@@ -7,6 +7,7 @@ TagManager:
   - In Transit
   - Perished
   - Goal Reached
+  - Obstacle
   layers:
   - Default
   - TransparentFX

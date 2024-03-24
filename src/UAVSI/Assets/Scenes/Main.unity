@@ -123,6 +123,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &178553517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178553519}
+  - component: {fileID: 178553518}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178553518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178553517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fca5177e60848a6b36d2fb58352a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrain: {fileID: 0}
+  meshCollider: {fileID: 0}
+  obstacle: {fileID: 5678625250596585052, guid: ec15d2f99e9294a008e741b39c0d1d84, type: 3}
+--- !u!4 &178553519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178553517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.178528, y: -152.9398, z: 86.659676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440210754
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +344,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -390,11 +438,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342ad76dc441d4275bf222a260bd1de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simulationsToRun: 5000
-  simulationTime: 60
-  timescale: 40
+  simulationsToRun: 50
+  simulationTime: 100
+  timescale: 1
   framerate: 0.025
   temp: 0
+  simsPerRun: 10
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 190246ac98cfe44629fdfa45bd50b9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flock: {fileID: 2061506432}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1237885671
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,11 +952,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 2913529644925153933, guid: f3cf8cb50dd9f4fe68d3bd3ec0a8eadc, type: 3}
-  behaviour: {fileID: 11400000, guid: f25f784bf57044ea6845d75620221a61, type: 2}
-  numAgents: 8
+  behaviour: {fileID: 11400000, guid: f973bd14abd6a41d8827d0d946d1deda, type: 2}
+  numAgents: 1
   spawnRadius: 4
   neighbourRadius: 3
   timeReached: 60
+  simTime: 60
+  numOfSimsPerRun: 10
   collisionNumber: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -906,3 +972,4 @@ SceneRoots:
   - {fileID: 1390627060}
   - {fileID: 1237885673}
   - {fileID: 1391118499}
+  - {fileID: 178553519}

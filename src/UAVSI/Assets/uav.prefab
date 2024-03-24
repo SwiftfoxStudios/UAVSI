@@ -84,12 +84,14 @@ MonoBehaviour:
   thrustD2: {fileID: 7376434310534984808}
   thrustD3: {fileID: 6008888378697648595}
   thrustD4: {fileID: 6397705932719903406}
-  kprop_altitude: 6
-  kinteg_altitude: 5
-  kderiv_altitude: 2
-  kprop_pitchroll: 10
-  kinteg_pitchroll: 10
-  kderiv_pitchroll: 2
+  usePID: 1
+  kprop_altitude: 0
+  kinteg_altitude: 0
+  kderiv_altitude: 0
+  kprop_pitchroll: 8
+  kinteg_pitchroll: 12
+  kderiv_pitchroll: 0.9
+  desiredPitchRate: 0
 --- !u!65 &2446949540294535117
 BoxCollider:
   m_ObjectHideFlags: 0
