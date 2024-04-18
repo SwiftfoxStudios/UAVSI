@@ -1,0 +1,16 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Control Operations and Thrust Levels\relax }}{15}{table.caption.7}%
+\contentsline {table}{\numberline {2}{\ignorespaces Yaw Directions and Respective Forces\relax }}{15}{table.caption.8}%
+\contentsline {table}{\numberline {3}{\ignorespaces Thrust Constants for a drone of mass $m$ kg\relax }}{16}{table.caption.10}%
+\contentsline {table}{\numberline {4}{\ignorespaces Effects of increasing a parameter independently\cite {ang2005pid}\relax }}{22}{table.caption.20}%
+\contentsline {table}{\numberline {5}{\ignorespaces Tuning Constants\relax }}{23}{table.caption.21}%
+\contentsline {table}{\numberline {6}{\ignorespaces Ziegler-Nichols Method\relax }}{23}{table.caption.23}%
+\contentsline {table}{\numberline {7}{\ignorespaces Final PID Constants\relax }}{26}{table.caption.28}%
+\contentsline {table}{\numberline {8}{\ignorespaces Spawn Constants\relax }}{36}{table.caption.35}%
+\contentsline {table}{\numberline {9}{\ignorespaces Boids Weights\relax }}{36}{table.caption.35}%
+\contentsline {table}{\numberline {10}{\ignorespaces Final Boids Weights\relax }}{37}{table.caption.38}%
+\contentsline {table}{\numberline {11}{\ignorespaces Optimal Parameters for Scenario 1\relax }}{56}{table.caption.59}%
+\contentsline {table}{\numberline {12}{\ignorespaces Optimal Parameters for Scenario 2\relax }}{57}{table.caption.61}%
+\contentsline {table}{\numberline {13}{\ignorespaces Optimal Parameters for Scenario 3\relax }}{59}{table.caption.65}%
+\contentsline {table}{\numberline {14}{\ignorespaces Ranges for Obstacle Generation\relax }}{63}{table.caption.67}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparison of Boids and LPFE Models\relax }}{69}{table.caption.71}%
+\contentsline {table}{\numberline {16}{\ignorespaces Time Breakdown\relax }}{78}{table.caption.75}%

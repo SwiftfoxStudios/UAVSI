@@ -16,6 +16,8 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{libnoise}
+\citation{ang2005pid}
 \citation{IJSAEM,Chen}
 \citation{burwell_2019}
 \citation{Monada}
@@ -31,241 +33,341 @@
 \citation{Basu}
 \citation{Pyke}
 \citation{Falomir}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Context}{4}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Introduction}{4}{subsection.1.1}\protected@file@percent }
-\newlabel{sec:introduction}{{1.1}{4}{Introduction}{subsection.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Context}{9}{section.1}\protected@file@percent }
+\newlabel{sec:context}{{1}{9}{Context}{section.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Introduction}{9}{subsection.1.1}\protected@file@percent }
+\newlabel{sec:introduction}{{1.1}{9}{Introduction}{subsection.1.1}{}}
 \citation{juliani2020unity}
 \citation{madey2013design}
 \citation{watson}
+\citation{watson}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Background}{10}{subsection.1.2}\protected@file@percent }
 \citation{Alaliyat2014OptimisationOB}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Background}{5}{subsection.1.2}\protected@file@percent }
 \citation{Hattenberger}
 \citation{Figliozzi}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Physics Model}{6}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Quadcopter}{6}{subsection.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Dimensions of the Agent\relax }}{6}{figure.caption.2}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:dimensions}{{1}{6}{Dimensions of the Agent\relax }{figure.caption.2}{}}
 \citation{Thamm}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Quadcopter Body Diagram in the x-z plane\relax }}{7}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:quadcopter}{{2}{7}{Quadcopter Body Diagram in the x-z plane\relax }{figure.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Agent in Unity\relax }}{7}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:quadcopter-unity}{{3}{7}{Agent in Unity\relax }{figure.caption.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Control Operations and Thrust Levels\relax }}{8}{table.caption.5}\protected@file@percent }
-\newlabel{tab:control}{{1}{8}{Control Operations and Thrust Levels\relax }{table.caption.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Yaw Directions and Respective Forces\relax }}{8}{table.caption.6}\protected@file@percent }
-\newlabel{tab:yaw-control}{{2}{8}{Yaw Directions and Respective Forces\relax }{table.caption.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Thrust Constants for a drone of mass $m$ kg\relax }}{9}{table.caption.7}\protected@file@percent }
-\newlabel{tab:thrust-constants}{{3}{9}{Thrust Constants for a drone of mass $m$ kg\relax }{table.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Stabilisation}{9}{subsection.2.2}\protected@file@percent }
-\newlabel{sec:stabilisation}{{2.2}{9}{Stabilisation}{subsection.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Pitch angle due to input over time\relax }}{9}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:pitch-angle}{{4}{9}{Pitch angle due to input over time\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Proportional Controller}{10}{subsubsection.2.2.1}\protected@file@percent }
-\newlabel{eq:p-controller}{{1}{10}{Proportional Controller}{equation.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pitch angle due to input over time with proportional error correction\relax }}{10}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:pitch-angle2}{{5}{10}{Pitch angle due to input over time with proportional error correction\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Derivative Controller}{11}{subsubsection.2.2.2}\protected@file@percent }
-\newlabel{eq:pd-controller}{{2}{11}{Derivative Controller}{equation.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Pitch angle due to input over time with additional derivative error correction\relax }}{11}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:pitch-angle3}{{6}{11}{Pitch angle due to input over time with additional derivative error correction\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }}{12}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:pitch-angle4}{{7}{12}{Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Integral Controller}{12}{subsubsection.2.2.3}\protected@file@percent }
-\newlabel{sec:integral-controller}{{2.2.3}{12}{Integral Controller}{subsubsection.2.2.3}{}}
-\newlabel{eq:pid-controller}{{3}{12}{Integral Controller}{equation.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }}{13}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:pitch-angle5}{{8}{13}{Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{13}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:pitch-angle6}{{9}{13}{Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}PID Controller}{14}{subsubsection.2.2.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces PID Controller\relax }}{14}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:pid}{{10}{14}{PID Controller\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Physics Model}{13}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Agent}{13}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Dimensions of the Agent\relax }}{13}{figure.caption.4}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:dimensions}{{1}{13}{Dimensions of the Agent\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Quadcopter Body Diagram in the x-z plane\relax }}{14}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:quadcopter}{{2}{14}{Quadcopter Body Diagram in the x-z plane\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Agent in Unity\relax }}{14}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:quadcopter-unity}{{3}{14}{Agent in Unity\relax }{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Control Operations and Thrust Levels\relax }}{15}{table.caption.7}\protected@file@percent }
+\newlabel{tab:control}{{1}{15}{Control Operations and Thrust Levels\relax }{table.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Yaw Directions and Respective Forces\relax }}{15}{table.caption.8}\protected@file@percent }
+\newlabel{tab:yaw-control}{{2}{15}{Yaw Directions and Respective Forces\relax }{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Propeller Forces for Positive (Clockwise) Yaw Control\relax }}{16}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:quadcopter-yaw}{{4}{16}{Propeller Forces for Positive (Clockwise) Yaw Control\relax }{figure.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Thrust Constants for a drone of mass $m$ kg\relax }}{16}{table.caption.10}\protected@file@percent }
+\newlabel{tab:thrust-constants}{{3}{16}{Thrust Constants for a drone of mass $m$ kg\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Stabilisation}{16}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:stabilisation}{{2.2}{16}{Stabilisation}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Proportional Controller}{16}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pitch angle due to input over time\relax }}{17}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:pitch-angle}{{5}{17}{Pitch angle due to input over time\relax }{figure.caption.11}{}}
+\newlabel{eq:p-controller}{{1}{17}{Proportional Controller}{equation.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Derivative Controller}{17}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Pitch angle due to input over time with proportional error correction\relax }}{18}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:pitch-angle2}{{6}{18}{Pitch angle due to input over time with proportional error correction\relax }{figure.caption.12}{}}
+\newlabel{eq:pd-controller}{{2}{18}{Derivative Controller}{equation.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Pitch angle due to input over time with additional derivative error correction\relax }}{19}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:pitch-angle3}{{7}{19}{Pitch angle due to input over time with additional derivative error correction\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Integral Controller}{19}{subsubsection.2.2.3}\protected@file@percent }
+\newlabel{sec:integral-controller}{{2.2.3}{19}{Integral Controller}{subsubsection.2.2.3}{}}
+\newlabel{eq:pid-controller}{{3}{19}{Integral Controller}{equation.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }}{20}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:pitch-angle4}{{8}{20}{Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}PID Controller}{20}{subsubsection.2.2.4}\protected@file@percent }
 \citation{skogestad2001probably}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }}{21}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:pitch-angle5}{{9}{21}{Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}PID Parameter Tuning}{21}{subsubsection.2.2.5}\protected@file@percent }
+\newlabel{sec:pid-tuning}{{2.2.5}{21}{PID Parameter Tuning}{subsubsection.2.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Empirical Method}{21}{section*.19}\protected@file@percent }
+\citation{ang2005pid}
+\citation{ang2005pid}
 \citation{McCormack}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces System Model\relax }}{15}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:pid-feedback}{{11}{15}{System Model\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}PID Parameter Tuning}{15}{subsubsection.2.2.5}\protected@file@percent }
-\newlabel{sec:pid-tuning}{{2.2.5}{15}{PID Parameter Tuning}{subsubsection.2.2.5}{}}
-\@writefile{toc}{\contentsline {paragraph}{Empirical Method}{15}{section*.16}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Tuning Constants\relax }}{15}{table.caption.17}\protected@file@percent }
-\newlabel{tab:pid-tuning}{{4}{15}{Tuning Constants\relax }{table.caption.17}{}}
-\@writefile{toc}{\contentsline {paragraph}{Ziegler-Nichols Method}{15}{section*.18}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Ziegler-Nichols Method\relax }}{16}{table.caption.19}\protected@file@percent }
-\newlabel{tab:zn}{{5}{16}{Ziegler-Nichols Method\relax }{table.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Oscillation of the system with varying $K_p$\relax }}{16}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:zn-tuning}{{12}{16}{Oscillation of the system with varying $K_p$\relax }{figure.caption.20}{}}
-\newlabel{eq:pid-tuning-relationships}{{6}{16}{Ziegler-Nichols Method}{equation.2.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }}{17}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:tuning-comparison}{{13}{17}{Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{18}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:combined-znemp}{{14}{18}{Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {paragraph}{Conclusion}{18}{section*.23}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Final PID Constants\relax }}{18}{table.caption.24}\protected@file@percent }
-\newlabel{tab:pid-final}{{6}{18}{Final PID Constants\relax }{table.caption.24}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Environment Model}{18}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Introducing Autonomy}{20}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Movement to Position}{20}{subsection.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces 2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }}{20}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:2d-coords}{{15}{20}{2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }{figure.caption.25}{}}
-\newlabel{eq:basis-transformation2}{{7}{21}{Movement to Position}{equation.3.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces 2D Coordinate Grid with $v_l$ and $v_g$\relax }}{21}{figure.caption.26}\protected@file@percent }
-\newlabel{fig:2d-rotation}{{16}{21}{2D Coordinate Grid with $v_l$ and $v_g$\relax }{figure.caption.26}{}}
-\newlabel{eq:basis-transformation}{{11}{22}{Movement to Position}{equation.3.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Constituent Pitch and Roll Components of $v_l$\relax }}{23}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:pitch-roll}{{17}{23}{Constituent Pitch and Roll Components of $v_l$\relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Boids (1987)}{23}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{22}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:pitch-angle6}{{10}{22}{Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces PID Controller\relax }}{22}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:pid}{{11}{22}{PID Controller\relax }{figure.caption.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Effects of increasing a parameter independently\cite  {ang2005pid}\relax }}{22}{table.caption.20}\protected@file@percent }
+\newlabel{tab:parameter_effects}{{4}{22}{Effects of increasing a parameter independently\cite {ang2005pid}\relax }{table.caption.20}{}}
+\@writefile{toc}{\contentsline {paragraph}{Ziegler-Nichols Method}{22}{section*.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces System Model\relax }}{23}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:pid-feedback}{{12}{23}{System Model\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Tuning Constants\relax }}{23}{table.caption.21}\protected@file@percent }
+\newlabel{tab:pid-tuning}{{5}{23}{Tuning Constants\relax }{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Ziegler-Nichols Method\relax }}{23}{table.caption.23}\protected@file@percent }
+\newlabel{tab:zn}{{6}{23}{Ziegler-Nichols Method\relax }{table.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Oscillation of the system with varying $K_p$\relax }}{24}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:zn-tuning}{{13}{24}{Oscillation of the system with varying $K_p$\relax }{figure.caption.24}{}}
+\newlabel{eq:pid-tuning-relationships}{{6}{24}{Ziegler-Nichols Method}{equation.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }}{25}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:tuning-comparison}{{14}{25}{Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{25}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:combined-znemp}{{15}{25}{Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {paragraph}{Conclusion}{25}{section*.27}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Final PID Constants\relax }}{26}{table.caption.28}\protected@file@percent }
+\newlabel{tab:pid-final}{{7}{26}{Final PID Constants\relax }{table.caption.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Environment Model}{26}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Introducing Autonomy}{27}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Movement to Position}{27}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces 2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }}{28}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:2d-coords}{{16}{28}{2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }{figure.caption.29}{}}
+\newlabel{eq:basis-transformation2}{{7}{28}{Movement to Position}{equation.3.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces 2D Coordinate Grid with $v_l$ and $v_g$\relax }}{29}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:2d-rotation}{{17}{29}{2D Coordinate Grid with $v_l$ and $v_g$\relax }{figure.caption.30}{}}
+\newlabel{eq:basis-transformation}{{11}{29}{Movement to Position}{equation.3.11}{}}
 \citation{Reynolds}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Constituent Pitch and Roll Components of $v_l$\relax }}{31}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:pitch-roll}{{18}{31}{Constituent Pitch and Roll Components of $v_l$\relax }{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Boids (1987)}{31}{subsection.3.2}\protected@file@percent }
 \citation{unity}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Avoidance}{24}{subsubsection.3.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Avoidance vectors for two nearby agents\relax }}{25}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:avoidance-2d}{{18}{25}{Avoidance vectors for two nearby agents\relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Alignment}{25}{subsubsection.3.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Alignment vectors for three nearby agents\relax }}{26}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:alignment-2d}{{19}{26}{Alignment vectors for three nearby agents\relax }{figure.caption.29}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Cohesion}{26}{subsubsection.3.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Alignment vectors for three nearby agents\relax }}{27}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:cohesion-2d}{{20}{27}{Alignment vectors for three nearby agents\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Combining Behaviours}{27}{subsubsection.3.2.4}\protected@file@percent }
-\newlabel{sec:combining-behaviours}{{3.2.4}{27}{Combining Behaviours}{subsubsection.3.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Avoidance}{32}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Alignment}{32}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Avoidance vectors for two nearby agents\relax }}{33}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:avoidance-2d}{{19}{33}{Avoidance vectors for two nearby agents\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Cohesion}{33}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Alignment vectors for three nearby agents\relax }}{34}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:alignment-2d}{{20}{34}{Alignment vectors for three nearby agents\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Combining Behaviours}{34}{subsubsection.3.2.4}\protected@file@percent }
+\newlabel{sec:combining-behaviours}{{3.2.4}{34}{Combining Behaviours}{subsubsection.3.2.4}{}}
 \citation{Reynolds}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Spawn Constants\relax }}{28}{table.caption.31}\protected@file@percent }
-\newlabel{tab:spawn-constants}{{7}{28}{Spawn Constants\relax }{table.caption.31}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Boids Weights\relax }}{28}{table.caption.31}\protected@file@percent }
-\newlabel{tab:boids-weights}{{8}{28}{Boids Weights\relax }{table.caption.31}{}}
-\newlabel{fig:exp1}{{21a}{29}{Initial\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:exp1}{{a}{29}{Initial\relax }{figure.caption.32}{}}
-\newlabel{fig:exp2}{{21b}{29}{Avoidance Tuning\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:exp2}{{b}{29}{Avoidance Tuning\relax }{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Simulations\relax }}{29}{figure.caption.32}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Final Tuning\relax }}{30}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:exp3}{{22}{30}{Final Tuning\relax }{figure.caption.33}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Extended Boids}{30}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Goal Seeking}{30}{subsubsection.3.3.1}\protected@file@percent }
-\newlabel{sec:goal-seek}{{3.3.1}{30}{Goal Seeking}{subsubsection.3.3.1}{}}
-\newlabel{fig:exp4}{{23a}{31}{Normalised Force Vector\relax }{figure.caption.34}{}}
-\newlabel{sub@fig:exp4}{{a}{31}{Normalised Force Vector\relax }{figure.caption.34}{}}
-\newlabel{fig:exp5}{{23b}{31}{Clamped Force Vector\relax }{figure.caption.34}{}}
-\newlabel{sub@fig:exp5}{{b}{31}{Clamped Force Vector\relax }{figure.caption.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Seeking Behaviour\relax }}{31}{figure.caption.34}\protected@file@percent }
-\newlabel{fig:exp45}{{23}{31}{Seeking Behaviour\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Alignment vectors for three nearby agents\relax }}{35}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:cohesion-2d}{{21}{35}{Alignment vectors for three nearby agents\relax }{figure.caption.34}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Spawn Constants\relax }}{36}{table.caption.35}\protected@file@percent }
+\newlabel{tab:spawn-constants}{{8}{36}{Spawn Constants\relax }{table.caption.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Boids Weights\relax }}{36}{table.caption.35}\protected@file@percent }
+\newlabel{tab:boids-weights}{{9}{36}{Boids Weights\relax }{table.caption.35}{}}
+\newlabel{fig:exp1}{{22a}{36}{Initial\relax }{figure.caption.36}{}}
+\newlabel{sub@fig:exp1}{{a}{36}{Initial\relax }{figure.caption.36}{}}
+\newlabel{fig:exp2}{{22b}{36}{Avoidance Tuning\relax }{figure.caption.36}{}}
+\newlabel{sub@fig:exp2}{{b}{36}{Avoidance Tuning\relax }{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Simulation Run (Start is indicated by black circle)\relax }}{36}{figure.caption.36}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Final Tuning\relax }}{37}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:exp3}{{23}{37}{Final Tuning\relax }{figure.caption.37}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Final Boids Weights\relax }}{37}{table.caption.38}\protected@file@percent }
+\newlabel{tab:boids-weights-final}{{10}{37}{Final Boids Weights\relax }{table.caption.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Extended Boids}{37}{subsection.3.3}\protected@file@percent }
+\citation{liu2020autonomous}
+\citation{Petrillo,burwell_2019}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Goal Seeking}{38}{subsubsection.3.3.1}\protected@file@percent }
+\newlabel{sec:goal-seek}{{3.3.1}{38}{Goal Seeking}{subsubsection.3.3.1}{}}
+\newlabel{fig:exp4}{{24a}{39}{Normalised Force Vector\relax }{figure.caption.39}{}}
+\newlabel{sub@fig:exp4}{{a}{39}{Normalised Force Vector\relax }{figure.caption.39}{}}
+\newlabel{fig:exp5}{{24b}{39}{Clamped Force Vector\relax }{figure.caption.39}{}}
+\newlabel{sub@fig:exp5}{{b}{39}{Clamped Force Vector\relax }{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Seeking Behaviour\relax }}{39}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:exp45}{{24}{39}{Seeking Behaviour\relax }{figure.caption.39}{}}
 \citation{Perlin}
-\newlabel{fig:exp6}{{24a}{32}{Final Seeking Behaviour\relax }{figure.caption.35}{}}
-\newlabel{sub@fig:exp6}{{a}{32}{Final Seeking Behaviour\relax }{figure.caption.35}{}}
-\newlabel{fig:exp7}{{24b}{32}{Three Initial Behaviours + Seeking\relax }{figure.caption.35}{}}
-\newlabel{sub@fig:exp7}{{b}{32}{Three Initial Behaviours + Seeking\relax }{figure.caption.35}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Finalising Seeking Behaviour\relax }}{32}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:exp67}{{24}{32}{Finalising Seeking Behaviour\relax }{figure.caption.35}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Terrain Generation}{32}{subsubsection.3.3.2}\protected@file@percent }
-\newlabel{fig:lacunarity1}{{25a}{33}{$l=1$\relax }{figure.caption.36}{}}
-\newlabel{sub@fig:lacunarity1}{{a}{33}{$l=1$\relax }{figure.caption.36}{}}
-\newlabel{fig:lacunarity2}{{25b}{33}{$l=2$\relax }{figure.caption.36}{}}
-\newlabel{sub@fig:lacunarity2}{{b}{33}{$l=2$\relax }{figure.caption.36}{}}
-\newlabel{fig:lacunarity4}{{25c}{33}{$l=4$\relax }{figure.caption.36}{}}
-\newlabel{sub@fig:lacunarity4}{{c}{33}{$l=4$\relax }{figure.caption.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces The effect of lacunarity on the generated terrain\relax }}{33}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:lacunarity}{{25}{33}{The effect of lacunarity on the generated terrain\relax }{figure.caption.36}{}}
-\newlabel{fig:persistence0.2}{{26a}{33}{$p=0.2$\relax }{figure.caption.37}{}}
-\newlabel{sub@fig:persistence0.2}{{a}{33}{$p=0.2$\relax }{figure.caption.37}{}}
-\newlabel{fig:persistence0.5}{{26b}{33}{$p=0.5$\relax }{figure.caption.37}{}}
-\newlabel{sub@fig:persistence0.5}{{b}{33}{$p=0.5$\relax }{figure.caption.37}{}}
-\newlabel{fig:persistence0.8}{{26c}{33}{$p=0.8$\relax }{figure.caption.37}{}}
-\newlabel{sub@fig:persistence0.8}{{c}{33}{$p=0.8$\relax }{figure.caption.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces The effect of persistence on the generated terrain\relax }}{33}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:persistence}{{26}{33}{The effect of persistence on the generated terrain\relax }{figure.caption.37}{}}
+\newlabel{fig:exp6}{{25a}{40}{Final Seeking Behaviour\relax }{figure.caption.40}{}}
+\newlabel{sub@fig:exp6}{{a}{40}{Final Seeking Behaviour\relax }{figure.caption.40}{}}
+\newlabel{fig:exp7}{{25b}{40}{Three Initial Behaviours + Seeking\relax }{figure.caption.40}{}}
+\newlabel{sub@fig:exp7}{{b}{40}{Three Initial Behaviours + Seeking\relax }{figure.caption.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Finalising Seeking Behaviour\relax }}{40}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:exp67}{{25}{40}{Finalising Seeking Behaviour\relax }{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Terrain Generation}{40}{subsubsection.3.3.2}\protected@file@percent }
+\citation{libnoise}
+\citation{libnoise}
+\newlabel{fig:octave1}{{26a}{41}{$O_n=1$\relax }{figure.caption.41}{}}
+\newlabel{sub@fig:octave1}{{a}{41}{$O_n=1$\relax }{figure.caption.41}{}}
+\newlabel{fig:octave2}{{26b}{41}{$O_n=2$\relax }{figure.caption.41}{}}
+\newlabel{sub@fig:octave2}{{b}{41}{$O_n=2$\relax }{figure.caption.41}{}}
+\newlabel{fig:octave4}{{26c}{41}{$O_n=4$\relax }{figure.caption.41}{}}
+\newlabel{sub@fig:octave4}{{c}{41}{$O_n=4$\relax }{figure.caption.41}{}}
+\newlabel{fig:octave8}{{26d}{41}{$O_n=8$\relax }{figure.caption.41}{}}
+\newlabel{sub@fig:octave8}{{d}{41}{$O_n=8$\relax }{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces $O_n$ effect on 1-D Perlin noise\cite  {libnoise}\relax }}{41}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:octaves-1d}{{26}{41}{$O_n$ effect on 1-D Perlin noise\cite {libnoise}\relax }{figure.caption.41}{}}
+\newlabel{fig:lacunarity1}{{27a}{42}{$l=1$\relax }{figure.caption.42}{}}
+\newlabel{sub@fig:lacunarity1}{{a}{42}{$l=1$\relax }{figure.caption.42}{}}
+\newlabel{fig:lacunarity2}{{27b}{42}{$l=2$\relax }{figure.caption.42}{}}
+\newlabel{sub@fig:lacunarity2}{{b}{42}{$l=2$\relax }{figure.caption.42}{}}
+\newlabel{fig:lacunarity4}{{27c}{42}{$l=4$\relax }{figure.caption.42}{}}
+\newlabel{sub@fig:lacunarity4}{{c}{42}{$l=4$\relax }{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces The effect of lacunarity on the generated terrain\relax }}{42}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:lacunarity}{{27}{42}{The effect of lacunarity on the generated terrain\relax }{figure.caption.42}{}}
+\newlabel{fig:persistence0.2}{{28a}{42}{$p=0.2$\relax }{figure.caption.43}{}}
+\newlabel{sub@fig:persistence0.2}{{a}{42}{$p=0.2$\relax }{figure.caption.43}{}}
+\newlabel{fig:persistence0.5}{{28b}{42}{$p=0.5$\relax }{figure.caption.43}{}}
+\newlabel{sub@fig:persistence0.5}{{b}{42}{$p=0.5$\relax }{figure.caption.43}{}}
+\newlabel{fig:persistence0.8}{{28c}{42}{$p=0.8$\relax }{figure.caption.43}{}}
+\newlabel{sub@fig:persistence0.8}{{c}{42}{$p=0.8$\relax }{figure.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces The effect of persistence on the generated terrain\relax }}{42}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:persistence}{{28}{42}{The effect of persistence on the generated terrain\relax }{figure.caption.43}{}}
 \citation{Etherington}
-\newlabel{fig:scale25}{{27a}{34}{$s=25$\relax }{figure.caption.38}{}}
-\newlabel{sub@fig:scale25}{{a}{34}{$s=25$\relax }{figure.caption.38}{}}
-\newlabel{fig:scale28}{{27b}{34}{$s=28$\relax }{figure.caption.38}{}}
-\newlabel{sub@fig:scale28}{{b}{34}{$s=28$\relax }{figure.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces The effect of scale on the generated terrain\relax }}{34}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:scale}{{27}{34}{The effect of scale on the generated terrain\relax }{figure.caption.38}{}}
-\newlabel{fig:final}{{28a}{34}{Final Terrain Mesh\relax }{figure.caption.39}{}}
-\newlabel{sub@fig:final}{{a}{34}{Final Terrain Mesh\relax }{figure.caption.39}{}}
-\newlabel{tab:parameter-values}{{28b}{34}{Perlin Noise Parameter Values\relax }{figure.caption.39}{}}
-\newlabel{sub@tab:parameter-values}{{b}{34}{Perlin Noise Parameter Values\relax }{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces \relax }}{34}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:parameter-values-lacunarity2}{{28}{34}{\relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Terrain Avoidance}{34}{subsubsection.3.3.3}\protected@file@percent }
-\newlabel{sec:terrain-avoidance}{{3.3.3}{34}{Terrain Avoidance}{subsubsection.3.3.3}{}}
-\newlabel{fig:naive-ta-1}{{29a}{35}{Agent approaching a steep hill\relax }{figure.caption.40}{}}
-\newlabel{sub@fig:naive-ta-1}{{a}{35}{Agent approaching a steep hill\relax }{figure.caption.40}{}}
-\newlabel{fig:naive-ta-2}{{29b}{35}{Agent failing to avoid terrain\relax }{figure.caption.40}{}}
-\newlabel{sub@fig:naive-ta-2}{{b}{35}{Agent failing to avoid terrain\relax }{figure.caption.40}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Naive Terrain Avoidance\relax }}{35}{figure.caption.40}\protected@file@percent }
-\newlabel{fig:naive-ta-side-by-side}{{29}{35}{Naive Terrain Avoidance\relax }{figure.caption.40}{}}
-\newlabel{fig:startplatform}{{30a}{36}{Start Platform\relax }{figure.caption.41}{}}
-\newlabel{sub@fig:startplatform}{{a}{36}{Start Platform\relax }{figure.caption.41}{}}
-\newlabel{fig:goalplatform}{{30b}{36}{Goal Platform\relax }{figure.caption.41}{}}
-\newlabel{sub@fig:goalplatform}{{b}{36}{Goal Platform\relax }{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Start and Goal Platforms in a single simulation\relax }}{36}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:platforms}{{30}{36}{Start and Goal Platforms in a single simulation\relax }{figure.caption.41}{}}
+\citation{Petrillo,burwell_2019}
+\newlabel{fig:scale25}{{29a}{43}{$s=25$\relax }{figure.caption.44}{}}
+\newlabel{sub@fig:scale25}{{a}{43}{$s=25$\relax }{figure.caption.44}{}}
+\newlabel{fig:scale28}{{29b}{43}{$s=28$\relax }{figure.caption.44}{}}
+\newlabel{sub@fig:scale28}{{b}{43}{$s=28$\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces The effect of scale on the generated terrain\relax }}{43}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:scale}{{29}{43}{The effect of scale on the generated terrain\relax }{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Terrain Avoidance}{43}{subsubsection.3.3.3}\protected@file@percent }
+\newlabel{sec:terrain-avoidance}{{3.3.3}{43}{Terrain Avoidance}{subsubsection.3.3.3}{}}
+\newlabel{fig:final}{{30a}{44}{Final Terrain Mesh\relax }{figure.caption.45}{}}
+\newlabel{sub@fig:final}{{a}{44}{Final Terrain Mesh\relax }{figure.caption.45}{}}
+\newlabel{tab:parameter-values}{{30b}{44}{Perlin Noise Parameter Values\relax }{figure.caption.45}{}}
+\newlabel{sub@tab:parameter-values}{{b}{44}{Perlin Noise Parameter Values\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces \relax }}{44}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:parameter-values-lacunarity2}{{30}{44}{\relax }{figure.caption.45}{}}
+\newlabel{fig:naive-ta-1}{{31a}{45}{Agent approaching a steep hill\relax }{figure.caption.46}{}}
+\newlabel{sub@fig:naive-ta-1}{{a}{45}{Agent approaching a steep hill\relax }{figure.caption.46}{}}
+\newlabel{fig:naive-ta-2}{{31b}{45}{Agent failing to avoid terrain\relax }{figure.caption.46}{}}
+\newlabel{sub@fig:naive-ta-2}{{b}{45}{Agent failing to avoid terrain\relax }{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Naive Terrain Avoidance\relax }}{45}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:naive-ta-side-by-side}{{31}{45}{Naive Terrain Avoidance\relax }{figure.caption.46}{}}
+\newlabel{fig:startplatform}{{32a}{46}{Start Platform\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:startplatform}{{a}{46}{Start Platform\relax }{figure.caption.47}{}}
+\newlabel{fig:goalplatform}{{32b}{46}{Goal Platform\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:goalplatform}{{b}{46}{Goal Platform\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Start and Goal Platforms in a single simulation\relax }}{46}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:platforms}{{32}{46}{Start and Goal Platforms in a single simulation\relax }{figure.caption.47}{}}
 \citation{Srinath}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{37}{section.4}\protected@file@percent }
-\newlabel{sec:methodology}{{4}{37}{Methodology}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Scenario 1: Shortest First Arrival Time}{37}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{37}{section*.42}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Proportion of Agents Arriving}{37}{section*.43}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Scenario 2: Reduced Spread (Cohesivity)}{38}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Standard Deviation of Arrival Times}{38}{section*.44}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{38}{section*.45}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Proportion of Agents Arriving}{38}{section*.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Scenario 3: Reducing Collision Numbers}{38}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{47}{section.4}\protected@file@percent }
+\newlabel{sec:methodology}{{4}{47}{Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Scenario 1: Shortest First Arrival Time}{47}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{47}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proportion of Agents Arriving}{48}{section*.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Scenario 2: Reduced Spread (Cohesivity)}{48}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Standard Deviation of Arrival Times}{48}{section*.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{48}{section*.51}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proportion of Agents Arriving}{48}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Scenario 3: Reducing Collision Numbers}{49}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Number of Collisions}{49}{section*.53}\protected@file@percent }
 \citation{Alaliyat2014OptimisationOB}
-\@writefile{toc}{\contentsline {paragraph}{Number of Collisions}{39}{section*.47}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Optimisation}{39}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Simulated Annealing}{40}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{41}{section*.48}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Proportion Reached}{41}{section*.49}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Simulations}{42}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results}{42}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Improving Autonomy}{42}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Boids (1999): Introducing Obstacle Avoidance}{42}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}A Simplified Model}{42}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Local Potential Field Emergence}{43}{subsection.6.3}\protected@file@percent }
-\newlabel{sec:lpfe}{{6.3}{43}{Local Potential Field Emergence}{subsection.6.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Final Results}{43}{subsection.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work}{43}{section.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}LPFE Implementation}{43}{subsection.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Online Optimisation}{43}{subsection.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Hostility}{43}{subsection.7.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Hostile Environments}{43}{subsubsection.7.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Hostile Agents}{43}{subsubsection.7.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8}Evaluation}{43}{section.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Project Management}{43}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Comparing Models}{43}{subsection.8.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Speed-Success-Flock Size Tradeoffs}{43}{subsection.8.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Use Cases}{43}{subsection.8.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Author's Assessment of the Project}{43}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Optimisation}{50}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Simulated Annealing}{50}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:simulated-annealing}{{5.1}{50}{Simulated Annealing}{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{First Arrival Time}{52}{section*.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proportion Reached}{53}{section*.55}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Number of Collisions}{53}{section*.56}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Standard Deviation of Arrival Times}{53}{section*.57}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Simulations}{54}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Results}{54}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Scenario 1: Shortest First Arrival Time}{55}{subsubsection.5.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Scenario 2: Reduced Spread (Cohesivity)}{55}{subsubsection.5.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Cost Function over Iterations for Scenario 1\relax }}{56}{figure.caption.58}\protected@file@percent }
+\newlabel{fig:scenario1-cost}{{33}{56}{Cost Function over Iterations for Scenario 1\relax }{figure.caption.58}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Optimal Parameters for Scenario 1\relax }}{56}{table.caption.59}\protected@file@percent }
+\newlabel{tab:scenario1-parameters}{{11}{56}{Optimal Parameters for Scenario 1\relax }{table.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Cost Function over Iterations for Scenario 2\relax }}{57}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:scenario2-cost}{{34}{57}{Cost Function over Iterations for Scenario 2\relax }{figure.caption.60}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Optimal Parameters for Scenario 2\relax }}{57}{table.caption.61}\protected@file@percent }
+\newlabel{tab:scenario2-parameters}{{12}{57}{Optimal Parameters for Scenario 2\relax }{table.caption.61}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Scenario 3: Reducing Collision Numbers}{57}{subsubsection.5.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Cost Function over Iterations for Scenario 2 with 100 Simulations\relax }}{58}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:scenario2-cost-100}{{35}{58}{Cost Function over Iterations for Scenario 2 with 100 Simulations\relax }{figure.caption.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Metrics over Iterations for Scenario 2\relax }}{58}{figure.caption.63}\protected@file@percent }
+\newlabel{fig:scenario2-metrics}{{36}{58}{Metrics over Iterations for Scenario 2\relax }{figure.caption.63}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Sensitivity Analysis}{58}{subsection.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Cost Function over Iterations for Scenario 3\relax }}{59}{figure.caption.64}\protected@file@percent }
+\newlabel{fig:scenario3-cost}{{37}{59}{Cost Function over Iterations for Scenario 3\relax }{figure.caption.64}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Optimal Parameters for Scenario 3\relax }}{59}{table.caption.65}\protected@file@percent }
+\newlabel{tab:scenario3-parameters}{{13}{59}{Optimal Parameters for Scenario 3\relax }{table.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Sensitivity Analysis\relax }}{60}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:spiderweb}{{38}{60}{Sensitivity Analysis\relax }{figure.caption.66}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Discussion}{60}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:results-discussion}{{5.5}{60}{Discussion}{subsection.5.5}{}}
+\citation{deng}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}Parameter-Metric Relationship}{61}{subsubsection.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}Collision Metrics}{61}{subsubsection.5.5.2}\protected@file@percent }
+\citation{boids95}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Improving Autonomy}{63}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Boids: Introducing Obstacle Avoidance}{63}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Ranges for Obstacle Generation\relax }}{63}{table.caption.67}\protected@file@percent }
+\newlabel{tab:obstacle-ranges}{{14}{63}{Ranges for Obstacle Generation\relax }{table.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Obstacles in the Environment\relax }}{64}{figure.caption.68}\protected@file@percent }
+\newlabel{fig:obstacles}{{39}{64}{Obstacles in the Environment\relax }{figure.caption.68}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}A Simplified Model}{64}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Repulsion}{64}{subsubsection.6.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Attraction}{65}{subsubsection.6.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Combining Behaviours: Potential Fields}{65}{subsubsection.6.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Local Potential Field Emergence}{67}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:lpfe}{{6.3}{67}{Local Potential Field Emergence}{subsection.6.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Two Dimensional Abstraction}{67}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Attraction Force Field\relax }}{68}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:force-field-att}{{40}{68}{Attraction Force Field\relax }{figure.caption.69}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Repulsion Force Field\relax }}{69}{figure.caption.70}\protected@file@percent }
+\newlabel{fig:force-field-rep}{{41}{69}{Repulsion Force Field\relax }{figure.caption.70}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Comparing Models}{69}{subsection.6.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Comparison of Boids and LPFE Models\relax }}{69}{table.caption.71}\protected@file@percent }
+\newlabel{tab:model-comparison}{{15}{69}{Comparison of Boids and LPFE Models\relax }{table.caption.71}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work}{71}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}LPFE Implementation}{71}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Other Models}{72}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}Online Optimisation}{72}{subsubsection.7.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.2}Neural Network Optimisaton}{72}{subsubsection.7.2.2}\protected@file@percent }
+\citation{Caldwell}
+\citation{zhao2022nature}
+\citation{chen2008application}
+\citation{delgado2007use}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Number of Collisions (First agent reaching the goal at $t\approx 25$)\relax }}{73}{figure.caption.72}\protected@file@percent }
+\newlabel{fig:collisions-goal}{{42}{73}{Number of Collisions (First agent reaching the goal at $t\approx 25$)\relax }{figure.caption.72}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Hostility}{73}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Hostile Agents}{73}{subsubsection.7.3.1}\protected@file@percent }
+\citation{jiang2017biome,whittaker1970communities}
+\citation{Zhou}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Hostile Environments}{74}{subsubsection.7.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Evaluation}{75}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Project Management}{75}{subsection.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Gantt Chart\relax }}{75}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:gantt-eval}{{43}{75}{Gantt Chart\relax }{figure.caption.73}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}Project Timeline Modifications}{76}{subsubsection.8.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}Methodology}{76}{subsubsection.8.1.2}\protected@file@percent }
+\gtt@chartextrasize{0}{117.36067pt}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Gantt Chart of Actual Progress\relax }}{77}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:gantt-actual}{{44}{77}{Gantt Chart of Actual Progress\relax }{figure.caption.74}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.3}Contingency Planning}{77}{subsubsection.8.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Time Breakdown\relax }}{78}{table.caption.75}\protected@file@percent }
+\newlabel{tab:time-breakdown}{{16}{78}{Time Breakdown\relax }{table.caption.75}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Remarks: Assumptions}{78}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Author's Assessment of the Project}{78}{subsection.8.3}\protected@file@percent }
 \bibstyle{IEEEtranN}
 \bibdata{refs}
-\bibcite{IJSAEM}{{1}{2021}{{Mandloi et~al.}}{{Mandloi, Arya, and Verma}}}
-\bibcite{Chen}{{2}{2018}{{Chen et~al.}}{{Chen, Zhang, Hu, and Xiao}}}
-\bibcite{burwell_2019}{{3}{2019}{{Burwell}}{{}}}
-\bibcite{Monada}{{4}{2004}{{Mondada et~al.}}{{Mondada, Pettinaro, Guignard, Kwee, Floreano, Deneubourg, Nolfi, Gambardella, and Dorigo}}}
-\bibcite{Zhou}{{5}{2020}{{Zhou et~al.}}{{Zhou, Rao, and Wang}}}
-\bibcite{Verdoucq}{{6}{2022}{{Verdoucq et~al.}}{{Verdoucq, Theraulaz, Escobedo, Sire, and Hattenberger}}}
-\bibcite{Reynolds}{{7}{1998}{{Reynolds}}{{}}}
-\bibcite{Hayat}{{8}{2016}{{Hayat et~al.}}{{Hayat, Yanmaz, and Muzaffar}}}
-\bibcite{Perez}{{9}{2019}{{Perez et~al.}}{{Perez, Goodloe, and Edmonson}}}
-\bibcite{Hu}{{10}{2022}{{Hu et~al.}}{{Hu, Niu, Carrasco, Lennox, and Arvin}}}
-\bibcite{Pyke}{{11}{2021}{{Pyke and Stark}}{{}}}
-\bibcite{Basu}{{12}{2004}{{Basu et~al.}}{{Basu, Redi, and Shurbanov}}}
-\bibcite{Falomir}{{13}{2018}{{Falomir et~al.}}{{Falomir, Chaumette, and Guerrini}}}
-\bibcite{juliani2020unity}{{14}{2020}{{Juliani et~al.}}{{Juliani, Berges, Teng, Cohen, Harper, Elion, Goy, Gao, Henry, Mattar, and Lange}}}
-\bibcite{madey2013design}{{15}{2013}{{Madey and Madey}}{{}}}
-\bibcite{watson}{{16}{2003}{{Watson et~al.}}{{Watson, John, and Crowther}}}
-\bibcite{Alaliyat2014OptimisationOB}{{17}{2014}{{Alaliyat et~al.}}{{Alaliyat, Yndestad, and Sanfilippo}}}
-\bibcite{Hattenberger}{{18}{2023}{{Hattenberger et~al.}}{{Hattenberger, Bronz, and Condomines}}}
-\bibcite{Figliozzi}{{19}{2023}{{Figliozzi}}{{}}}
-\bibcite{Thamm}{{20}{2015}{{{Thamm} et~al.}}{{{Thamm}, {Brieger}, {Neitzke}, {Meyer}, {Jansen}, and {M{\"o}nninghof}}}}
-\bibcite{skogestad2001probably}{{21}{2001}{{Skogestad}}{{}}}
-\bibcite{McCormack}{{22}{1998}{{McCormack and Godfrey}}{{}}}
-\bibcite{unity}{{23}{2022}{{Technologies}}{{}}}
-\bibcite{Perlin}{{24}{1985}{{Perlin}}{{}}}
-\bibcite{Etherington}{{25}{2022}{{Etherington}}{{}}}
-\bibcite{Srinath}{{26}{2022}{{Srinath et~al.}}{{Srinath, Can, and Mitch}}}
-\newlabel{LastPage}{{}{46}{}{page.46}{}}
-\xdef\lastpage@lastpage{46}
-\xdef\lastpage@lastpageHy{46}
-\gdef \@abspage@last{47}
+\bibcite{libnoise}{{1}{2024}{{lib}}{{}}}
+\bibcite{ang2005pid}{{2}{2005}{{Ang et~al.}}{{Ang, Chong, and Li}}}
+\bibcite{IJSAEM}{{3}{2021}{{Mandloi et~al.}}{{Mandloi, Arya, and Verma}}}
+\bibcite{Chen}{{4}{2018}{{Chen et~al.}}{{Chen, Zhang, Hu, and Xiao}}}
+\bibcite{burwell_2019}{{5}{2019}{{Burwell}}{{}}}
+\bibcite{Monada}{{6}{2004}{{Mondada et~al.}}{{Mondada, Pettinaro, Guignard, Kwee, Floreano, Deneubourg, Nolfi, Gambardella, and Dorigo}}}
+\bibcite{Zhou}{{7}{2020}{{Zhou et~al.}}{{Zhou, Rao, and Wang}}}
+\bibcite{Verdoucq}{{8}{2022}{{Verdoucq et~al.}}{{Verdoucq, Theraulaz, Escobedo, Sire, and Hattenberger}}}
+\bibcite{Reynolds}{{9}{1998}{{Reynolds}}{{}}}
+\bibcite{Hayat}{{10}{2016}{{Hayat et~al.}}{{Hayat, Yanmaz, and Muzaffar}}}
+\bibcite{Perez}{{11}{2019}{{Perez et~al.}}{{Perez, Goodloe, and Edmonson}}}
+\bibcite{Hu}{{12}{2022}{{Hu et~al.}}{{Hu, Niu, Carrasco, Lennox, and Arvin}}}
+\bibcite{Pyke}{{13}{2021}{{Pyke and Stark}}{{}}}
+\bibcite{Basu}{{14}{2004}{{Basu et~al.}}{{Basu, Redi, and Shurbanov}}}
+\bibcite{Falomir}{{15}{2018}{{Falomir et~al.}}{{Falomir, Chaumette, and Guerrini}}}
+\bibcite{juliani2020unity}{{16}{2020}{{Juliani et~al.}}{{Juliani, Berges, Teng, Cohen, Harper, Elion, Goy, Gao, Henry, Mattar, and Lange}}}
+\bibcite{madey2013design}{{17}{2013}{{Madey and Madey}}{{}}}
+\bibcite{watson}{{18}{2003}{{Watson et~al.}}{{Watson, John, and Crowther}}}
+\bibcite{Alaliyat2014OptimisationOB}{{19}{2014}{{Alaliyat et~al.}}{{Alaliyat, Yndestad, and Sanfilippo}}}
+\bibcite{Hattenberger}{{20}{2023}{{Hattenberger et~al.}}{{Hattenberger, Bronz, and Condomines}}}
+\bibcite{Figliozzi}{{21}{2023}{{Figliozzi}}{{}}}
+\bibcite{Thamm}{{22}{2015}{{{Thamm} et~al.}}{{{Thamm}, {Brieger}, {Neitzke}, {Meyer}, {Jansen}, and {M{\"o}nninghof}}}}
+\bibcite{skogestad2001probably}{{23}{2001}{{Skogestad}}{{}}}
+\bibcite{McCormack}{{24}{1998}{{McCormack and Godfrey}}{{}}}
+\bibcite{unity}{{25}{2022}{{Technologies}}{{}}}
+\bibcite{liu2020autonomous}{{26}{2020}{{Liu et~al.}}{{Liu, Li, Fan, Wu, Pedrycz, and Suganthan}}}
+\bibcite{Petrillo}{{27}{2021}{{De~Petrillo et~al.}}{{De~Petrillo, Beard, Gu, and Gross}}}
+\bibcite{Perlin}{{28}{1985}{{Perlin}}{{}}}
+\bibcite{Etherington}{{29}{2022}{{Etherington}}{{}}}
+\bibcite{Srinath}{{30}{2022}{{Srinath et~al.}}{{Srinath, Can, and Mitch}}}
+\bibcite{deng}{{31}{2007}{{Deng}}{{}}}
+\bibcite{boids95}{{32}{2001}{{Reynolds}}{{}}}
+\bibcite{Caldwell}{{33}{2018}{{Caldwell et~al.}}{{Caldwell, Watson, Thies, and Knowles}}}
+\bibcite{zhao2022nature}{{34}{2022}{{Zhao et~al.}}{{Zhao, Zeng, Han, Fang, and Zhao}}}
+\bibcite{chen2008application}{{35}{2008}{{Chen et~al.}}{{Chen, Kobayashi, Kawabayashi, and Huang}}}
+\bibcite{delgado2007use}{{36}{2007}{{Delgado-Mata et~al.}}{{Delgado-Mata, Martinez, Bee, Ruiz-Rodarte, and Aylett}}}
+\bibcite{jiang2017biome}{{37}{2017}{{Jiang et~al.}}{{Jiang, Felzer, Nielsen, and Medlyn}}}
+\bibcite{whittaker1970communities}{{38}{1970}{{Whittaker}}{{}}}
+\newlabel{LastPage}{{}{84}{}{page.84}{}}
+\xdef\lastpage@lastpage{84}
+\xdef\lastpage@lastpageHy{84}
+\gdef \@abspage@last{86}

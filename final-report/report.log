@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  24 MAR 2024 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.19)  15 APR 2024 12:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -665,28 +665,28 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 42.
-Package hyperref Info: Link coloring OFF on input line 42.
+(lastpage)             ! on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -696,9 +696,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
@@ -762,14 +762,14 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count363
-<img//crest.png, id=199, 1204.5pt x 1534.73375pt>
+<img//crest.png, id=256, 1204.5pt x 1534.73375pt>
 File: img//crest.png Graphic file (type png)
 <use img//crest.png>
-Package pdftex.def Info: img//crest.png  used on input line 49.
+Package pdftex.def Info: img//crest.png  used on input line 52.
 (pdftex.def)             Requested size: 133.07489pt x 169.5472pt.
 [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//crest.png>] (./report.toc
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//crest.png>] [2] (./report.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -781,27 +781,45 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ...1}LPFE Implementation}{43}{subsection.7.1}
-                                                  % [1])
+l.35 ...ing Collision Numbers}{49}{subsection.4.3}
+                                                  % [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 ...1}Hostile Agents}{73}{subsubsection.7.3.1}
+                                                  % [2])
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
- [2] [3] [4] [5] [6]
-<img//agent.png, id=342, 276.03125pt x 212.795pt>
+ [3] (./report.lof [4])
+\tf@lof=\write6
+\openout6 = `report.lof'.
+
+ (./report.lot [5])
+\tf@lot=\write7
+\openout7 = `report.lot'.
+
+ [6] [7] [8] [9]
+Overfull \hbox (8.78766pt too wide) in paragraph at lines 165--166
+[]\OT1/cmr/m/n/12 Additionally, our ap-proach in-volves an in-no-va-tive in-te-gra-tion of in-di-vid-ual be-havioural
+ []
+
+[10] [11] [12] [13]
+<img//agent.png, id=568, 276.03125pt x 212.795pt>
 File: img//agent.png Graphic file (type png)
 <use img//agent.png>
-Package pdftex.def Info: img//agent.png  used on input line 227.
+Package pdftex.def Info: img//agent.png  used on input line 262.
 (pdftex.def)             Requested size: 104.16429pt x 80.3003pt.
- [7 <./img//agent.png>] [8]
+ [14 <./img//agent.png>] [15]
 PGFPlots: reading {pitchAngle.csv}
- [9]
+ [16]
 PGFPlots: reading {pcontrol1.csv}
 PGFPlots: reading {pcontrol5.csv}
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.58287pt too wide) in paragraph at lines 407--408
+Overfull \hbox (17.58287pt too wide) in paragraph at lines 474--475
 [][] 
  []
 
@@ -810,18 +828,18 @@ PGFPlots: reading {pcontrol10.csv}
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.58287pt too wide) in paragraph at lines 445--446
+Overfull \hbox (17.58287pt too wide) in paragraph at lines 512--513
 [][] 
  []
 
-[10]
+[17]
 PGFPlots: reading {pdcontrol1.csv}
 PGFPlots: reading {pdcontrol5.csv}
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.56927pt too wide) in paragraph at lines 509--510
+Overfull \hbox (17.56927pt too wide) in paragraph at lines 572--573
 [][] 
  []
 
@@ -830,58 +848,59 @@ PGFPlots: reading {pdcontrol20.csv}
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.56927pt too wide) in paragraph at lines 549--550
+Overfull \hbox (17.56927pt too wide) in paragraph at lines 612--613
 [][] 
  []
 
-[11]
+[18]
 PGFPlots: reading {pdproblem.csv}
 
 Missing character: There is no ; in font nullfont!
-[12]
 PGFPlots: reading {pidcontrol2.csv}
-
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.5733pt too wide) in paragraph at lines 668--669
+Overfull \hbox (17.5733pt too wide) in paragraph at lines 729--730
 [][] 
  []
 
 PGFPlots: reading {pidcontrol5.csv}
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (17.5733pt too wide) in paragraph at lines 712--713
+Overfull \hbox (17.5733pt too wide) in paragraph at lines 773--774
 [][] 
  []
 
 PGFPlots: reading {pidmodified.csv}
 Missing character: There is no ; in font nullfont!
-[13] [14]
+[19] [20] [21]
+Overfull \hbox (4.62883pt too wide) in paragraph at lines 944--951
+ [][] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15]
+[22]
 PGFPlots: reading {pidtuningzn.csv}
 
-Overfull \hbox (17.56827pt too wide) in paragraph at lines 970--971
+Overfull \hbox (17.56827pt too wide) in paragraph at lines 1037--1038
 [][] 
  []
 
 PGFPlots: reading {pidtuningzn.csv}
 
-Overfull \hbox (17.56918pt too wide) in paragraph at lines 1016--1017
+Overfull \hbox (17.56918pt too wide) in paragraph at lines 1083--1084
 [][] 
  []
 
-[16]
+[23]
 PGFPlots: reading {znresults.csv}
 PGFPlots: reading {empresults.csv}
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+[24]
 PGFPlots: reading {znempresults.csv}
+
 Missing character: There is no ; in font nullfont!
-[17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27]
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
 PGFPlots: reading {droneData.csv}
 
 NOTE: coordinate (0.2986946,0.3932586) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
@@ -2012,7 +2031,7 @@ NOTE: coordinate (2.427425,57.63025) has been dropped because of a coordinate fi
 NOTE: coordinate (2.881474,63.28399) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (-0.3902073,55.95462) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 
-Overfull \hbox (17.57309pt too wide) in paragraph at lines 1659--1660
+Overfull \hbox (17.57309pt too wide) in paragraph at lines 1694--1695
 [][] 
  []
 
@@ -3145,11 +3164,11 @@ NOTE: coordinate (1.38506,51.86089) has been dropped because of a coordinate fil
 NOTE: coordinate (1.871426,28.5447) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (-1.147842,48.56065) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 
-Overfull \hbox (17.56581pt too wide) in paragraph at lines 1701--1702
+Overfull \hbox (17.56581pt too wide) in paragraph at lines 1736--1737
 [][] 
  []
 
-[28]
+[36]
 PGFPlots: reading {drone3.csv}
 
 NOTE: coordinate (-3.494649,3.892789) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
@@ -4279,7 +4298,7 @@ NOTE: coordinate (-3.278331,51.32015) has been dropped because of a coordinate f
 NOTE: coordinate (3.185698,55.7686) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (-2.861908,46.35474) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (1.499382,45.48027) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
-[29] [30]
+[37] [38]
 PGFPlots: reading {drone4.csv}
 
 NOTE: coordinate (1.015033,-0.9788909) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
@@ -6537,7 +6556,7 @@ NOTE: coordinate (26.42641,21.9488) has been dropped because of a coordinate fil
 NOTE: coordinate (37.43285,11.90564) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (25.4836,14.50624) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (24.73568,20.53068) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
-[31]
+[39]
 PGFPlots: reading {drone6.csv}
 
 NOTE: coordinate (0.3352146,3.003813) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
@@ -9915,88 +9934,214 @@ NOTE: coordinate (-30.21472,10.49618) has been dropped because of a coordinate f
 NOTE: coordinate (-29.10055,13.60042) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (-24.5062,11.92943) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (-30.2552,13.37451) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
-[32]
-<img//lacunarity1.png, id=580, 689.57625pt x 444.66125pt>
+[40]
+<img//octave1.png, id=793, 228.855pt x 129.48375pt>
+File: img//octave1.png Graphic file (type png)
+<use img//octave1.png>
+Package pdftex.def Info: img//octave1.png  used on input line 2067.
+(pdftex.def)             Requested size: 177.42868pt x 100.39034pt.
+<img//octave2.png, id=794, 228.855pt x 129.48375pt>
+File: img//octave2.png Graphic file (type png)
+<use img//octave2.png>
+Package pdftex.def Info: img//octave2.png  used on input line 2074.
+(pdftex.def)             Requested size: 177.42868pt x 100.39034pt.
+<img//octave4.png, id=795, 228.855pt x 129.48375pt>
+File: img//octave4.png Graphic file (type png)
+<use img//octave4.png>
+Package pdftex.def Info: img//octave4.png  used on input line 2081.
+(pdftex.def)             Requested size: 177.42868pt x 100.39034pt.
+<img//octave8.png, id=796, 228.855pt x 129.48375pt>
+File: img//octave8.png Graphic file (type png)
+<use img//octave8.png>
+Package pdftex.def Info: img//octave8.png  used on input line 2088.
+(pdftex.def)             Requested size: 177.42868pt x 100.39034pt.
+ [41 <./img//octave1.png (PNG copy)> <./img//octave2.png (PNG copy)> <./img//octave4.png (PNG copy)> <./img//octave8.png (PNG copy)>]
+<img//lacunarity1.png, id=806, 689.57625pt x 444.66125pt>
 File: img//lacunarity1.png Graphic file (type png)
 <use img//lacunarity1.png>
-Package pdftex.def Info: img//lacunarity1.png  used on input line 1988.
+Package pdftex.def Info: img//lacunarity1.png  used on input line 2106.
 (pdftex.def)             Requested size: 133.07489pt x 85.80957pt.
-<img//lacunarity2.png, id=581, 689.57625pt x 444.66125pt>
+<img//lacunarity2.png, id=807, 689.57625pt x 444.66125pt>
 File: img//lacunarity2.png Graphic file (type png)
 <use img//lacunarity2.png>
-Package pdftex.def Info: img//lacunarity2.png  used on input line 1995.
+Package pdftex.def Info: img//lacunarity2.png  used on input line 2113.
 (pdftex.def)             Requested size: 133.07489pt x 85.80957pt.
-<img//lacunarity4.png, id=582, 689.57625pt x 444.66125pt>
+<img//lacunarity4.png, id=808, 689.57625pt x 444.66125pt>
 File: img//lacunarity4.png Graphic file (type png)
 <use img//lacunarity4.png>
-Package pdftex.def Info: img//lacunarity4.png  used on input line 2002.
+Package pdftex.def Info: img//lacunarity4.png  used on input line 2120.
 (pdftex.def)             Requested size: 133.07489pt x 85.80957pt.
-<img//persistance0.2.png, id=585, 689.57625pt x 444.66125pt>
+<img//persistance0.2.png, id=810, 689.57625pt x 444.66125pt>
 File: img//persistance0.2.png Graphic file (type png)
 <use img//persistance0.2.png>
-Package pdftex.def Info: img//persistance0.2.png  used on input line 2021.
+Package pdftex.def Info: img//persistance0.2.png  used on input line 2140.
 (pdftex.def)             Requested size: 133.07489pt x 85.80957pt.
-<img//persistance0.5.png, id=586, 689.57625pt x 444.66125pt>
+<img//persistance0.5.png, id=811, 689.57625pt x 444.66125pt>
 File: img//persistance0.5.png Graphic file (type png)
 <use img//persistance0.5.png>
-Package pdftex.def Info: img//persistance0.5.png  used on input line 2028.
+Package pdftex.def Info: img//persistance0.5.png  used on input line 2147.
 (pdftex.def)             Requested size: 133.07489pt x 85.80957pt.
-<img//persistance0.8.png, id=587, 689.57625pt x 442.65375pt>
+<img//persistance0.8.png, id=812, 689.57625pt x 442.65375pt>
 File: img//persistance0.8.png Graphic file (type png)
 <use img//persistance0.8.png>
-Package pdftex.def Info: img//persistance0.8.png  used on input line 2035.
+Package pdftex.def Info: img//persistance0.8.png  used on input line 2154.
 (pdftex.def)             Requested size: 133.07489pt x 85.42218pt.
- [33 <./img//lacunarity1.png> <./img//lacunarity2.png> <./img//lacunarity4.png> <./img//persistance0.2.png> <./img//persistance0.5.png> <./img//persistance0.8.png>]
-<img//scale25.png, id=606, 689.57625pt x 444.66125pt>
+ [42 <./img//lacunarity1.png> <./img//lacunarity2.png> <./img//lacunarity4.png> <./img//persistance0.2.png> <./img//persistance0.5.png> <./img//persistance0.8.png>]
+<img//scale25.png, id=827, 689.57625pt x 444.66125pt>
 File: img//scale25.png Graphic file (type png)
 <use img//scale25.png>
-Package pdftex.def Info: img//scale25.png  used on input line 2049.
+Package pdftex.def Info: img//scale25.png  used on input line 2170.
 (pdftex.def)             Requested size: 199.60895pt x 128.71098pt.
-<img//scale28.png, id=607, 689.57625pt x 444.66125pt>
+<img//scale28.png, id=828, 689.57625pt x 444.66125pt>
 File: img//scale28.png Graphic file (type png)
 <use img//scale28.png>
-Package pdftex.def Info: img//scale28.png  used on input line 2056.
+Package pdftex.def Info: img//scale28.png  used on input line 2177.
 (pdftex.def)             Requested size: 199.60895pt x 128.71098pt.
 File: img//lacunarity2.png Graphic file (type png)
 <use img//lacunarity2.png>
-Package pdftex.def Info: img//lacunarity2.png  used on input line 2070.
+Package pdftex.def Info: img//lacunarity2.png  used on input line 2193.
 (pdftex.def)             Requested size: 177.42868pt x 114.40825pt.
- [34 <./img//scale25.png> <./img//scale28.png>]
-<img//naive-ta-edited.png, id=620, 532.99126pt x 438.63875pt>
+ [43 <./img//scale25.png> <./img//scale28.png>] [44]
+<img//naive-ta-edited.png, id=848, 532.99126pt x 438.63875pt>
 File: img//naive-ta-edited.png Graphic file (type png)
 <use img//naive-ta-edited.png>
-Package pdftex.def Info: img//naive-ta-edited.png  used on input line 2127.
+Package pdftex.def Info: img//naive-ta-edited.png  used on input line 2253.
 (pdftex.def)             Requested size: 199.60895pt x 164.27493pt.
-<img//naive-ta-2.png, id=621, 532.99126pt x 438.63875pt>
+<img//naive-ta-2.png, id=849, 532.99126pt x 438.63875pt>
 File: img//naive-ta-2.png Graphic file (type png)
 <use img//naive-ta-2.png>
-Package pdftex.def Info: img//naive-ta-2.png  used on input line 2134.
+Package pdftex.def Info: img//naive-ta-2.png  used on input line 2260.
 (pdftex.def)             Requested size: 199.60895pt x 164.27493pt.
- [35 <./img//naive-ta-edited.png> <./img//naive-ta-2.png>]
-<img//startplatform.png, id=632, 421.575pt x 431.6125pt>
+ [45 <./img//naive-ta-edited.png> <./img//naive-ta-2.png>]
+<img//startplatform.png, id=858, 421.575pt x 431.6125pt>
 File: img//startplatform.png Graphic file (type png)
 <use img//startplatform.png>
-Package pdftex.def Info: img//startplatform.png  used on input line 2152.
+Package pdftex.def Info: img//startplatform.png  used on input line 2282.
 (pdftex.def)             Requested size: 199.60895pt x 204.36606pt.
-<img//goalplatform.png, id=633, 268.00125pt x 274.52562pt>
+<img//goalplatform.png, id=859, 268.00125pt x 274.52562pt>
 File: img//goalplatform.png Graphic file (type png)
 <use img//goalplatform.png>
-Package pdftex.def Info: img//goalplatform.png  used on input line 2159.
+Package pdftex.def Info: img//goalplatform.png  used on input line 2289.
 (pdftex.def)             Requested size: 199.60895pt x 204.46529pt.
- [36 <./img//startplatform.png> <./img//goalplatform.png>] [37] [38] [39] [40] [41] [42] [43] (./report.bbl [44] [45]) 
+ [46 <./img//startplatform.png> <./img//goalplatform.png>] [47] [48] [49] [50] [51] [52] [53] [54]
+PGFPlots: reading {scenario1.csv}
+
+Overfull \hbox (17.56851pt too wide) in paragraph at lines 2504--2505
+[][] 
+ []
+
+PGFPlots: reading {scenario1.csv}
+
+Overfull \hbox (17.57101pt too wide) in paragraph at lines 2520--2521
+[][] 
+ []
+
+[55]
+PGFPlots: reading {scenario2.csv}
+
+Overfull \hbox (17.56973pt too wide) in paragraph at lines 2572--2573
+[][] 
+ []
+
+PGFPlots: reading {scenario2.csv}
+
+Overfull \hbox (17.57132pt too wide) in paragraph at lines 2588--2589
+[][] 
+ []
+
+PGFPlots: reading {scenario2b.csv}
+Missing character: There is no ` in font nullfont!
+[56]
+PGFPlots: reading {metrics2.csv}
+PGFPlots: reading {metrics2.csv}
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[57]
+PGFPlots: reading {scenario3.csv}
+
+Overfull \hbox (17.5721pt too wide) in paragraph at lines 2683--2684
+[][] 
+ []
+
+PGFPlots: reading {scenario3.csv}
+
+Overfull \hbox (17.57132pt too wide) in paragraph at lines 2699--2700
+[][] 
+ []
+
+[58] [59]
+\R=\dimen303
+\L=\dimen304
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (40.39558pt too wide) in paragraph at lines 2839--2840
+ [][] 
+ []
+
+[60]
+Overfull \hbox (0.43219pt too wide) in paragraph at lines 2862--2863
+\OT1/cmr/m/n/12 In the anal-y-sis of the third sce-nario's op-ti-mi-sa-tion re-sults, an in-trigu-ing pat-tern emerges:
+ []
+
+[61] [62]
+<img//obstacles.png, id=985, 872.25874pt x 383.4325pt>
+File: img//obstacles.png Graphic file (type png)
+<use img//obstacles.png>
+Package pdftex.def Info: img//obstacles.png  used on input line 2908.
+(pdftex.def)             Requested size: 354.86412pt x 155.9914pt.
+ [63] [64 <./img//obstacles.png>] [65] [66]
+
+Package pgfplots Warning: Axis range for axis z is approximately empty; enlarging it (it is [0.0:0.0]) on input line 3018.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+[67]
+
+Package pgfplots Warning: Axis range for axis z is approximately empty; enlarging it (it is [0.0:0.0]) on input line 3058.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+[68] [69] [70]
+Overfull \hbox (42.73225pt too wide) detected at line 3124
+[][]\OML/cmm/m/it/12 F[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 ) = []
+ []
+
+[71] [72] [73] [74]
+<gantt.png, id=1071, 662.475pt x 547.04375pt>
+File: gantt.png Graphic file (type png)
+<use gantt.png>
+Package pdftex.def Info: gantt.png  used on input line 3192.
+(pdftex.def)             Requested size: 354.86412pt x 293.02861pt.
+ [75 <./gantt.png>]
+Overfull \hbox (15.21494pt too wide) in paragraph at lines 3281--3282
+ [] 
+ []
+
+[76] [77] [78] [79] [80] (./report.bbl
+Underfull \hbox (badness 1215) in paragraph at lines 27--30
+[]\OT1/cmr/m/n/12 2024. [On-line]. Avail-able: []$https : / / libnoise . sourceforge . net / glossary /
+ []
+
+[81] [82] [83]) 
 AED: lastpage setting LastPage
-[46] (./report.aux)
+[84] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 68D1621D3C5B480E202749BDD9A74E5B;7244.
+(rerunfilecheck)             Checksum: 98D56ACE79490CCAC4D80F02519BD5B6;9900.
  ) 
 Here is how much of TeX's memory you used:
- 39752 strings out of 478268
- 936504 string characters out of 5846347
- 4863187 words of memory out of 5000000
- 57082 multiletter control sequences out of 15000+600000
+ 42294 strings out of 478268
+ 983062 string characters out of 5846347
+ 4910566 words of memory out of 5000000
+ 59493 multiletter control sequences out of 15000+600000
  480128 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,21n,104p,1242b,2574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,21n,104p,1433b,3211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
 
@@ -10010,10 +10155,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (47 pages, 4130826 bytes).
+Output written on report.pdf (86 pages, 4711483 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 722 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1283 PDF objects out of 1440 (max. 8388607)
+ 1109 compressed objects within 12 object streams
+ 312 named destinations out of 1000 (max. 500000)
+ 609 words of extra memory for PDF output out of 10000 (max. 10000000)
 

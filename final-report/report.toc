@@ -1,59 +1,75 @@
-\contentsline {section}{\numberline {1}Context}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Introduction}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Background}{5}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Physics Model}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Quadcopter}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Stabilisation}{9}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Proportional Controller}{10}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Derivative Controller}{11}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Integral Controller}{12}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}PID Controller}{14}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}PID Parameter Tuning}{15}{subsubsection.2.2.5}%
-\contentsline {paragraph}{Empirical Method}{15}{section*.16}%
-\contentsline {paragraph}{Ziegler-Nichols Method}{15}{section*.18}%
-\contentsline {paragraph}{Conclusion}{18}{section*.23}%
-\contentsline {subsection}{\numberline {2.3}Environment Model}{18}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Introducing Autonomy}{20}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Movement to Position}{20}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Boids (1987)}{23}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Avoidance}{24}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Alignment}{25}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Cohesion}{26}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Combining Behaviours}{27}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Extended Boids}{30}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Goal Seeking}{30}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Terrain Generation}{32}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Terrain Avoidance}{34}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Methodology}{37}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Scenario 1: Shortest First Arrival Time}{37}{subsection.4.1}%
-\contentsline {paragraph}{First Arrival Time}{37}{section*.42}%
-\contentsline {paragraph}{Proportion of Agents Arriving}{37}{section*.43}%
-\contentsline {subsection}{\numberline {4.2}Scenario 2: Reduced Spread (Cohesivity)}{38}{subsection.4.2}%
-\contentsline {paragraph}{Standard Deviation of Arrival Times}{38}{section*.44}%
-\contentsline {paragraph}{First Arrival Time}{38}{section*.45}%
-\contentsline {paragraph}{Proportion of Agents Arriving}{38}{section*.46}%
-\contentsline {subsection}{\numberline {4.3}Scenario 3: Reducing Collision Numbers}{38}{subsection.4.3}%
-\contentsline {paragraph}{Number of Collisions}{39}{section*.47}%
-\contentsline {section}{\numberline {5}Optimisation}{39}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Simulated Annealing}{40}{subsection.5.1}%
-\contentsline {paragraph}{First Arrival Time}{41}{section*.48}%
-\contentsline {paragraph}{Proportion Reached}{41}{section*.49}%
-\contentsline {subsection}{\numberline {5.2}Simulations}{42}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Results}{42}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Improving Autonomy}{42}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Boids (1999): Introducing Obstacle Avoidance}{42}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}A Simplified Model}{42}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Local Potential Field Emergence}{43}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Final Results}{43}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Future Work}{43}{section.7}%
-\contentsline {subsection}{\numberline {7.1}LPFE Implementation}{43}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Online Optimisation}{43}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Hostility}{43}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Hostile Environments}{43}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Hostile Agents}{43}{subsubsection.7.3.2}%
-\contentsline {section}{\numberline {8}Evaluation}{43}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Project Management}{43}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Comparing Models}{43}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Speed-Success-Flock Size Tradeoffs}{43}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Use Cases}{43}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Author's Assessment of the Project}{43}{subsection.8.5}%
+\contentsline {section}{\numberline {1}Context}{9}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{9}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Background}{10}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Physics Model}{13}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Agent}{13}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Stabilisation}{16}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Proportional Controller}{16}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Derivative Controller}{17}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Integral Controller}{19}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}PID Controller}{20}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}PID Parameter Tuning}{21}{subsubsection.2.2.5}%
+\contentsline {paragraph}{Empirical Method}{21}{section*.19}%
+\contentsline {paragraph}{Ziegler-Nichols Method}{22}{section*.22}%
+\contentsline {paragraph}{Conclusion}{25}{section*.27}%
+\contentsline {subsection}{\numberline {2.3}Environment Model}{26}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Introducing Autonomy}{27}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Movement to Position}{27}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Boids (1987)}{31}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Avoidance}{32}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Alignment}{32}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Cohesion}{33}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Combining Behaviours}{34}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Extended Boids}{37}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Goal Seeking}{38}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Terrain Generation}{40}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Terrain Avoidance}{43}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Methodology}{47}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scenario 1: Shortest First Arrival Time}{47}{subsection.4.1}%
+\contentsline {paragraph}{First Arrival Time}{47}{section*.48}%
+\contentsline {paragraph}{Proportion of Agents Arriving}{48}{section*.49}%
+\contentsline {subsection}{\numberline {4.2}Scenario 2: Reduced Spread (Cohesivity)}{48}{subsection.4.2}%
+\contentsline {paragraph}{Standard Deviation of Arrival Times}{48}{section*.50}%
+\contentsline {paragraph}{First Arrival Time}{48}{section*.51}%
+\contentsline {paragraph}{Proportion of Agents Arriving}{48}{section*.52}%
+\contentsline {subsection}{\numberline {4.3}Scenario 3: Reducing Collision Numbers}{49}{subsection.4.3}%
+\contentsline {paragraph}{Number of Collisions}{49}{section*.53}%
+\contentsline {section}{\numberline {5}Optimisation}{50}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Simulated Annealing}{50}{subsection.5.1}%
+\contentsline {paragraph}{First Arrival Time}{52}{section*.54}%
+\contentsline {paragraph}{Proportion Reached}{53}{section*.55}%
+\contentsline {paragraph}{Number of Collisions}{53}{section*.56}%
+\contentsline {paragraph}{Standard Deviation of Arrival Times}{53}{section*.57}%
+\contentsline {subsection}{\numberline {5.2}Simulations}{54}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Results}{54}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Scenario 1: Shortest First Arrival Time}{55}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Scenario 2: Reduced Spread (Cohesivity)}{55}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Scenario 3: Reducing Collision Numbers}{57}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Sensitivity Analysis}{58}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Discussion}{60}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Parameter-Metric Relationship}{61}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Collision Metrics}{61}{subsubsection.5.5.2}%
+\contentsline {section}{\numberline {6}Improving Autonomy}{63}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Boids: Introducing Obstacle Avoidance}{63}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}A Simplified Model}{64}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Repulsion}{64}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Attraction}{65}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Combining Behaviours: Potential Fields}{65}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Local Potential Field Emergence}{67}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Two Dimensional Abstraction}{67}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.4}Comparing Models}{69}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Future Work}{71}{section.7}%
+\contentsline {subsection}{\numberline {7.1}LPFE Implementation}{71}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Other Models}{72}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Online Optimisation}{72}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Neural Network Optimisaton}{72}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Hostility}{73}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Hostile Agents}{73}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Hostile Environments}{74}{subsubsection.7.3.2}%
+\contentsline {section}{\numberline {8}Evaluation}{75}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Project Management}{75}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Project Timeline Modifications}{76}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Methodology}{76}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Contingency Planning}{77}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Remarks: Assumptions}{78}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Author's Assessment of the Project}{78}{subsection.8.3}%
