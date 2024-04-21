@@ -797,6 +797,17 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.c
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
@@ -1115,6 +1126,7 @@ INPUT ./report.lot
 INPUT report.lot
 INPUT report.lot
 OUTPUT report.lot
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
@@ -1122,7 +1134,6 @@ INPUT ./img//agent.png
 INPUT img//agent.png
 INPUT ./img//agent.png
 INPUT ./img//agent.png
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT pitchAngle.csv
 INPUT pcontrol1.csv
 INPUT pcontrol5.csv
@@ -1305,6 +1316,8 @@ INPUT metrics2.csv
 INPUT metrics2.csv
 INPUT scenario3.csv
 INPUT scenario3.csv
+INPUT altcooling.csv
+INPUT size500.csv
 INPUT ./img//obstacles.png
 INPUT ./img//obstacles.png
 INPUT img//obstacles.png

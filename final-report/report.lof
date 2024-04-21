@@ -1,44 +1,47 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Dimensions of the Agent\relax }}{13}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Quadcopter Body Diagram in the x-z plane\relax }}{14}{figure.caption.5}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Agent in Unity\relax }}{14}{figure.caption.6}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Propeller Forces for Positive (Clockwise) Yaw Control\relax }}{16}{figure.caption.9}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pitch angle due to input over time\relax }}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Pitch angle due to input over time with proportional error correction\relax }}{18}{figure.caption.12}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Pitch angle due to input over time with additional derivative error correction\relax }}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }}{20}{figure.caption.14}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }}{21}{figure.caption.15}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {11}{\ignorespaces PID Controller\relax }}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {12}{\ignorespaces System Model\relax }}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Oscillation of the system with varying $K_p$\relax }}{24}{figure.caption.24}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {16}{\ignorespaces 2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }}{28}{figure.caption.29}%
-\contentsline {figure}{\numberline {17}{\ignorespaces 2D Coordinate Grid with $v_l$ and $v_g$\relax }}{29}{figure.caption.30}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Constituent Pitch and Roll Components of $v_l$\relax }}{31}{figure.caption.31}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Avoidance vectors for two nearby agents\relax }}{33}{figure.caption.32}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Alignment vectors for three nearby agents\relax }}{34}{figure.caption.33}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Alignment vectors for three nearby agents\relax }}{35}{figure.caption.34}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Simulation Run (Start is indicated by black circle)\relax }}{36}{figure.caption.36}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Final Tuning\relax }}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Seeking Behaviour\relax }}{39}{figure.caption.39}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Finalising Seeking Behaviour\relax }}{40}{figure.caption.40}%
-\contentsline {figure}{\numberline {26}{\ignorespaces $O_n$ effect on 1-D Perlin noise\cite {libnoise}\relax }}{41}{figure.caption.41}%
-\contentsline {figure}{\numberline {27}{\ignorespaces The effect of lacunarity on the generated terrain\relax }}{42}{figure.caption.42}%
-\contentsline {figure}{\numberline {28}{\ignorespaces The effect of persistence on the generated terrain\relax }}{42}{figure.caption.43}%
-\contentsline {figure}{\numberline {29}{\ignorespaces The effect of scale on the generated terrain\relax }}{43}{figure.caption.44}%
-\contentsline {figure}{\numberline {30}{\ignorespaces \relax }}{44}{figure.caption.45}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Naive Terrain Avoidance\relax }}{45}{figure.caption.46}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Start and Goal Platforms in a single simulation\relax }}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Cost Function over Iterations for Scenario 1\relax }}{56}{figure.caption.58}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Cost Function over Iterations for Scenario 2\relax }}{57}{figure.caption.60}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Cost Function over Iterations for Scenario 2 with 100 Simulations\relax }}{58}{figure.caption.62}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Metrics over Iterations for Scenario 2\relax }}{58}{figure.caption.63}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Cost Function over Iterations for Scenario 3\relax }}{59}{figure.caption.64}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Sensitivity Analysis\relax }}{60}{figure.caption.66}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Obstacles in the Environment\relax }}{64}{figure.caption.68}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Attraction Force Field\relax }}{68}{figure.caption.69}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Repulsion Force Field\relax }}{69}{figure.caption.70}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Number of Collisions (First agent reaching the goal at $t\approx 25$)\relax }}{73}{figure.caption.72}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Gantt Chart\relax }}{75}{figure.caption.73}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Gantt Chart of Actual Progress\relax }}{77}{figure.caption.74}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Dimensions of the Agent\relax }}{10}{figure.caption.4}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Quadcopter Body Diagram in the x-z plane\relax }}{11}{figure.caption.5}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Agent in Unity\relax }}{11}{figure.caption.6}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Propeller Forces for Positive (Clockwise) Yaw Control\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pitch angle due to input over time\relax }}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Pitch angle due to input over time with proportional error correction\relax }}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Pitch angle due to input over time with additional derivative error correction\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 3.7$ seconds\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.4$ seconds\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {11}{\ignorespaces PID Controller\relax }}{18}{figure.caption.17}%
+\contentsline {figure}{\numberline {12}{\ignorespaces System Model\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Oscillation of the system with varying $K_p$\relax }}{21}{figure.caption.24}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 2.03$ seconds\relax }}{22}{figure.caption.25}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Pitch angle due to inputs at $t = 0$ and $t = 1.6$ seconds\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {16}{\ignorespaces 2D Coordinate Grid with $p_{goal}$ and $p_{0}$\relax }}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {17}{\ignorespaces 2D Coordinate Grid with $v_l$ and $v_g$\relax }}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Constituent Pitch and Roll Components of $v_l$\relax }}{29}{figure.caption.31}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Avoidance vectors for two nearby agents\relax }}{30}{figure.caption.32}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Alignment vectors for three nearby agents\relax }}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Alignment vectors for three nearby agents\relax }}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Simulation Run (Start is indicated by black circle)\relax }}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Final Tuning\relax }}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Seeking Behaviour\relax }}{37}{figure.caption.39}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Finalising Seeking Behaviour\relax }}{38}{figure.caption.40}%
+\contentsline {figure}{\numberline {26}{\ignorespaces $O_n$ effect on 1-D Perlin noise\cite {libnoise}\relax }}{39}{figure.caption.41}%
+\contentsline {figure}{\numberline {27}{\ignorespaces The effect of lacunarity on the generated terrain\relax }}{40}{figure.caption.42}%
+\contentsline {figure}{\numberline {28}{\ignorespaces The effect of persistence on the generated terrain\relax }}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {29}{\ignorespaces The effect of scale on the generated terrain\relax }}{40}{figure.caption.44}%
+\contentsline {figure}{\numberline {30}{\ignorespaces \relax }}{41}{figure.caption.45}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Naive Terrain Avoidance\relax }}{43}{figure.caption.46}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Start and Goal Platforms in a single simulation\relax }}{43}{figure.caption.47}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Cost Function over Iterations for Scenario 1\relax }}{53}{figure.caption.58}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Cost Function over Iterations for Scenario 2\relax }}{54}{figure.caption.60}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Cost Function over Iterations for Scenario 2 with 100 Simulations\relax }}{54}{figure.caption.62}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Metrics over Iterations for Scenario 2\relax }}{55}{figure.caption.63}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Cost Function over Iterations for Scenario 3\relax }}{56}{figure.caption.64}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Cost Function over Iterations for Scenario 2 with Exponential Cooling\relax }}{57}{figure.caption.66}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Cost Function over Iterations for Scenario 1 with Environment Size 500\relax }}{58}{figure.caption.67}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Sensitivity Analysis\relax }}{59}{figure.caption.68}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Sensitivity Analysis with Increased Resolution\relax }}{60}{figure.caption.69}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Obstacles in the Environment\relax }}{64}{figure.caption.71}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Attraction Force Field\relax }}{68}{figure.caption.72}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Repulsion Force Field\relax }}{69}{figure.caption.73}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Number of Collisions (First agent reaching the goal at $t\approx 25$)\relax }}{72}{figure.caption.75}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Gantt Chart\relax }}{75}{figure.caption.76}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Gantt Chart of Actual Progress\relax }}{76}{figure.caption.77}%

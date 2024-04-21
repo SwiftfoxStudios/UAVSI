@@ -19,45 +19,45 @@ Warning--empty journal in deng
 Warning--empty journal in whittaker1970communities
 
 Done.
-You've used 38 entries,
+You've used 41 entries,
             4855 wiz_defined-function locations,
-            1199 strings with 16132 characters,
-and the built_in function-call counts, 34383 in all, are:
-= -- 2980
-> -- 1074
-< -- 238
-+ -- 549
-- -- 254
-* -- 1960
-:= -- 5201
-add.period$ -- 77
-call.type$ -- 38
-change.case$ -- 73
-chr.to.int$ -- 557
-cite$ -- 41
-duplicate$ -- 2253
-empty$ -- 2483
-format.name$ -- 312
-if$ -- 7771
+            1214 strings with 16722 characters,
+and the built_in function-call counts, 37360 in all, are:
+= -- 3234
+> -- 1168
+< -- 261
++ -- 596
+- -- 274
+* -- 2130
+:= -- 5626
+add.period$ -- 84
+call.type$ -- 41
+change.case$ -- 79
+chr.to.int$ -- 614
+cite$ -- 44
+duplicate$ -- 2446
+empty$ -- 2710
+format.name$ -- 340
+if$ -- 8456
 int.to.chr$ -- 1
-int.to.str$ -- 39
-missing$ -- 361
-newline$ -- 164
-num.names$ -- 111
-pop$ -- 957
+int.to.str$ -- 42
+missing$ -- 391
+newline$ -- 173
+num.names$ -- 120
+pop$ -- 1036
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 41
 quote$ -- 2
-skip$ -- 2518
+skip$ -- 2740
 stack$ -- 0
-substring$ -- 1364
-swap$ -- 1681
-text.length$ -- 52
+substring$ -- 1499
+swap$ -- 1826
+text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 594
+type$ -- 642
 warning$ -- 2
-while$ -- 148
+while$ -- 162
 width$ -- 0
-write$ -- 483
+write$ -- 517
 (There were 2 warnings)
